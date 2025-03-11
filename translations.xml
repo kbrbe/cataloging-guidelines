@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <text key="isbnValid">
+        <lang code="dut"> is een geldige ISBN</lang>
+		<lang code="fre"> est un numéro ISBN-13 valide</lang>
+		<lang code="ger"> ist eine gültige ISBN</lang>
+        <lang code="eng"> is a valid ISBN</lang>
+    </text>
+	<text key="isbnInvalid">
+        <lang code="dut"> is geen geldige ISBN</lang>
+        <lang code="fre"> n est pas un numéro ISBN-13 valide!</lang>
+		<lang code="ger"> ist keine gültige ISBN</lang>
+        <lang code="eng"> is not a valid ISBN</lang>
+    </text>
+	<text key="catAgency">
+        <lang code="dut">040$a : ontbreekt, voer BE-KBR00 in</lang>
+		<lang code="fre">040$a : manquant, indiquez BE-KBR00</lang>
+		<lang code="ger">040$a : fehlt, geben sie BE-KBR00 ein</lang>
+        <lang code="eng">040$a : is empty, it should contain BE-KBR00</lang>
+    </text>
+	<text key="catLang">
+        <lang>040$b : Geef als taal van catalogisering 'fre', 'dut', 'eng' of 'ger' in / Indiquez comme langue de catalogage 'fre', 'dut', 'eng' ou 'ger' / Enter a language of cataloguing : 'fre', 'dut', 'eng' or 'ger' / Geben sie die Katalogisieringssprache ein : 'fre', 'dut', 'eng' oder 'ger'</lang>
+    </text>
+    <text key="bookLang">
+        <lang code="dut">041$a : ontbreekt, voer taalcode in</lang>
+		<lang code="fre">041$a : manquant, saisissez le code langue</lang>
+		<lang code="ger">041$a : fehlt, geben sie den Sprachcode ein</lang>
+        <lang code="eng">041$a : is empty, enter the language code</lang>
+    </text>
+	<text key="bookCountry">
+        <lang code="dut">044$a : ontbreekt, voer landcode in</lang>
+        <lang code="fre">044$a : manquant, saisissez le code pays</lang>
+		<lang code="ger">044$a : fehlt, geben sie den Ländercode ein</lang>
+        <lang code="eng">044$a : is empty, enter the country code</lang>
+    </text>
+    <text key="publishingLocation">
+        <lang code="dut">264$a : ontbreekt, voer plaats van uitgave in</lang>
+		<lang code="fre">264$a : manquant, indiquez le lieu d’édition</lang>
+		<lang code="ger">264$a : fehlt, geben sie den Erscheinungsort ein</lang>
+        <lang code="eng">264$a : is empty, enter a place of publication</lang>
+    </text>
+	<text key="publisher">
+        <lang code="dut">264$b : ontbreekt, voer uitgever in</lang>
+        <lang code="fre">264$b : manquant, indiquez l’éditeur</lang>
+		<lang code="ger">264$b : fehlt, geben sie den Herausgeber/Verlag ein</lang>
+        <lang code="eng">264$b : is empty, enter a publisher</lang>
+    </text>
+    <text key="yearPubColl">
+        <lang code="dut">264$c : ontbreekt, voer het eerste jaar van uitgave van de reeks in</lang>
+		<lang code="fre">264$c : manquant, indiquez la première année d'édition de la collection</lang>
+		<lang code="ger">264$c:  fehlt, geben sie das erste Erscheinungsjahr der Reihe ein</lang>
+        <lang code="eng">264$c : is empty, enter the first year of publication of the series</lang>
+    </text>
+	<text key="yearPub">
+        <lang code="dut">264$c : ontbreekt, voer het jaar van uitgave in</lang>
+		<lang code="fre">264$c : manquant, indiquez l’année d’édition</lang>
+		<lang code="ger">264$c : fehlt, geben sie das Erscheinungsjahr ein</lang>
+        <lang code="eng">264$c : is empty, enter the year of publication</lang>
+    </text>
+	<text key="RDA336">
+        <lang code="dut">336$a : ontbreekt, voer info in</lang>
+        <lang code="fre">336$a : manquant, ajoutez les infos</lang>
+		<lang code="ger">336$a : fehlt, geben sie Info ein</lang>
+        <lang code="eng">336$a : is empty, enter the necessary information</lang>
+    </text>
+	<text key="RDA337">
+        <lang code="dut">337$a : ontbreekt, voer info in</lang>
+        <lang code="fre">337$a : manquant, ajoutez les infos</lang>
+		<lang code="ger">337$a : fehlt, geben sie Info ein</lang>
+        <lang code="eng">337$a : is empty, enter the necessary information</lang>
+    </text>
+	<text key="RDA338">
+        <lang code="dut">338$a : ontbreekt, voer info in</lang>
+        <lang code="fre">338$a : manquant, ajoutez les infos</lang>
+		<lang code="ger">338$a : fehlt, geben sie Info ein</lang>
+        <lang code="eng">338$a : is empty, enter the necessary information</lang>
+    </text>
+	<text key="rubriek">
+        <lang code="dut">Rubriek BB : ontbreekt, voeg rubriek toe</lang>
+        <lang code="fre">Rubrique BB : manquant, ajoutez une rubrique</lang>
+		<lang code="ger">Rubrik BB : fehlt, fügen sie eine Rubrik zu</lang>
+        <lang code="eng">Category BB : is empty, add a category</lang>
+    </text>
+	<text key="legalDepositNr">
+        <lang code="dut">017$a : niet ingevuld, controleer of er een wettelijk depotnummer is</lang>
+        <lang code="fre">017$a : non rempli, vérifiez s’il y a un numéro de dépôt légal</lang>
+		<lang code="ger">017$a : nicht ausgefüllt, kontrollieren sie, ob es eine gesetzliche Depotnummer gibt</lang>
+        <lang code="eng">017$a : is empty, verify if there is a legal deposit number</lang>
+    </text>
+	<text key="isbn">
+        <lang code="dut">020$a : niet ingevuld, controleer of er een ISBN is</lang>
+        <lang code="fre">020$a : non rempli, vérifiez s'il y a un ISBN</lang>
+		<lang code="ger">020$a : fehlt, kontrollieren sie, ob es eine ISBN-Nummer gibt</lang>
+        <lang code="eng">020$a : is empty, verify if there is an ISBN</lang>
+    </text>
+	<text key="ebook">
+        <lang code="dut">Type beschrijving: als het een ebook is, vul dan veld 007 in met 'cu'</lang>
+        <lang code="fre">Type de notice : s'il s'agit d'un ebook, alors remplissez le champ 007 avec 'cu'</lang>
+		<lang code="ger">Beschreibungsart : falls es ein E-Book ist, 'cu' eingeben in Feld 007</lang>
+        <lang code="eng">Type of record: if it is an ebook, then enter 'cu' in field 007</lang>
+    </text>
+	<text key="allCheckedColl">
+        <lang code="dut">Alle verplichte velden voor de reeks zijn ingevuld!</lang>
+        <lang code="fre">Tous les champs obligatoires pour la collection sont remplis!</lang>
+		<lang code="ger">Alle benötigten Felder für die Reihe sind ausgefüllt!</lang>
+        <lang code="eng">All obligatory fields for the series are filled in!</lang>
+    </text>
+	<text key="allChecked">
+        <lang code="dut">Alle verplichte velden zijn ingevuld!</lang>
+        <lang code="fre">Tous les champs obligatoires sont remplis!</lang>
+		<lang code="ger">Alle benötigten Felder sind ausgefüllt!</lang>
+        <lang code="eng">All obligatory fields are filled in!</lang>
+    </text>
+	<text key="collation">
+        <lang code="dut">300$a : ontbreekt, voer aantal pagina's in</lang>
+        <lang code="fre">300$a : manquant, ajoutez le nombre de pages</lang>
+		<lang code="ger">300$a : fehlt, geben sie die Anzahl der Seiten ein</lang>
+        <lang code="eng">300$a : is empty, enter the amount of pages</lang>
+    </text>
+	<text key="dimensions">
+        <lang code="dut">300$c : ontbreekt, voeg de afmetingen toe (excl. ebooks)</lang>
+        <lang code="fre">300$c : manquant, ajoutez les dimensions (excl. ebooks)</lang>
+		<lang code="ger">300$c : fehlt, fügen sie das Format zu (excl. E-Books)</lang>
+        <lang code="eng">300$c : is empty, enter the dimensions (excl. ebooks)</lang>
+    </text>
+	<text key="binding">
+        <lang code="dut">340$l : ontbreekt, voeg type boekband toe (excl. reeksen, kaarten, ebooks)</lang>
+        <lang code="fre">340$l : manquant, ajoutez le type de reliure (excl. collections, cartes, ebooks)</lang>
+		<lang code="ger">340$l : fehlt, fügen sie die Einbandart des Buches zu (excl. Reihen, Karten, E-Books)</lang>
+        <lang code="eng">340$l : is empty, enter a type of binding (excl. series, maps, ebooks)</lang>
+    </text>
+	<text key="statusLacking">
+        <lang code="dut">Status BB : ontbreekt, voeg status toe</lang>
+        <lang code="fre">Statut BB : manquant, ajoutez le statut</lang>
+		<lang code="ger">Status BB : fehlt, fügen sie den Status zu</lang>
+        <lang code="eng">Status BB : is empty, choose a status</lang>
+    </text>
+	<text key="statusWrong">
+        <lang code="dut">949$z : verander de status naar 4a voor publicatie in de Belgische Bibliografie of 5b als het niet gepubliceerd moet worden</lang>
+        <lang code="fre">949$z : veuillez changer le statut en 4a pour publication dans la Bibliographie de Belgique ou 5b si la notice ne doit pas être publiée</lang>
+		<lang code="ger">949$z : verändern sie den Status nach 4a für eine Publikation in der belgischen Bibliografie oder nach 5b, falls es dort nicht erscheinen muss</lang>
+        <lang code="eng">949$z : change the status to 4a for publication in the Belgian Bibliography or 5b if it should not be published</lang>
+    </text>
+	<text key="statusOld">
+        <lang code="dut">949$z : de publicatie is al ouder dan 5 jaar en moet niet meer in de BB verschijnen, verander de status naar 5b</lang>
+        <lang code="fre">949$z : la publication a déjà plus de cinq ans et ne doit pas apparaître dans la BB, veuillez changer le statut en 5b</lang>
+		<lang code="ger">494$z : die Publikation ist älter als 5 Jahre und muss nicht mehr in der BB erscheinen, verändern sie den Status nach 5b</lang>
+        <lang code="eng">949$z : the publication is older than 5 years and shouldn't appear in the Belgian Bibliography anymore, change status to 5b</lang>
+    </text>
+	<text key="eurSymbol">
+        <lang code="dut">020$c : voer EUR in in plaats van €</lang>
+        <lang code="fre">020$c : indiquez EUR au lieu de €</lang>
+		<lang code="ger">020$c : geben sie EUR anstatt € ein</lang>
+        <lang code="eng">020$c : write EUR instead of €</lang>
+    </text>
+	<text key="zeros">
+        <lang code="dut">020$c : geef geen nullen in na de komma voor gehele bedragen</lang>
+        <lang code="fre">020$c : n'indiquez pas les zéros après la virgule pour les nombres entiers</lang>
+		<lang code="ger">020$c : verwenden sie keine Nullen nach dem Komma bei ganzen Geldbeträgen</lang>
+        <lang code="eng">020$c : don't enter zeroes after the comma for whole numbers</lang>
+    </text>
+	<text key="catLangDut">
+        <lang code="dut">040$b : komt niet overeen met de taalcode in 041$a, verander taal van catalogiseren naar 'dut'</lang>
+        <lang code="fre">040$b : ne correspond pas avec le code de langue dans 041$a, changez la langue de catalogage en 'dut'</lang>
+    </text>
+	<text key="catLangFre">
+        <lang code="dut">040$b : komt niet overeen met de taalcode in 041$a, verander taal van catalogiseren naar 'fre'</lang>
+        <lang code="fre">040$b : ne correspond pas avec le code de langue dans 041$a, changez la langue de catalogage en 'fre'</lang>
+    </text>
+	<text key="mulLang">
+        <lang code="dut">041$a : gebruik niet meer de code 'mul' : herhaal $a en geef alle taalcodes in</lang>
+        <lang code="fre">041$a : n'utilisez plus le code 'mul' : répétez le $a et indiquez tous les codes des langues</lang>
+		<lang code="ger">041$a : Code 'mul' nicht mehr verwenden : wiederholen sie $a und geben sie alle Sprachecodes ein</lang>
+        <lang code="eng">041$a : don't use the code 'mul' : repeat $a and enter all language codes</lang>
+    </text>
+	<text key="origLang">
+        <lang code="dut">041$h : vul de oorspronkelijke taal in als het werk een vertaling is</lang>
+        <lang code="fre">041$h : remplissez la langue d'origine si l'ouvrage est une traduction</lang>
+		<lang code="ger">041$h : geben sie die Originalsprache ein, wenn das Werk eine Übersetzung ist</lang>
+        <lang code="eng">041$h : enter the original language if the work is a translation</lang>
+    </text>
+    <text key="vpCountry">
+		<lang code="dut">044$a : gebruik niet meer de code 'vp' : herhaal $a en geef alle landcodes in</lang>
+        <lang code="fre">044$a : n'utilisez plus le code 'vp' : répétez le $a et indiquez tous les codes des pays</lang>
+		<lang code="ger">044$a : Code 'vp' nicht mehr verwenden : wiederholen sie $a und geben sie alle Ländercodes ein</lang>
+        <lang code="eng">044$a : don't use the code 'vp' : repeat $a and enter all country codes</lang>
+    </text>
+	<text key="codeFoncLacking100">
+		<lang code="dut">100$4 : functiecode ontbreekt bij autoriteit </lang>
+		<lang code="fre">100$4 : code de fonction manquant à l'autorité </lang>
+		<lang code="ger">100$4 : Funktionscode der Autorität fehlt </lang>
+		<lang code="eng">100$4 : function code is empty for authority </lang>
+	</text>
+	<text key="codeFoncLacking110">
+		<lang code="dut">110$4 : functiecode ontbreekt bij autoriteit </lang>
+		<lang code="fre">110$4 : code de fonction manquant à l'autorité </lang>
+		<lang code="ger">110$4 : Funktionscode der Autorität fehlt </lang>
+		<lang code="eng">110$4 : function code is empty for authority </lang>
+	</text>
+	<text key="codeFoncLacking700">
+		<lang code="dut">700$4 : functiecode ontbreekt bij autoriteit </lang>
+		<lang code="fre">700$4 : code de fonction manquant à l'autorité </lang>
+		<lang code="ger">700$4 : Funktionscode der Autorität fehlt </lang>
+		<lang code="eng">700$4 : function code is empty for authority </lang>
+	</text>
+	<text key="codeFoncLacking710">
+		<lang code="dut">710$4 : functiecode ontbreekt bij autoriteit </lang>
+		<lang code="fre">710$4 : code de fonction manquant à l'autorité </lang>
+		<lang code="ger">710$4 : Funktionscode der Autorität fehlt </lang>
+		<lang code="eng">710$4 : function code is empty for authority </lang>
+	</text>
+	<text key="twoMainEntries">
+		<lang code="dut">1XX : twee hoofdingangen aanwezig, verplaats 110 naar 710</lang>
+		<lang code="fre">1XX : deux entrées principales présentes, déplacez 110 à 710</lang>
+		<lang code="ger">1XX : zwei Haupteingänge vorhanden, verschieben sie 110 nach 710</lang>
+		<lang code="eng">1XX : two main entries present, move 110 to 710</lang>
+	</text>
+	<text key="titleInd1">
+		<lang code="dut">245 : vul als 1ste indicator '0' in</lang>
+		<lang code="fre">245 : indiquez '0' pour le 1er indicateur</lang>
+		<lang code="ger">245 : geben sie als ersten Indikator '0' ein</lang>
+		<lang code="eng">245 : choose '0' as 1st indicator</lang>
+	</text>
+	<text key="titleInd2">
+		<lang code="dut">245 : vul als 2de indicator '0' in</lang>
+		<lang code="fre">245 : indiquez '0' pour le 2ème indicateur</lang>
+		<lang code="ger">245 : geben sie als zweiten Indikator '0' ein</lang>
+		<lang code="eng">245 : choose '0' as 2nd indicator</lang>
+	</text>
+	<text key="resp">
+		<lang code="dut">245$c : in plaats van '[et al.]', voer '[en X anderen]' in, zie de catalografische richtlijnen</lang>
+		<lang code="fre">245$c : au lieu de '[et al.]' indiquez '[et X autres]', voir les règles de catalogage</lang>
+		<lang code="ger">245$c : anstatt von '[et al]' '[en X anderen], '[et X autres] oder '[und X andere]' eingeben, siehe katalografische Richtlinien</lang>
+		<lang code="eng">245$c : instead of '[et al.]', enter '[en X anderen]' (see the cataloguing guidelines)</lang>
+	</text>
+	<text key="titleMedium">
+		<lang code="dut">245$h : verplaats de info naar een ander veld of schrijf een uitzondering met hoofdletter, zie de catalografische richtlijnen</lang>
+		<lang code="fre">245$h : déplacez l'info vers un autre champ ou écrivez une exception avec majuscule, voir les règles de catalogage</lang>
+		<lang code="ger">245$h : verschieben sie die Informationen zu einem anderen Feld oder schreiben sie beginnend mit einem Großbuchstaben in einem der Ausnahmefälle, siehe katalografische Richtlinien</lang>
+		<lang code="eng">245$h : move the information to another field or write an allowed exception with capital letter, see the cataloguing guidelines</lang>
+	</text>
+		<text key="origtitleLang">
+		<lang code="dut">246$g : verplaats taalcode van het origineel naar 041$h</lang>
+		<lang code="fre">246$g : déplacez le code de langue de l’original vers 041$h</lang>
+		<lang code="ger">246$g verschieben sie den Sprachcode des Orginals nach 041$h</lang>
+		<lang code="eng">246$g : move language code of original to 041$h</lang>
+	</text>
+	<text key="origTitleFre">
+		<lang code="dut">246$i : schrijf in de taal van 040$b 'Titre original'</lang>
+		<lang code="fre">246$i : indiquez 'Titre original' dans la langue du 040$b</lang>
+	</text>
+	<text key="origTitleDut">
+		<lang code="dut">246$i : schrijf in de taal van 040$b 'Oorspronkelijke titel'</lang>
+		<lang code="fre">246$i : indiquez 'Oorspronkelijke titel' dans la langue du 040$b</lang>
+	</text>
+	<text key="wrongPubField">
+		<lang code="dut">260 : te verwijderen, verplaats info naar 264</lang>
+		<lang code="fre">260 : à supprimer, déplacez l’info vers 264</lang>
+		<lang code="ger">260 : löschen, verschieben sie die Informationen nach 264</lang>
+		<lang code="eng">260 : delete and move information to 264</lang>
+	</text>
+	<text key="pubInd">
+		<lang code="dut">264 : selecteer '1 - Publication' als 2de indicator</lang>
+		<lang code="fre">264 : sélectionnez '1 - Publication' dans le 2ème indicateur</lang>
+		<lang code="ger">264 : wählen sie '1 - Publikation' als 2ten Indikator</lang>
+		<lang code="eng">264 : select '1 - Publication' as 2nd indicator</lang>
+	</text>
+	<text key="sineLoc">
+		<lang code="dut">264$a : niet meer 'S.l.' gebruiken, zie de catalografische richtlijnen</lang>
+		<lang code="fre">264$a : n'utilisez plus 'S.l.', voir les règles de catalogage</lang>
+		<lang code="ger">264$a : nicht mehr 'S.l.' benutzen, siehe katalografische Richtlinien</lang>
+		<lang code="eng">264$a : don't use 'S.l.', see the cataloguing guidelines</lang>
+	</text>
+	<text key="controlledYearPub">
+		<lang code="dut">264$c : bevat tekstuele informatie, vul het jaartal in 008 in pos. 07-10 in en kies ook het type datum in 008 pos. 06 (zie de catalografische richtlijnen)</lang>
+		<lang code="fre">264$c : contient des informations textuelles, remplissez l'année dans 008 pos. 07-10 et indiquez également le type de date dans 008 pos. 06 (voir les règles de catalogage)</lang>
+		<lang code="ger">264$c : enthält textliche Information, geben sie die Jahreszahl in 008 in Pos. 07-10 ein und wählen sie auch den Typ des Datums in 008 Pos. 06 (siehe katalografische Richtlinien)</lang>
+		<lang code="eng">264$c : contains textual information, enter the year in 008 in pos. 07-10 and choose a type of date in 008 pos. 06 (see the cataloguing guidelines)</lang>
+	</text>
+	<text key="noTranslate">
+		<lang code="dut">300$a : vertaling niet nodig, voer het aantal pagina's in in de taal van 040$b</lang>
+		<lang code="fre">300$a : traduction pas nécessaire, indiquez le nombre de pages dans la langue du 040$b</lang>
+		<lang code="ger">300$a : Übersetzung nicht nötig, geben sie die Anzahl der Seiten in der Sprache von 040$b ein</lang>
+		<lang code="eng">300$a : translation not necessary, write the amount of pages in the language of 040$b</lang>
+	</text>
+	<text key="numberOfPages">
+		<lang code="dut">300$a : voer het aantal pagina's in in de taal van 040$b</lang>
+		<lang code="fre">300$a : indiquez le nombre de pages dans la langue du 040$b</lang>
+		<lang code="ger">300$a : geben sie die Anzahl der Seiten in der Sprache von 040$b ein</lang>
+		<lang code="eng">300$a : write the amount of pages in the language of 040$b</lang>
+	</text>
+	<text key="unnumberedPages">
+		<lang code="dut">300$a : niet meer '[ ]' gebruiken. Als het document niet genummerd is en het aantal pagina’s op het eerste gezicht lager is dan 50 pagina’s, dan tellen we het aantal pagina’s met de hand en voeren het in als 'xx pages non numérotées' of 'xx ongenummerde pagina's' in de taal van 040$b</lang>
+		<lang code="fre">300$a : ne plus utiliser '[ ]'. Si le document n’est pas numéroté et que le nombre de pages est, à vue d’œil, inférieur à 50 pages, on compte manuellement le nombre de pages 'xx pages non numérotées' ou 'xx ongenummerde pagina's' dans la langue du 040$b</lang>
+		<lang code="ger">300$a : nicht mehr '[]' verwenden. Falls das Dokument nicht nummeriert ist  und die Anzahl der Seiten auf den ersten Blick niedriger ist als 50 Seiten, dann zählen wir die Anzahl der Seiten und geben sie als 'xx pages non numérotées','xx ongenummerde pagina's' oder 'xx nicht nummerierte Seiten' in der Sprache von 040$b ein</lang>
+		<lang code="eng">300$a : don't use '[ ]'. If the document is unnumbered and the amount of pages seems less than 50, count manually and enter as 'xx unnumbered pages' in the language of 040$b</lang>
+	</text>
+	<text key="abbrevPages">
+		<lang code="dut">300$a : schrijf in de taal van 040$b voluit 'pagina's' of 'pages' in plaats van 'p.'</lang>
+		<lang code="fre">300$a : au lieu de 'p.', écrivez 'pagina's' ou 'pages' en entier dans la langue du 040$b</lang>
+		<lang code="ger">300$a : schreiben sie in der Sprache von 040$b 'pagina's', 'pages' oder 'Seiten' anstatt von 'p.' oder 'S.'</lang>
+		<lang code="eng">300$a : write 'pages' instead of 'p.', in the language of 040$b</lang>
+	</text>
+	<text key="mulPages">
+		<lang code="dut">300$a : in plaats van 'Veelv. gepag.', als er meer dan 3 nummeringen voorkomen, schrijf in de taal van 040$b voluit '1 volume (meervoudige paginering)' of '1 volume (pagination multiple)'</lang>
+		<lang code="fre">300$a : au lieu de 'Pag. mult.', au cas où nous rencontrons plus de 3 séquences de numérotation différentes, écrivez '1 volume (pagination multiple)' ou '1 volume (meervoudige paginering)' en entier dans la langue du 040$b</lang>
+		<lang code="ger">300$a : geben sie ausgeschrieben '1 volume (meervoudige paginerung)',  '1 volume (pagination multiple)' oder '1 Volumen (Mehrfachpaginierung)' anstatt 'Veelv. gepag.' ein, wenn mehr als 3 Nummerierungen vorkommen</lang>
+		<lang code="eng">300$a : instead of 'Mult. pag.' or similar abbreviated terms, if there are more than 3 sequences of numbering, write '1 volume (various pagings)'</lang>
+	</text>
+	<text key="nonPages">
+		<lang code="dut">300$a : in plaats van 'Niet gepag.', als het document niet genummerd is en het aantal pagina’s op het eerste gezicht hoger is dan 50 pagina’s, dan vermelden we: '1 volume (non paginé)' of '1 volume (zonder paginering)' in de taal van 040$b</lang>
+		<lang code="fre">300$a : au lieu de 'Non pag.', si le document n’est pas numéroté et que le nombre de pages est, à vue d’œil, supérieur à 50 pages, on met: '1 volume (non paginé)' ou '1 volume (zonder paginering)' dans la langue du 040$b</lang>
+		<lang code="ger">300$a : Wenn das Dokument nicht nummeriert ist und auf den ersten Blick die Anzahl der Seiten höher ist als 50 Seiten, vermelden wir '1 volume (non paginé)', '1 volume (zonder paginering)' oder '1 Volumen (ohne Paginierung)' in der Sprache von 040$b</lang>
+		<lang code="eng">300$a : instead of 'Non pag.' or similar, if the document is unnumbered and the amount of pages seems higher than 50, enter '1 volume (unpaged)'</lang>
+	</text>
+	<text key="abbrevIll">
+		<lang code="dut">300$b : schrijf in de taal van 040$b 'illustraties' of 'illustrations' in plaats van 'ill.'</lang>
+		<lang code="fre">300$b : au lieu de 'ill.', écrivez 'illustrations' ou 'illustraties' dans la langue du 040$b</lang>
+		<lang code="ger">300$b : schreiben sie in der Sprache von 040$b 'illustrations', 'illustraties' oder 'Illustrationen' anstatt 'ill'</lang>
+		<lang code="eng">300$b : write 'illustrations' instead of 'ill.'</lang>
+	</text>
+	<text key="donotTranslate">
+		<lang code="dut">300$b : vertaling niet nodig, voer de illustratieve inhoud in in de taal van 040$b</lang>
+		<lang code="fre">300$b : traduction pas nécessaire, indiquez le contenu illustratif dans la langue du 040$b</lang>
+		<lang code="ger">300$b : Übersetzung nicht nötig, geben sie den illustrativen Inhalt in der Sprache von 040$b ein</lang>
+		<lang code="eng">300$b : translation not necessary, enter the illustrations content in the language of 040$b</lang>
+	</text>
+	<text key="illFreDut">
+		<lang code="dut">300$b : voer de illustratieve inhoud in in de taal van 040$b</lang>
+		<lang code="fre">300$b : indiquez le contenu illustratif dans la langue du 040$b</lang>
+		<lang code="ger">300$b : geben sie den illustrativen Inhalt in der Sprache von 040$b ein</lang>
+		<lang code="eng">300$b : enter the illustrations content in the language of 040$b</lang>
+	</text>
+	<text key="targetAudience">
+		<lang code="dut">385$a : te verwijderen, verplaats info naar 521$a</lang>
+		<lang code="fre">385$a : à supprimer, déplacez l’info vers 521$a</lang>
+		<lang code="ger">385$a : löschen, verschieben sie die Information nach 521$a</lang>
+		<lang code="eng">385$a : delete and move information to 521$a</lang>
+	</text>
+	<text key="series">
+		<lang code="dut">490$a : te verwijderen, voeg link naar reeks toe in 773$t</lang>
+		<lang code="fre">490$a : à supprimer, ajoutez un lien vers la collection dans 773$t</lang>
+		<lang code="ger">490$a : löschen, fügen sie den Link zur Reihe in 773$t zu</lang>
+		<lang code="eng">490$a : delete and move link to series to 773$t</lang>
+	</text>
+		<text key="subject">
+		<lang code="dut">650$x : 650 dient voor eenvoudige onderwerpen, verplaats het samengestelde onderwerp naar 654</lang>
+		<lang code="fre">650$x : 650 sert pour les sujets simples, déplacez le sujet composé vers 654</lang>
+		<lang code="ger">650$x : 650 wird für einfache Themen verwendet, verschieben sie das zusammengestellte Thema nach 654</lang>
+		<lang code="eng">650$x : 650 is meant for simple subjects, move the faceted subject terms to 654</lang>
+	</text>
+	<text key="addAutorities">
+		<lang code="dut">1XX/7XX : gelieve de autoriteiten toe te voegen</lang>
+		<lang code="fre">1XX/7XX : veuillez ajouter les autorités</lang>
+		<lang code="ger">1XX/7XX : bitte die Autoritäten zufügen</lang>
+		<lang code="eng">1XX/7XX : please add the authorities</lang>
+	</text>
+	<text key="noCallnr">
+		<lang code="dut">Deze beschrijving heeft nog geen plaatskenmerk!</lang>
+		<lang code="fre">Cette notice n'a pas encore de cote !</lang>
+		<lang code="ger">Diese Bescheibung hat noch keine Signatur!</lang>
+		<lang code="eng">This record doesn't have a call number yet!</lang>
+	</text>
+</translations>
