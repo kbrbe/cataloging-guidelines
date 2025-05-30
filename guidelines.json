@@ -1509,7 +1509,7 @@
         "TitleFR": "024$2 - Autre numéro ou code normalisé - Source",
         "TitleNL": "024$2 - Ander standaardnummer of -code - Bron",
         "MARC21": "https://www.loc.gov/marc/authority/ad024.html",
-        "RDA_ELEMENT": "<a target="_blank" href="http://rdaregistry.info/Elements/w/P10406" rel="noopener">source consulted</a>",
+        "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/w/P10406' rel='noopener'>source consulted</a>",
         "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-cece8d2c-50a8-3436-b217-2e98d9ae9f12",
         "RulesFR": "Codes possibles : isni, viaf<br><br>on peut mettre '?' si plusieurs numéros ISNI, mais doute sur celui qui est correct",
         "RulesNL": "Mogelijke codes : isni, viaf<br><br>Zet '?' indien meerdere ISNI, maar twijfel over welk correct is"
