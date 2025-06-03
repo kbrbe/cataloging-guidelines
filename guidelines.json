@@ -1,11 +1,11 @@
 [
      {
         "ID": "BIBleader007",
-        "TitleFR": "949$b - Date",
-        "TitleNL": "949$b - Datum",
-	"MARC21": "[Champ local / lokaal veld]",	    
-        "RulesFR": "Indication par la Cellule QC de la date de publication dans la Bibliographie de Belgique (format YYYYMM).",
-        "RulesNL": "Vermelding door de cel QC van de datum van publicatie in de Belgische Bibliografie (formaat YYYYMM).",
+        "TitleFR": "Leader and 007",
+        "TitleNL": "Leader and 007",
+	"MARC21": "https://www.loc.gov/marc/bibliographic/bd007.html <br>https://www.loc.gov/marc/bibliographic/bdleader.html",	    
+        "RulesFR": "Champs structurés.",
+        "RulesNL": "Gestructureerde velden.",
 	"RulesTable": [
 		  {
 			"FR": "Livre",
