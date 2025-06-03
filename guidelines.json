@@ -7,238 +7,238 @@
         "RulesFR": "Indication par la Cellule QC de la date de publication dans la Bibliographie de Belgique (format YYYYMM).",
         "RulesNL": "Vermelding door de cel QC van de datum van publicatie in de Belgische Bibliografie (formaat YYYYMM)."
 	"RulesTable": [
-  {
-    "Type de document FR": "Livre",
-    "Type document NL": "Boek",
-    "Type document code": "LIVR",
-    "Leader 06/07": "am",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Ebook",
-    "Type document NL": "Ebook",
-    "Type document code": "ELIV",
-    "Leader 06/07": "am",
-    "Veld 007 / champ 007": "cu"
-  },
-  {
-    "Type de document FR": "Livre précieux",
-    "Type document NL": "Kostbaar drukwerk",
-    "Type document code": "PREC",
-    "Leader 06/07": "am",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Manuscrit",
-    "Type document NL": "Handschrift",
-    "Type document code": "MANU",
-    "Leader 06/07": "tm",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Lettre",
-    "Type document NL": "Brief",
-    "Type document code": "LETT",
-    "Leader 06/07": "tm",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Journal",
-    "Type document NL": "Krant",
-    "Type document code": "JOUR",
-    "Leader 06/07": "as",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Périodique",
-    "Type document NL": "Tijdschrift",
-    "Type document code": "PERE",
-    "Leader 06/07": "as",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "E-périodique",
-    "Type document NL": "E-tijdschrift",
-    "Type document code": "EPER",
-    "Leader 06/07": "as",
-    "Veld 007 / champ 007": "cu"
-  },
-  {
-    "Type de document FR": "Tiré à part",
-    "Type document NL": "Overdruk",
-    "Type document code": "EXTR",
-    "Leader 06/07": "aa",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Fascicule",
-    "Type document NL": "Tijdschriftnummer",
-    "Type document code": "FASP, FASC",
-    "Leader 06/07": "ab",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Collection ou coupole livre",
-    "Type document NL": "Reeks of koepel boek",
-    "Type document code": "COLL, CCOL",
-    "Leader 06/07": "ac",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Coupole livre précieux",
-    "Type document NL": "Koepel kostbaar drukwerk",
-    "Type document code": "CPRE",
-    "Leader 06/07": "ac",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Collection ebook",
-    "Type document NL": "Koepel ebook",
-    "Type document code": "CELI",
-    "Leader 06/07": "ac",
-    "Veld 007 / champ 007": "cu"
-  },
-  {
-    "Type de document FR": "Coupole manuscrit",
-    "Type document NL": "Koepel handschrift",
-    "Type document code": "CMAN",
-    "Leader 06/07": "tc",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Coupole lettre",
-    "Type document NL": "Koepel brief",
-    "Type document code": "CLET",
-    "Leader 06/07": "tc",
-    "Veld 007 / champ 007": "tu"
-  },
-  {
-    "Type de document FR": "Coupole musique imprimée",
-    "Type document NL": "Koepel gedrukte muziek",
-    "Type document code": "CPAR",
-    "Leader 06/07": "cc",
-    "Veld 007 / champ 007": "qu"
-  },
-  {
-    "Type de document FR": "Musique imprimée",
-    "Type document NL": "Gedrukte muziek",
-    "Type document code": "PART",
-    "Leader 06/07": "cm",
-    "Veld 007 / champ 007": "qu"
-  },
-  {
-    "Type de document FR": "Coupole musique manuscrite",
-    "Type document NL": "Koepel handgeschreven muziek",
-    "Type document code": "CPAR",
-    "Leader 06/07": "dc",
-    "Veld 007 / champ 007": "qu"
-  },
-  {
-    "Type de document FR": "Musique manuscrite",
-    "Type document NL": "Handgeschreven muziek",
-    "Type document code": "PART",
-    "Leader 06/07": "dm",
-    "Veld 007 / champ 007": "qu"
-  },
-  {
-    "Type de document FR": "Coupole carte imprimée",
-    "Type document NL": "Koepel gedrukte kaart",
-    "Type document code": "CCAR",
-    "Leader 06/07": "ec",
-    "Veld 007 / champ 007": "au"
-  },
-  {
-    "Type de document FR": "Document cartographique",
-    "Type document NL": "Cartografisch document",
-    "Type document code": "CART",
-    "Leader 06/07": "em",
-    "Veld 007 / champ 007": "au"
-  },
-  {
-    "Type de document FR": "Coupole carte manuscrite",
-    "Type document NL": "Koepel handgeschreven kaart",
-    "Type document code": "CCAR",
-    "Leader 06/07": "fc",
-    "Veld 007 / champ 007": "au"
-  },
-  {
-    "Type de document FR": "Carte manuscrite",
-    "Type document NL": "Handgeschreven kaart",
-    "Type document code": "CART",
-    "Leader 06/07": "fm",
-    "Veld 007 / champ 007": "au"
-  },
-  {
-    "Type de document FR": "Coupole audiovisuel",
-    "Type document NL": "Koepel audiovisueel document",
-    "Type document code": "DAVI",
-    "Leader 06/07": "gc",
-    "Veld 007 / champ 007": "vu"
-  },
-  {
-    "Type de document FR": "Document audiovisuel",
-    "Type document NL": "Audiovisueel document",
-    "Type document code": "DAVI",
-    "Leader 06/07": "gm",
-    "Veld 007 / champ 007": "vu"
-  },
-  {
-    "Type de document FR": "Coupole document sonore",
-    "Type document NL": "Koepel geluidsdocument",
-    "Type document code": "CDSO",
-    "Leader 06/07": "ic",
-    "Veld 007 / champ 007": "su"
-  },
-  {
-    "FR": "Document sonore",
-    "NL": "Geluidsdocument",
-    "code": "DSON",
-    "06/07": "im",
-    "007": "su"
-  },
-  {
-    "FR": "Coupole musique performée",
-    "NL": "Koepel uitgevoerde muziek",
-    "code": "CDSO",
-    "06/07": "jc",
-    "007": "su"
-  },
-  {
-    "FR": "Musique performée",
-    "NL": "Uitgevoerde muziek",
-    "code": "DSON",
-    "06/07": "jm",
-    "007": "su"
-  },
-  {
-    "FR": "Coupole estampe/chalcographie",
-    "NL": "Koepel prenten",
-    "code": "CIMA, CCHA",
-    "06/07": "kc",
-    "007": "ku"
-  },
-  {
-    "FR": "Estampe/chalcographie",
-    "NL": "Prent/chalcografie",
-    "code": "IMAG, CHAL",
-    "06/07": "km",
-    "007": "ku"
-  },
-  {
-    "FR": "Objet",
-    "NL": "Object",
-    "code": "OBJE",
-    "06/07": "rm",
-    "007": "globe : du"
-  },
-  {
-    "FR": "Monnaie",
-    "NL": "Munt",
-    "code": "MONN",
-    "06/07": "rm",
-    "007": "uu"
-  }
-]
+		  {
+			"FR": "Livre",
+			"NL": "Boek",
+			"code": "LIVR",
+			"06/07": "am",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Ebook",
+			"NL": "Ebook",
+			"code": "ELIV",
+			"06/07": "am",
+			"007": "cu"
+		  },
+		  {
+			"FR": "Livre précieux",
+			"NL": "Kostbaar drukwerk",
+			"code": "PREC",
+			"06/07": "am",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Manuscrit",
+			"NL": "Handschrift",
+			"code": "MANU",
+			"06/07": "tm",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Lettre",
+			"NL": "Brief",
+			"code": "LETT",
+			"06/07": "tm",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Journal",
+			"NL": "Krant",
+			"code": "JOUR",
+			"06/07": "as",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Périodique",
+			"NL": "Tijdschrift",
+			"code": "PERE",
+			"06/07": "as",
+			"007": "tu"
+		  },
+		  {
+			"FR": "E-périodique",
+			"NL": "E-tijdschrift",
+			"code": "EPER",
+			"06/07": "as",
+			"007": "cu"
+		  },
+		  {
+			"FR": "Tiré à part",
+			"NL": "Overdruk",
+			"code": "EXTR",
+			"06/07": "aa",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Fascicule",
+			"NL": "Tijdschriftnummer",
+			"code": "FASP, FASC",
+			"06/07": "ab",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Collection ou coupole livre",
+			"NL": "Reeks of koepel boek",
+			"code": "COLL, CCOL",
+			"06/07": "ac",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Coupole livre précieux",
+			"NL": "Koepel kostbaar drukwerk",
+			"code": "CPRE",
+			"06/07": "ac",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Collection ebook",
+			"NL": "Koepel ebook",
+			"code": "CELI",
+			"06/07": "ac",
+			"007": "cu"
+		  },
+		  {
+			"FR": "Coupole manuscrit",
+			"NL": "Koepel handschrift",
+			"code": "CMAN",
+			"06/07": "tc",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Coupole lettre",
+			"NL": "Koepel brief",
+			"code": "CLET",
+			"06/07": "tc",
+			"007": "tu"
+		  },
+		  {
+			"FR": "Coupole musique imprimée",
+			"NL": "Koepel gedrukte muziek",
+			"code": "CPAR",
+			"06/07": "cc",
+			"007": "qu"
+		  },
+		  {
+			"FR": "Musique imprimée",
+			"NL": "Gedrukte muziek",
+			"code": "PART",
+			"06/07": "cm",
+			"007": "qu"
+		  },
+		  {
+			"FR": "Coupole musique manuscrite",
+			"NL": "Koepel handgeschreven muziek",
+			"code": "CPAR",
+			"06/07": "dc",
+			"007": "qu"
+		  },
+		  {
+			"FR": "Musique manuscrite",
+			"NL": "Handgeschreven muziek",
+			"code": "PART",
+			"06/07": "dm",
+			"007": "qu"
+		  },
+		  {
+			"FR": "Coupole carte imprimée",
+			"NL": "Koepel gedrukte kaart",
+			"code": "CCAR",
+			"06/07": "ec",
+			"007": "au"
+		  },
+		  {
+			"FR": "Document cartographique",
+			"NL": "Cartografisch document",
+			"code": "CART",
+			"06/07": "em",
+			"007": "au"
+		  },
+		  {
+			"FR": "Coupole carte manuscrite",
+			"NL": "Koepel handgeschreven kaart",
+			"code": "CCAR",
+			"06/07": "fc",
+			"007": "au"
+		  },
+		  {
+			"FR": "Carte manuscrite",
+			"NL": "Handgeschreven kaart",
+			"code": "CART",
+			"06/07": "fm",
+			"007": "au"
+		  },
+		  {
+			"FR": "Coupole audiovisuel",
+			"NL": "Koepel audiovisueel document",
+			"code": "DAVI",
+			"06/07": "gc",
+			"007": "vu"
+		  },
+		  {
+			"FR": "Document audiovisuel",
+			"NL": "Audiovisueel document",
+			"code": "DAVI",
+			"06/07": "gm",
+			"007": "vu"
+		  },
+		  {
+			"FR": "Coupole document sonore",
+			"NL": "Koepel geluidsdocument",
+			"code": "CDSO",
+			"06/07": "ic",
+			"007": "su"
+		  },
+		  {
+			"FR": "Document sonore",
+			"NL": "Geluidsdocument",
+			"code": "DSON",
+			"06/07": "im",
+			"007": "su"
+		  },
+		  {
+			"FR": "Coupole musique performée",
+			"NL": "Koepel uitgevoerde muziek",
+			"code": "CDSO",
+			"06/07": "jc",
+			"007": "su"
+		  },
+		  {
+			"FR": "Musique performée",
+			"NL": "Uitgevoerde muziek",
+			"code": "DSON",
+			"06/07": "jm",
+			"007": "su"
+		  },
+		  {
+			"FR": "Coupole estampe/chalcographie",
+			"NL": "Koepel prenten",
+			"code": "CIMA, CCHA",
+			"06/07": "kc",
+			"007": "ku"
+		  },
+		  {
+			"FR": "Estampe/chalcographie",
+			"NL": "Prent/chalcografie",
+			"code": "IMAG, CHAL",
+			"06/07": "km",
+			"007": "ku"
+		  },
+		  {
+			"FR": "Objet",
+			"NL": "Object",
+			"code": "OBJE",
+			"06/07": "rm",
+			"007": "globe : du"
+		  },
+		  {
+			"FR": "Monnaie",
+			"NL": "Munt",
+			"code": "MONN",
+			"06/07": "rm",
+			"007": "uu"
+		  }
+		]
     }, 
 	{
         "ID": "BIB949b",
