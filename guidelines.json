@@ -5,7 +5,7 @@
         "TitleNL": "949$b - Datum",
 	"MARC21": "[Champ local / lokaal veld]",	    
         "RulesFR": "Indication par la Cellule QC de la date de publication dans la Bibliographie de Belgique (format YYYYMM).",
-        "RulesNL": "Vermelding door de cel QC van de datum van publicatie in de Belgische Bibliografie (formaat YYYYMM)."
+        "RulesNL": "Vermelding door de cel QC van de datum van publicatie in de Belgische Bibliografie (formaat YYYYMM).",
 	"RulesTable": [
 		  {
 			"FR": "Livre",
