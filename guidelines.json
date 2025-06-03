@@ -1,17 +1,268 @@
 [
-    {
+     {
+        "ID": "BIBleader007",
+        "TitleFR": "949$b - Date",
+        "TitleNL": "949$b - Datum",
+	"MARC21": "[Champ local / lokaal veld]",	    
+        "RulesFR": "Indication par la Cellule QC de la date de publication dans la Bibliographie de Belgique (format YYYYMM).",
+        "RulesNL": "Vermelding door de cel QC van de datum van publicatie in de Belgische Bibliografie (formaat YYYYMM)."
+	"RulesTable": [
+  {
+    "Type de document FR": "Livre",
+    "Type document NL": "Boek",
+    "Type document code": "LIVR",
+    "Leader 06/07": "am",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Ebook",
+    "Type document NL": "Ebook",
+    "Type document code": "ELIV",
+    "Leader 06/07": "am",
+    "Veld 007 / champ 007": "cu"
+  },
+  {
+    "Type de document FR": "Livre précieux",
+    "Type document NL": "Kostbaar drukwerk",
+    "Type document code": "PREC",
+    "Leader 06/07": "am",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Manuscrit",
+    "Type document NL": "Handschrift",
+    "Type document code": "MANU",
+    "Leader 06/07": "tm",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Lettre",
+    "Type document NL": "Brief",
+    "Type document code": "LETT",
+    "Leader 06/07": "tm",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Journal",
+    "Type document NL": "Krant",
+    "Type document code": "JOUR",
+    "Leader 06/07": "as",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Périodique",
+    "Type document NL": "Tijdschrift",
+    "Type document code": "PERE",
+    "Leader 06/07": "as",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "E-périodique",
+    "Type document NL": "E-tijdschrift",
+    "Type document code": "EPER",
+    "Leader 06/07": "as",
+    "Veld 007 / champ 007": "cu"
+  },
+  {
+    "Type de document FR": "Tiré à part",
+    "Type document NL": "Overdruk",
+    "Type document code": "EXTR",
+    "Leader 06/07": "aa",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Fascicule",
+    "Type document NL": "Tijdschriftnummer",
+    "Type document code": "FASP, FASC",
+    "Leader 06/07": "ab",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Collection ou coupole livre",
+    "Type document NL": "Reeks of koepel boek",
+    "Type document code": "COLL, CCOL",
+    "Leader 06/07": "ac",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Coupole livre précieux",
+    "Type document NL": "Koepel kostbaar drukwerk",
+    "Type document code": "CPRE",
+    "Leader 06/07": "ac",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Collection ebook",
+    "Type document NL": "Koepel ebook",
+    "Type document code": "CELI",
+    "Leader 06/07": "ac",
+    "Veld 007 / champ 007": "cu"
+  },
+  {
+    "Type de document FR": "Coupole manuscrit",
+    "Type document NL": "Koepel handschrift",
+    "Type document code": "CMAN",
+    "Leader 06/07": "tc",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Coupole lettre",
+    "Type document NL": "Koepel brief",
+    "Type document code": "CLET",
+    "Leader 06/07": "tc",
+    "Veld 007 / champ 007": "tu"
+  },
+  {
+    "Type de document FR": "Coupole musique imprimée",
+    "Type document NL": "Koepel gedrukte muziek",
+    "Type document code": "CPAR",
+    "Leader 06/07": "cc",
+    "Veld 007 / champ 007": "qu"
+  },
+  {
+    "Type de document FR": "Musique imprimée",
+    "Type document NL": "Gedrukte muziek",
+    "Type document code": "PART",
+    "Leader 06/07": "cm",
+    "Veld 007 / champ 007": "qu"
+  },
+  {
+    "Type de document FR": "Coupole musique manuscrite",
+    "Type document NL": "Koepel handgeschreven muziek",
+    "Type document code": "CPAR",
+    "Leader 06/07": "dc",
+    "Veld 007 / champ 007": "qu"
+  },
+  {
+    "Type de document FR": "Musique manuscrite",
+    "Type document NL": "Handgeschreven muziek",
+    "Type document code": "PART",
+    "Leader 06/07": "dm",
+    "Veld 007 / champ 007": "qu"
+  },
+  {
+    "Type de document FR": "Coupole carte imprimée",
+    "Type document NL": "Koepel gedrukte kaart",
+    "Type document code": "CCAR",
+    "Leader 06/07": "ec",
+    "Veld 007 / champ 007": "au"
+  },
+  {
+    "Type de document FR": "Document cartographique",
+    "Type document NL": "Cartografisch document",
+    "Type document code": "CART",
+    "Leader 06/07": "em",
+    "Veld 007 / champ 007": "au"
+  },
+  {
+    "Type de document FR": "Coupole carte manuscrite",
+    "Type document NL": "Koepel handgeschreven kaart",
+    "Type document code": "CCAR",
+    "Leader 06/07": "fc",
+    "Veld 007 / champ 007": "au"
+  },
+  {
+    "Type de document FR": "Carte manuscrite",
+    "Type document NL": "Handgeschreven kaart",
+    "Type document code": "CART",
+    "Leader 06/07": "fm",
+    "Veld 007 / champ 007": "au"
+  },
+  {
+    "Type de document FR": "Coupole audiovisuel",
+    "Type document NL": "Koepel audiovisueel document",
+    "Type document code": "DAVI",
+    "Leader 06/07": "gc",
+    "Veld 007 / champ 007": "vu"
+  },
+  {
+    "Type de document FR": "Document audiovisuel",
+    "Type document NL": "Audiovisueel document",
+    "Type document code": "DAVI",
+    "Leader 06/07": "gm",
+    "Veld 007 / champ 007": "vu"
+  },
+  {
+    "Type de document FR": "Coupole document sonore",
+    "Type document NL": "Koepel geluidsdocument",
+    "Type document code": "CDSO",
+    "Leader 06/07": "ic",
+    "Veld 007 / champ 007": "su"
+  },
+  {
+    "FR": "Document sonore",
+    "NL": "Geluidsdocument",
+    "code": "DSON",
+    "06/07": "im",
+    "007": "su"
+  },
+  {
+    "FR": "Coupole musique performée",
+    "NL": "Koepel uitgevoerde muziek",
+    "code": "CDSO",
+    "06/07": "jc",
+    "007": "su"
+  },
+  {
+    "FR": "Musique performée",
+    "NL": "Uitgevoerde muziek",
+    "code": "DSON",
+    "06/07": "jm",
+    "007": "su"
+  },
+  {
+    "FR": "Coupole estampe/chalcographie",
+    "NL": "Koepel prenten",
+    "code": "CIMA, CCHA",
+    "06/07": "kc",
+    "007": "ku"
+  },
+  {
+    "FR": "Estampe/chalcographie",
+    "NL": "Prent/chalcografie",
+    "code": "IMAG, CHAL",
+    "06/07": "km",
+    "007": "ku"
+  },
+  {
+    "FR": "Objet",
+    "NL": "Object",
+    "code": "OBJE",
+    "06/07": "rm",
+    "007": "globe : du"
+  },
+  {
+    "FR": "Monnaie",
+    "NL": "Munt",
+    "code": "MONN",
+    "06/07": "rm",
+    "007": "uu"
+  }
+]
+    }, 
+	{
+        "ID": "BIB949b",
+        "TitleFR": "949$b - Date",
+        "TitleNL": "949$b - Datum",
+	"MARC21": "[Champ local / lokaal veld]",	    
+        "RulesFR": "Indication par la Cellule QC de la date de publication dans la Bibliographie de Belgique (format YYYYMM).",
+        "RulesNL": "Vermelding door de cel QC van de datum van publicatie in de Belgische Bibliografie (formaat YYYYMM)."
+    }, 
+	{
         "ID": "BIB949z",
         "TitleFR": "949$z - Statut KBR",
         "TitleNL": "949$z - Status Wettelijk Depot",
-        "RulesFR": "",
-        "RulesNL": ""
+	"MARC21": "[Champ local / lokaal veld]",	    
+        "RulesFR": "Choisissez le statut adéquat dans la liste déroulante. Le statut 4a est 'prêt à être publié dans la Bibliographie de Belgique', après quoi il passe au statut 6.",
+        "RulesNL": "Kies de passende status in het pull-down menu. Status 4a is klaar voor publicatie in de Belgische Bibliografie, waarna ze naar status 6 veranderen."
     },
     {
         "ID": "BIB911a",
         "TitleFR": "911$a - Rubrique bibliographie de Belgique",
         "TitleNL": "911$a - Rubriek Belgische bibliografie",
-        "RulesFR": "",
-        "RulesNL": ""
+        "MARC21": "[Champ local / lokaal veld]",	    
+        "RulesFR": "Déroulez l'arborescence des rubriques afin d'affiner votre sélection.",
+        "RulesNL": "Ontvouw de boomstructuur van de rubrieken om uw keuze te verfijnen."
     },
     {
         "ID": "BIB008",
@@ -20,8 +271,8 @@
         "MARC21": "https://www.loc.gov/marc/bibliographic/bd008.html",
         "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/m/P30011' rel='noopener'>date of publication</a>",
         "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-26b84eaa-054e-3c8c-8933-8760b9b2046fhttps://access.rdatoolkit.org/en-US_ala-34b5a5fd-dede-3020-97f6-6b4e1111568chttps://access.rdatoolkit.org/en-US_ala-f6396d3f-6883-3ad2-84f1-d0714cfd42a0",
-        "RulesFR": "En position 06, indiquez le type de date ou le statut de publication (e, m ou s) :<br>e = date détaillée<br>m = dates multiples<br>s = date unique de publication connue ou probable<br>En position 07-10, indiquez l'année. Ce champ permet aux utilisateurs de filtrer par année dans l'OPAC et est complémentaire au champ 264$c.<br>Il est parfois utile de remplir la position 11-14 selon les cas détaillés ci-dessous.<br>Veuillez noter que ces dates ne sont pas affichées dans la notice.",
-        "RulesNL": "Vermeld in positie 06 het type datum of de publicatiestatus (e, m of s):<br>e = gedetailleerde datum<br>m = meerdere datums<br>s = enige gekende of waarschijnlijke datum van publicatie<br>Vermeld in positie 07-10 het jaartal. Dit veld laat de gebruikers toe om te filteren per jaar in de OPAC en is complementair aan het veld 264$c.<br>Het is soms nuttig om positie 11-14 in te vullen volgens de hieronder aangegeven gevallen.<br>Opmerking: deze datums worden niet getoond in de beschrijving.",
+        "RulesFR": "En position 06, indiquez le type de date ou le statut de publication (e, m ou s) :<br>e = date détaillée<br>m = dates multiples<br>s = date unique de publication connue ou probable<br>En position 07-10, indiquez l'année. Ce champ permet aux utilisateurs de filtrer par année dans l'OPAC et est complémentaire au champ 264$c.<br>Il est parfois utile de remplir la position 11-14 selon les cas détaillés ci-dessous.<br>Veuillez noter que ces dates ne sont pas affichées dans la notice.<br><br>Veuillez remplir le 008 dans les cas suivants :<br /><br /><u>-La date en 264$c contient des informations textuelles, des crochets, des tirets ou un point d'interrogation</u><br />En position 06, indiquez le type de date 's'.<br />En position 07-10, indiquez uniquement l'année dans le format YYYY.<br /><br /><u>-La date en 264$c contient le mois + l'année</u><br />En position 06, indiquez le type de date 'e'.<br />En position 07-10, indiquez l'année dans le format YYYY.<br />En position 11-14, indiquez le mois sous la forme MM suivi par deux espaces :<br /><i>264$a Bruxelles : Casterman, novembre 2020</i><br /><i>008/06 e</i><br /><i>008/07-10 2020</i><br /><i>008/11-14 11[espace][espace]</i><br /><br /><u>-La date en 264$c ne contient que le siècle [20--]</u><br />En position 06, indiquez le type de date 's'.<br />En position 07-10, indiquez les deux premiers chiffres du siècle suivis de 'uu' comme l'exemple suivant :<br /><i>264$a Bruxelles : Rossel, [19--]</i><br /><i>008/06 s</i><br /><i>008/07-10 19uu</i><br /><br /><u>-Les dates sont multiples (multivolumes)</u><br />En position 06, indiquez le type de date 'm'.<br />En position 07-10, indiquez l'année de début.<br />En position 11-14, indiquez l'année de fin.00",
+        "RulesNL": "Vermeld in positie 06 het type datum of de publicatiestatus (e, m of s):<br>e = gedetailleerde datum<br>m = meerdere datums<br>s = enige gekende of waarschijnlijke datum van publicatie<br>Vermeld in positie 07-10 het jaartal. Dit veld laat de gebruikers toe om te filteren per jaar in de OPAC en is complementair aan het veld 264$c.<br>Het is soms nuttig om positie 11-14 in te vullen volgens de hieronder aangegeven gevallen.<br>Opmerking: deze datums worden niet getoond in de beschrijving.<br><br>Gelieve 008 in de volgende gevallen in te vullen :<br /><br /><u>-De datum in 264$c bevat tekstuele informatie, haakjes, streepjes of een vraagteken</u><br />In positie 06, vermeld het type datum 's'.<br />In positie 07-10, vermeld enkel het jaar in het formaat YYYY.<br /><br /><u>-De datum in 264$c bevat de maand + het jaar</u><br />In positie 06, vermeld het type datum 'e'.<br />In positie 07-10, vermeld het jaartal in het formaat YYYY.<br />In positie 11-14, vermeld de maand in de vorm MM gevolgd door twee spaties :<br /><i>264$a Bruxelles : Casterman, novembre 2020</i><br /><i>008/06 e</i><br /><i>008/07-10 2020</i><br /><i>008/11-14 11[spatie][spatie]</i><br /><br /><u>-De datum in 264$c bevat enkel de eeuw [20--]</u><br />In positie 06, vermeld het type datum 's'.<br />In position 07-10, vermeld de eerste twee cijfers van de eeuw gevolgd door 'uu' zoals het volgende voorbeeld :<br /><i>264$a Bruxelles : Rossel, [19--]</i><br /><i>008/06 s</i><br /><i>008/07-10 19uu</i><br /><br /><u>-Er zijn meerdere datums (multivolumes)</u><br />In positie 06, vermeld het type datum 'm'.<br />In positie 07-10, vermeld het beginjaar.<br />In position 11-14, vermeld het eindjaar.",
         "PERE_FR": "En position 06, indiquez si la ressource continue est toujours publiée sous le titre donné ou non. La position 06, est codée «c» = Continuing resource currently published si le périodique est toujours publié et «d» = Continuing resource ceased publication s'il ne l'est plus. Lorsqu'on ne sait pas si une ressource continue est toujours publiée, la position 06, est codée «u» = Continuing resource status unknown.<br>En position 07-10, indiquez l'année où une ressource continue a été publiée pour la première fois sous un titre donné et, en position 11-14, l'année où elle a été publiée pour la dernière fois sous ce titre.<br>Quatre chiffres ou le caractère «u» pour le(s) chiffre(s) manquants (Exemples : 1974 : date ; u973, 195u : date probable ; 200u : année incertaine à l'intérieur d'une décennie ; 19uu : décennie incertaine ; uuuu : date inconnue). Dans les zones 264 $c, il est possible d'enregistrer des années de publication différentes de celles notées dans les zones 008.<br>Lorsque le code de la sous-zone $b est «c» (publication en cours), la sous-zone $d (date de fin) doit contenir «9999». Lorsque le code de la sous-zone $b est «d» (publication morte), la sous-zone $d doit contenir une date de fin (cette date peut être probable, incertaine ou inconnue). Lorsque le code de la sous-zone $b est «u» (statut de publication inconnu), la sous-zone $d (date de fin) doit contenir «uuuu».<br>En position 15-17, indiquez le pays de publication déterminé à partir de l'adresse de l'éditeur. Si plusieurs adresses figurent sur la ressource continue, le pays de publication est déterminé à partir de l'adresse mise en évidence par la typographie, ou, s'il n'y a pas de différence typographique, à partir de l'adresse citée en premier (Ex. Bruxelles : Presses Universitaires ; Paris : Eyrolles. Pays de publication : Belgique. Code de pays de publication : be#). Voir la liste des codes MARC pour les noms de pays.<br>En position 18, dans le cas de ressources continues qui se cumulent, la périodicité de base est enregistrée. The British national bibliography, par exemple, qui est publiée de façon hebdomadaire et se cumule de façon mensuelle et annuelle, est enregistrée comme  «hebdomadaire». Il faut mettre à jour la position 18 de la zone 008 en cas de changement de périodicité afin de refléter la périodicité courante. De façon optionnelle, on peut enregistrer la périodicité antérieure, qui ne peut être codée, dans la zone 321 (Périodicité antérieure de la publication).<br>En position 21, le code est « p » pour les périodiques et « n » pour les journaux (quotidiens).<br>En position 23, le code est « # » pour les périodiques sur support papier et « o » pour les e-periodicals.<br>En position 33, le code « b » (latin étendu » est utilisé pour toutes les langues utilisant l'alphabet latin et des signes diacritiques, même si le titre considéré ne contient pas de signes diacritiques ; Journal de physique, par exemple aurait le code «b» et Journal of Physics le code «a».<br>En position 34, pour correspondre aux règles de catalogage actuelles, la position 34 doit toujours être codée 0 = « Notice successive ».",
         "PERE NL": ""
     },
@@ -77,7 +328,8 @@
         "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/m/P30309' rel='noopener'>type of binding</a>",
         "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-4b9320ad-5cf8-31b7-aad2-7d4b60070bbb",
         "RulesFR": "Sélectionnez dans la liste déroulante. Pour le type reliure: utilisez 340$l",
-        "RulesNL": "Selecteer in het pull-down menu. Voor het type boekband, gebruik 340$l"
+        "RulesNL": "Selecteer in het pull-down menu. Voor het type boekband, gebruik 340$l",
+	"ELIV_FR": "Informations complémentaires (pdf, epub, webpdf, ebook etc…)"
     },
     {
         "ID": "BIB020z",
