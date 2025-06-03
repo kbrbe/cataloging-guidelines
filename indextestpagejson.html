@@ -2910,6 +2910,22 @@ function renderRulesTable(rulesArray) {
   html += '</tbody></table>';
   return html;
 }
+function renderRulesTableLeader(rulesArray) {
+  if (!Array.isArray(rulesArray)) return '';
+
+  let html = '<table><tbody>';
+  rulesArray.forEach(row => {
+    html += `<tr>
+      <td>${row.FR}</td>
+      <td>${row.NL}</td>
+      <td>${row.code}</td>
+      <td>${row.06/07}</td>
+      <td>${row.007}</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  return html;
+}	
   fetch('guidelines.json')
     .then(response => response.json())
 	.then(data => {
@@ -2969,6 +2985,7 @@ function renderRulesTable(rulesArray) {
 				<tr>${field.IMAG_FR ? `<td class="lang-fr">IMAG :<br>${field.IMAG_FR}</td>` : ''}${field.IMAG_NL ? `<td class="lang-nl">IMAG :<br>${field.IMAG_NL}</td>` : ''}</tr>
 				<tr>${field.ELIV_FR ? `<td class="lang-fr">ELIV :<br>${field.ELIV_FR}</td>` : ''}${field.IELIV_NL ? `<td class="lang-nl">ELIV :<br>${field.IMAG_NL}</td>` : ''}</tr>		  
      				<tr>${field.PERE_FR ? `<td class="lang-fr">PERE :<br>${field.IMAG_FR}</td>` : ''}${field.PERE_NL ? `<td class="lang-nl">PERE :<br>${field.IMAG_NL}</td>` : ''}</tr>
+				<tr>${field.RulesTable ? `<td colspan:"2">${renderRulesTableLeader(field.RulesTableFR)}</td>` : ''}</tr>
 			</tbody>
 			</table>`;
 		  containerBIB.appendChild(div);
