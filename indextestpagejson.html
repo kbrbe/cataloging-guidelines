@@ -4,11 +4,6 @@
   <meta charset="UTF-8">
   <title>KBR Cataloguing guidelines page</title>
 <style>
-  .lang-nl,
-  .lang-fr {	
-	margin-left:40px;
-    display: none;
-  }
   #introduction {
 	margin-left:40px;
   }
@@ -48,25 +43,25 @@
 	}
 
 	td.termesgeneral{
-		padding: 0px;
+		padding: 0px !Important;
 	}
 	td.width8{
-		width: 8%;
+		width: 8%!Important
 	}
 	th.width8{
-		width: 8%;
+		width: 8% !Important;
 	}
 	td.width23{
-		width: 23%;
+		width: 23% !Important;
 	}
 	th.width23{
-		width: 23%;
+		width: 23% !Important;
 	}
 	td.width40{
-		width: 40%;
+		width: 40% !Important;
 	}
 	th.width40{
-		width: 40%;
+		width: 40%!Important;
 	}	
 	tr.tableheading{background-color:#79be87;}
 	th.width23{
@@ -115,13 +110,15 @@
 	.catalo table {
 		width:90%;
 	}
-	table.bigtable {
-		width:90%;
-		margin-left:80px;
-		border-collapse:collapse;
-		border: 1px solid;
+	table.all {
+		width:98%;
+		margin-left:20px;
 
-	}
+	}	
+	.all td{
+		padding:5px;
+		width:50%;
+		}
 	.close	{
 		text-align:right;
 	}
@@ -158,26 +155,51 @@
 <div id="introduction">
 <a target="_blank" href="https://www.rdatoolkit.org/" rel="noopener"><button type="button" class="btn button">RDA toolkit</button></a>  <a target="_blank" href="https://www.loc.gov/marc/bibliographic/" rel="noopener"><button type="button" class="btn button">MARC21 (loc.gov EN)</button></a> <a target="_blank" href="https://www.marc21.ca/M21/BIB/B001-Sommaire.html" rel="noopener"><button type="button" class="btn button">MARC21 (Canada FR)</button></a>  <a target="_blank" href="https://isni.org/page/search-database/" rel="noopener"><button type="button" class="btn button">ISNI</button></a> <br /><br />
 <p>Kies uw taal - Choississez votre langue  
-<label><input type="radio" name="lang" value="NL" onchange="setLanguage(this.value)"> NL </label>
-<label><input type="radio" name="lang" value="FR" checked onchange="setLanguage(this.value)"> FR </label></p>
+<label><input type="radio" name="lang" value="NL" onchange="setLanguage(this.value)"> NL  </label>
+<label><input type="radio" name="lang" value="FR" onchange="setLanguage(this.value)"> FR  </label>
+<label><input type="radio" name="lang" value="ALL" checked onchange="setLanguage(this.value)">  All </label></p>
 </div>
-<div class="lang-fr"><h2><span style="color: #00748f; font-style: italic;" class="forecolor">Introduction</span></h2>
+<table class="all">
+
+<tr>
+<td class="lang-fr">
+<h2><span style="color: #00748f; font-style: italic;" class="forecolor">Introduction</span></h2>
 <p>Les règles énumérées ici par sous-champ ont été formatées par l'Agence de l'information bibliographique et sont toutes conformes aux nouvelles directives de RDA. Nous avons également ajouté des instructions provenant d'autres manuels existants pour les différents types de documents (manuscrits, documents iconographiques, etc.). La rédaction de cette page d'instructions est toujours en cours d'élaboration. Si vous avez des remarques ou des questions, n'hésitez pas à les envoyer à <a href="mailto:metadata@kbr.be?subject=Cataloging Guidelines">metadata@kbr.be</a></p>
-</div>
-<div class="lang-nl">
+
+</td>
+<td class="lang-nl">
 <h2><span style="color: #00748f; font-style: italic;" class="forecolor">Inleiding</span></h2>
 <p>De regels die hier per subveld zijn opgelijst zijn opgemaakt door het Agentschap van Bibliografische Informatie en allemaal conform de nieuwe RDA-richtlijnen. We voegden ook informatie toe uit andere bestaande fiches van verschillende documenttypes. Deze pagina is nog in opmaak. Indien u opmerkingen of vragen hebt, kan u ze altijd sturen naar <a href="mailto:metadata@kbr.be?subject=Cataloging Guidelines">metadata@kbr.be</a></p>
-</div>
-
-<div style="padding-top: 20px;" class="lang-fr">
+</td>
+</tr>
+<tr>
+<td class="lang-fr">
 				<div class="panel-heading">
 					<h4 class="panel-title" onclick="var element = document.getElementById('FAQFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Comment fonctionne cette page</a></h4>
 				</div>
 				<p id="FAQFR" style="display: none;">Cette page a pour but de rassembler toutes les informations sur le catalogage. En outre, elle permet de coordonner la transition vers RDA. La première partie ci-dessous contient quelques termes et informations générales. Dans la deuxième partie, vous trouverez des explications sur les autorités : comment ajouter une autorité et comment formater une autorité. Dans la troisième partie, vous trouverez des informations sur les différents types de documents. Elle fonctionne de la manière suivante : vous cliquez d'abord sur un certain type de document, puis vous voyez apparaître une liste de sous-zones à remplir. Si vous cliquez sur une sous-zone, une explication sur la façon de la remplir apparaîtra à droite. Chaque case commence par une explication générale (préparée par l'Agence de l'information bibliographique), mais vous trouverez également en bas des consignes provenant de fiches existantes (par type de document).<br /><br />Dans les mois à venir, avec les sections patrimoniales, nous allons passer tous les sous-champs en revue afin d'harmoniser ces instructions. Les informations contenues dans une sous-zone seront donc toujours les mêmes, quel que soit le type de document que vous consultez. Il s'agit d'une page en préparation et de nombreuses informations seront ajoutées ou mises à jour dans les mois et années à venir. Sur cette page, vous trouverez donc toujours les instructions les plus récentes.</p>
+</td>
+<td class="lang-nl">
 				<div class="panel-heading">
-					<h4 class="panel-title" onclick="var element = document.getElementById('WHYRDAFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Abréviations / Explications</a></h4>
+					<h4 class="panel-title" onclick="var element = document.getElementById('FAQNL'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Hoe deze pagina werkt</a></h4>
 				</div>
-				<div id="WHYRDAFR" style="display: none;">
+				<div id="FAQNL" style="display: none;">Deze pagina heeft als doel al de informatie rond catalografie te verzamelen. Bovendien laat het doe de transitie naar RDA te coördineren. In het eerste deel hier meteen onder vind je wat algemene termen en informatie. In het tweede deel vindt u uitleg over de autoriteiten: hoe een autoriteit toevoegen en hoe een autoriteit opmaken. In het derde deel vindt u informatie over de verschillende type documenten. Het werkt als volgt: eerst klikt u op een bepaalde type document en dan ziet u een lijst met in te vullen subvelden. Klikt u op een subveld, dan krijgt u aan de rechterkant uitleg over hoe dat subveld in te vullen. Ieder kader begint met een algemene uitleg (opgemaakt door het Agentschap voor Bibliografische informatie), maar onderaan vindt u ook informatie die overgenomen is uit bestaande fiches (per type document).<br />In de komende maanden zullen we samen met de patrimoniale diensten subveld per subveld overlopen om deze informatie te harmoniseren. De informatie bij een subveld zal dus altijd dezelfde zijn, ongeacht het type document dat u aan het bekijken bent. Dit is een pagina in opmaak en waarbij de komende maanden, jaren, nog veel informatie zal bijkomen, of bijgewerkt worden. Op deze pagina vindt u dus steeds de meest actuele informatie.</div>
+</td>
+</tr>
+<tr>
+<td class="lang-fr">
+				<div class="panel-heading">
+					<h4 class="panel-title" onclick="var element = document.getElementById('ABBREVIATIONSFR'); element.style.display = element.style.display === 'none' ? 'table-cell' : 'none';"><a class="collapsed">Abréviations / Explications</a></h4>
+				</div>
+</td>
+<td class="lang-nl">			
+				<div class="panel-heading">
+					<h4 class="panel-title" onclick="var element = document.getElementById('ABBREVIATIONSNL'); element.style.display = element.style.display === 'none' ? 'table-cell' : 'none';"><a class="collapsed">Afkortingen / Uitleg</a></h4>
+				</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" id="ABBREVIATIONSFR" style="display: none;">				
 					<table>
 						<tbody>
 							<tr>
@@ -212,27 +234,10 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
-				<div class="panel-heading">
-					<h4 class="panel-title" onclick="var element = document.getElementById('LOCFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Le rôle de 040$b dans RDA</a></h4>
-				</div>
-				<div id="LOCFR" style="display: none;">
-				<p>RDA a été développé en pensant à l'utilisateur final. C'est pourquoi, contrairement à l'ISBD, RDA préconise de ne pas utiliser les abréviations en latin (par exemple : s.l., s.n., et al.,…). Ces éléments sont désormais donnés en entier. C'est la raison pour laquelle la langue de catalogage est très importante dans RDA. La langue du catalogage est la langue utilisée dans les éléments non-transcrits de la ressource (les notes, les termes de vocabulaire contrôlé,…). La langue de catalogage est indiquée dans le champ 040$b. Elle ne doit pas être confondue avec la ou les langue(s) indiquée(s) en 041$a (= langue du document).<br /><br />Les règles pour la langue de catalogage sont les suivantes :<br />-Les publications en néerlandais seront cataloguées en néerlandais, indépendamment de la langue parlée par le ou la catalographe (040$b=dut); <br />-Les publications en français seront cataloguées en français, indépendamment de la langue parlée par le ou la catalographe (040$b=fre) ; <br />-Les livres bilingues français-néerlandais seront catalogués dans la langue parlée par le ou la catalographe (040$b=dut ou fre); <br />-Les publications en allemand seront cataloguées dans la langue parlée par le ou la catalographe (040$b=dut ou fre ou ger);<br />-Les publications dans toute autre langue seront cataloguées dans la langue parlée par le ou la catalographe (040$b=dut ou fre); <br />-Les documents sans titre ou sans texte (monnaies, estampes, manuscrits) seront catalogués en anglais (040$b=eng).
-				</p></div>
-				<div class="panel-heading">
-					<h4 class="panel-title" onclick="var element = document.getElementById('TERMES'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Une liste multilingue de termes clés</a></h4>
-				</div>
-</div>
-			<div style="padding-top: 20px;" class="lang-nl">
-				<div class="panel-heading">
-					<h4 class="panel-title" onclick="var element = document.getElementById('FAQNL'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Hoe deze pagina werkt</a></h4>
-				</div>
-				<div id="FAQNL" style="display: none;">Deze pagina heeft als doel al de informatie rond catalografie te verzamelen. Bovendien laat het doe de transitie naar RDA te coördineren. In het eerste deel hier meteen onder vind je wat algemene termen en informatie. In het tweede deel vindt u uitleg over de autoriteiten: hoe een autoriteit toevoegen en hoe een autoriteit opmaken. In het derde deel vindt u informatie over de verschillende type documenten. Het werkt als volgt: eerst klikt u op een bepaalde type document en dan ziet u een lijst met in te vullen subvelden. Klikt u op een subveld, dan krijgt u aan de rechterkant uitleg over hoe dat subveld in te vullen. Ieder kader begint met een algemene uitleg (opgemaakt door het Agentschap voor Bibliografische informatie), maar onderaan vindt u ook informatie die overgenomen is uit bestaande fiches (per type document).<br />In de komende maanden zullen we samen met de patrimoniale diensten subveld per subveld overlopen om deze informatie te harmoniseren. De informatie bij een subveld zal dus altijd dezelfde zijn, ongeacht het type document dat u aan het bekijken bent. Dit is een pagina in opmaak en waarbij de komende maanden, jaren, nog veel informatie zal bijkomen, of bijgewerkt worden. Op deze pagina vindt u dus steeds de meest actuele informatie.</div>
-				<div class="panel-heading">
-					<h4 class="panel-title" onclick="var element = document.getElementById('WHYRDANL'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Afkortingen / Uitleg</a></h4>
-				</div>
-				<div id="WHYRDANL" style="display: none;">
-					<table class="bigtable">
+
+</td>
+<td colspan="2" id="ABBREVIATIONSNL" style="display: none;">
+					<table>
 						<tbody>
 							<tr>
 								<td style="width: 15%;">RDA</td>
@@ -266,7 +271,23 @@
 							</tr>
 						</tbody>
 					</table>
+
+</td>
+</tr>
+<tr>
+<td class="lang-fr">
+	<div class="panel-heading">
+					<h4 class="panel-title" onclick="var element = document.getElementById('LOCFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Le rôle de 040$b dans RDA</a></h4>
 				</div>
+				<div id="LOCFR" style="display: none;">
+				<p>RDA a été développé en pensant à l'utilisateur final. C'est pourquoi, contrairement à l'ISBD, RDA préconise de ne pas utiliser les abréviations en latin (par exemple : s.l., s.n., et al.,…). Ces éléments sont désormais donnés en entier. C'est la raison pour laquelle la langue de catalogage est très importante dans RDA. La langue du catalogage est la langue utilisée dans les éléments non-transcrits de la ressource (les notes, les termes de vocabulaire contrôlé,…). La langue de catalogage est indiquée dans le champ 040$b. Elle ne doit pas être confondue avec la ou les langue(s) indiquée(s) en 041$a (= langue du document).<br /><br />Les règles pour la langue de catalogage sont les suivantes :<br />-Les publications en néerlandais seront cataloguées en néerlandais, indépendamment de la langue parlée par le ou la catalographe (040$b=dut); <br />-Les publications en français seront cataloguées en français, indépendamment de la langue parlée par le ou la catalographe (040$b=fre) ; <br />-Les livres bilingues français-néerlandais seront catalogués dans la langue parlée par le ou la catalographe (040$b=dut ou fre); <br />-Les publications en allemand seront cataloguées dans la langue parlée par le ou la catalographe (040$b=dut ou fre ou ger);<br />-Les publications dans toute autre langue seront cataloguées dans la langue parlée par le ou la catalographe (040$b=dut ou fre); <br />-Les documents sans titre ou sans texte (monnaies, estampes, manuscrits) seront catalogués en anglais (040$b=eng).
+				</p></div>
+				<div class="panel-heading">
+					<h4 class="panel-title" onclick="var element = document.getElementById('TERMES'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';"><a class="collapsed">Une liste multilingue de termes clés</a></h4>
+				</div>
+</td>
+<td class="lang-nl">				
+				
 				<div class="panel-heading">
 					<h4 class="panel-title" onclick="var element = document.getElementById('LOCNL'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">De rol van 040$b in RDA</a></h4>
 				</div>
@@ -274,13 +295,15 @@
 				<p>RDA is ontwikkeld met de eindgebruiker in gedachten. Daarom raadt RDA aan, in tegenstelling tot ISBD, om geen Latijnse afkortingen te gebruiken (bv. s.l., s.n., et al.,...). Deze elementen worden nu volledig vermeld. Daarom is de taal van catalogiseren zeer belangrijk in RDA. De catalogiseringstaal is de taal die wordt gebruikt in de niet-geschreven elementen van het archiefdocument (annotaties, beschrijving, gecontroleerde woordenlijsttermen,...). De catalogiseringstaal wordt vermeld in veld 040$b. Deze taal mag niet worden verward met de in 041$a vermelde taal/talen(= taal van het document).<br /><br />De regels voor de taal van catalogiseren zijn als volgt: <br />-publicaties in het Nederlands worden gecatalogiseerd in het Nederlands, ongeacht de taal die de catalograaf spreekt (040$b=dut); <br />-publicaties in het Frans worden gecatalogiseerd in het Frans, ongeacht de taal die de catalograaf spreekt (040$b=fre); <br />-Tweetalige Frans-Nederlandse boeken worden gecatalogiseerd in de taal die de catalograaf spreekt (040$b=dut of fre); <br />-publicaties in het Duits worden gecatalogiseerd in de taal die de catalograaf spreekt (040$b=dut of fre of ger); <br />-publicaties in een andere taal worden gecatalogiseerd in de taal die de catalograaf spreekt (040$b=dut of fre); <br />- documenten zonder titel of tekstuele informatie (munten, prenten, manuscripten) worden gecatalogiseerd in het Engels (040$b=eng).
 				</p>
 				</div>
+
 				<div class="panel-heading">
-					<h4 class="panel-title" onclick="var element = document.getElementById('TERMES'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Meertalige lijst van de belangrijkste termen</a></h4>
+					<h4 class="panel-title" onclick="var element = document.getElementById('TERMES'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';"><a class="collapsed">Meertalige lijst van de belangrijkste termen</a></h4>
 				</div>
-			</div>
-			<div colspan="2" class="termesgeneral">
-				<div id="TERMES" style="display: none;">
-					<table class="bigtable">
+</td>
+</tr>
+<tr id="TERMES" style="display: none;">
+<td colspan="4" class="termesgeneral">
+					<table>
 						<tbody>
 							<tr>
 								<th class="width8">MARC21</th>
@@ -288,7 +311,6 @@
 								<th class="width23">dut</th>
 								<th class="width23">ger</th>
 								<th class="width23">eng</th>
-								<th class="width23"></th>
 							</tr>
 							<tr>
 								<td class="width8">245$a</td>
@@ -296,7 +318,6 @@
 								<td class="width23">Gefingeerde titel</td>
 								<td class="width23">Fingierter Titel</td>
 								<td class="width23">Devised title</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8">245$c</td>
@@ -304,7 +325,7 @@
 								<td class="width23">[en x anderen]</td>
 								<td class="width23">[und x andere]</td>
 								<td class="width23">[and x others]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8">245$h</td>
@@ -312,7 +333,7 @@
 								<td class="width23">Veilingscatalogus</td>
 								<td class="width23">Auktionskatalog</td>
 								<td class="width23">Auction catalogue</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -320,7 +341,7 @@
 								<td class="width23">Gedrukte muziek</td>
 								<td class="width23">Gedruckte Musik</td>
 								<td class="width23">Printed music</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -328,7 +349,7 @@
 								<td class="width23">Handgeschreven muziek</td>
 								<td class="width23">Handgeschriebene Musik</td>
 								<td class="width23">Handwritten music</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8">246$i</td>
@@ -336,7 +357,7 @@
 								<td class="width23">Oorspronkelijke titel</td>
 								<td class="width23">Originaltitel</td>
 								<td class="width23">Original title</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -344,7 +365,7 @@
 								<td class="width23">Gecorrigeerde titel</td>
 								<td class="width23"></td>
 								<td class="width23">Corrected title</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -352,7 +373,7 @@
 								<td class="width23">Kaarttitel boven het kader</td>
 								<td class="width23"></td>
 								<td class="width23">At head of title</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8">264$a</td>
@@ -360,7 +381,7 @@
 								<td class="width23">[Plaats van productie niet geïdentificeerd]</td>
 								<td class="width23">[Produktionsort nicht ermittelbar]</td>
 								<td class="width23">[Place of production not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -368,7 +389,7 @@
 								<td class="width23">[Plaats van uitgave niet geïdentificeerd]</td>
 								<td class="width23">[Erscheinungsort nicht ermittelbar]</td>
 								<td class="width23">[Place of publication not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -376,7 +397,7 @@
 								<td class="width23">[Plaats van verdeling niet geïdentificeerd]</td>
 								<td class="width23">[Vertriebsort nicht ermittelbar]</td>
 								<td class="width23">[Place of distribution not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -384,7 +405,7 @@
 								<td class="width23">[Plaats van vervaardiging niet geïdentificeerd]</td>
 								<td class="width23">[Herstellungsort nicht ermittelbar]</td>
 								<td class="width23">[Place of manufacture not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8">264$b</td>
@@ -392,7 +413,7 @@
 								<td class="width23">[Producent niet geïdentificeerd]</td>
 								<td class="width23">[Produzent nicht ermittelbar]</td>
 								<td class="width23">[Producer not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -400,7 +421,7 @@
 								<td class="width23">[Uitgever niet geïdentificeerd]</td>
 								<td class="width23">[Herausgeber nicht ermittelbar]</td>
 								<td class="width23">[Publisher not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -408,7 +429,7 @@
 								<td class="width23">[Verdeler niet geïdentificeerd]</td>
 								<td class="width23">[Vertreiber nicht ermittelbar]</td>
 								<td class="width23">[Distributor not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -416,7 +437,7 @@
 								<td class="width23">[Vervaardiger niet geïdentificeerd]</td>
 								<td class="width23">[Hersteller nicht ermittelbar]</td>
 								<td class="width23">[Manufacturer not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8">264$c</td>
@@ -424,7 +445,7 @@
 								<td class="width23">[Productiedatum niet geïdentificeerd]</td>
 								<td class="width23">[Produktionsdatum nicht ermittelbar]</td>
 								<td class="width23">[Date of production not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -432,7 +453,7 @@
 								<td class="width23">[Publicatiedatum niet geïdentificeerd]</td>
 								<td class="width23">[Erscheinungsdatum nicht ermittelbar]</td>
 								<td class="width23">[Date of publication not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -440,7 +461,7 @@
 								<td class="width23">[Verdelingsdatum niet geïdentificeerd]</td>
 								<td class="width23">[Vertriebsdatum nicht ermittelbar]</td>
 								<td class="width23">[Date of distribution not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -448,7 +469,7 @@
 								<td class="width23">[Vervaardigingsdatum niet geïdentificeerd]</td>
 								<td class="width23">[Herstellungsdatum nicht ermittelbar]</td>
 								<td class="width23">[Date of manufacture not identified]</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8">300$a</td>
@@ -456,7 +477,7 @@
 								<td class="width23">pagina / pagina's</td>
 								<td class="width23">Seite / Seiten</td>
 								<td class="width23">page / pages</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -464,7 +485,7 @@
 								<td class="width23">blad / bladen</td>
 								<td class="width23">Blatt / Blätter</td>
 								<td class="width23">leaf / leaves</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -472,7 +493,7 @@
 								<td class="width23">gevouwen vel / gevouwen vellen</td>
 								<td class="width23">gefalteter Bogen / gefaltete Bögen</td>
 								<td class="width23">folded sheet / folded sheets</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -480,7 +501,7 @@
 								<td class="width23">kolom / kolommen</td>
 								<td class="width23">Kolumne / Kolumnen</td>
 								<td class="width23">column / columns</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -488,7 +509,7 @@
 								<td class="width23">kaart / kaarten</td>
 								<td class="width23">Karte / Karten</td>
 								<td class="width23">map / maps</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -496,7 +517,7 @@
 								<td class="width23">legpuzzel / legpuzzels</td>
 								<td class="width23">Puzzle / Puzzles</td>
 								<td class="width23">jigsaw puzzle / jigsaw puzzles</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -504,7 +525,7 @@
 								<td class="width23">map / mappen</td>
 								<td class="width23">Mappe / Mappen</td>
 								<td class="width23">portfolio / portfolios</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -512,7 +533,7 @@
 								<td class="width23">xx ongenummerde pagina’s</td>
 								<td class="width23">xx nicht nummerierte Seiten</td>
 								<td class="width23">xx unnumbered pages</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -520,7 +541,7 @@
 								<td class="width23">1 volume (zonder paginering)</td>
 								<td class="width23">1 Volumen (ohne Paginierung)</td>
 								<td class="width23">1 volume (unpaged)</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -528,7 +549,7 @@
 								<td class="width23">1 volume (meervoudige paginering)</td>
 								<td class="width23">1 Volumen (mehrfache Paginierung)</td>
 								<td class="width23">1 volume (various pagings)</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8">300$b</td>
@@ -536,7 +557,7 @@
 								<td class="width23">illustraties</td>
 								<td class="width23">Illustrationen</td>
 								<td class="width23">illustrations</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -544,7 +565,7 @@
 								<td class="width23">blazoenen</td>
 								<td class="width23">Wappen</td>
 								<td class="width23">coat of arms</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -552,7 +573,7 @@
 								<td class="width23">facsimilé</td>
 								<td class="width23">Faksimile</td>
 								<td class="width23">facsimile</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -560,7 +581,7 @@
 								<td class="width23">formulier</td>
 								<td class="width23">Formular</td>
 								<td class="width23">form</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -568,7 +589,6 @@
 								<td class="width23">genealogische tabel</td>
 								<td class="width23">genealogische Tabelle</td>
 								<td class="width23">genealogical table</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -576,7 +596,6 @@
 								<td class="width23">grafiek</td>
 								<td class="width23">Grafik</td>
 								<td class="width23">graph</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -584,7 +603,6 @@
 								<td class="width23">zicht / zichten</td>
 								<td class="width23"></td>
 								<td class="width23">view / views</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -592,7 +610,6 @@
 								<td class="width23">miniatuur</td>
 								<td class="width23">Miniatur</td>
 								<td class="width23">illumination</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -600,7 +617,6 @@
 								<td class="width23">illustratie</td>
 								<td class="width23">Illustration</td>
 								<td class="width23">illustration</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -608,7 +624,6 @@
 								<td class="width23">kaart</td>
 								<td class="width23">Karte</td>
 								<td class="width23">map</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -616,7 +631,6 @@
 								<td class="width23">foto</td>
 								<td class="width23">Foto</td>
 								<td class="width23">photograph</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -624,7 +638,6 @@
 								<td class="width23">plan</td>
 								<td class="width23">Plan</td>
 								<td class="width23">plan</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -632,7 +645,6 @@
 								<td class="width23">portret</td>
 								<td class="width23">Porträt</td>
 								<td class="width23">portrait</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -640,7 +652,6 @@
 								<td class="width23">staal</td>
 								<td class="width23">Muster</td>
 								<td class="width23">sample</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -648,7 +659,6 @@
 								<td class="width23">manuskript</td>
 								<td class="width23"></td>
 								<td class="width23">manuscript</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -656,7 +666,6 @@
 								<td class="width23">in kleur</td>
 								<td class="width23"></td>
 								<td class="width23">coloured</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -664,7 +673,6 @@
 								<td class="width23">deels in kleur</td>
 								<td class="width23"></td>
 								<td class="width23">some colour</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -672,7 +680,6 @@
 								<td class="width23">in kleur (bichroom)</td>
 								<td class="width23"></td>
 								<td class="width23">coloured (bichrome)</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -680,7 +687,6 @@
 								<td class="width23">in kleur (trichroom)</td>
 								<td class="width23"></td>
 								<td class="width23">coloured (trichrome)</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -688,7 +694,6 @@
 								<td class="width23">in kleur (quadrichroom)</td>
 								<td class="width23"></td>
 								<td class="width23">coloured (quadrichrome)</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -696,7 +701,6 @@
 								<td class="width23">handgekleurd</td>
 								<td class="width23"></td>
 								<td class="width23">hand coloured</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -704,7 +708,6 @@
 								<td class="width23">randen ingekleurd</td>
 								<td class="width23"></td>
 								<td class="width23">edges coloured</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -712,7 +715,6 @@
 								<td class="width23">in zwart-wit</td>
 								<td class="width23"></td>
 								<td class="width23">black and white</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8">500$a</td>
@@ -720,7 +722,6 @@
 								<td class="width23">Gefingeerde titel</td>
 								<td class="width23"></td>
 								<td class="width23">Devised title</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -728,7 +729,6 @@
 								<td class="width23">Beschrijving gecreëerd met behulp van AI</td>
 								<td class="width23"></td>
 								<td class="width23">Description created with the help of AI</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -736,7 +736,6 @@
 								<td class="width23">Voorlopige beschrijving</td>
 								<td class="width23"></td>
 								<td class="width23">Preliminary description</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -744,7 +743,6 @@
 								<td class="width23">Index van aangrenzende bladen</td>
 								<td class="width23"></td>
 								<td class="width23">Index to adjoining sheets</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8">504$a</td>
@@ -752,7 +750,6 @@
 								<td class="width23">Bibliografie</td>
 								<td class="width23">Bibliografie</td>
 								<td class="width23">Bibliography</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -760,7 +757,6 @@
 								<td class="width23">Index</td>
 								<td class="width23">Index</td>
 								<td class="width23">Index</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8">521$a</td>
@@ -768,7 +764,6 @@
 								<td class="width23">x jaar en ouder</td>
 								<td class="width23">ab x Jahren</td>
 								<td class="width23">age x and up</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -776,7 +771,6 @@
 								<td class="width23">tussen x en x jaar</td>
 								<td class="width23">zwischen x und x Jahren</td>
 								<td class="width23">from x to x years</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -784,7 +778,6 @@
 								<td class="width23">jongvolwassenen</td>
 								<td class="width23">Jugendliche</td>
 								<td class="width23">teenagers</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -792,7 +785,6 @@
 								<td class="width23">volwassenen</td>
 								<td class="width23">Erwachsene</td>
 								<td class="width23">adults</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -800,7 +792,6 @@
 								<td class="width23">voorschoolse leeftijd</td>
 								<td class="width23">Vorschulalter</td>
 								<td class="width23">/</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -808,7 +799,6 @@
 								<td class="width23">Xde jaar kleuterschool</td>
 								<td class="width23">x. Kindergartenjahr</td>
 								<td class="width23">/</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -816,7 +806,6 @@
 								<td class="width23">Xde jaar lagere school</td>
 								<td class="width23">x. Grundschuljahr</td>
 								<td class="width23">/</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -824,7 +813,6 @@
 								<td class="width23">Xde jaar middelbaar</td>
 								<td class="width23">x. Jahr Sekundarschule</td>
 								<td class="width23">/</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -832,7 +820,6 @@
 								<td class="width23">kinderen met een visuele beperking</td>
 								<td class="width23">Kinder mit einer visuellen Wahrnehmungsstörung</td>
 								<td class="width23">visually impaired children</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -840,7 +827,6 @@
 								<td class="width23">kinderen met een auditieve beperking</td>
 								<td class="width23">Kinder mit einer auditiven Wahrnehmungsstörung</td>
 								<td class="width23">hearing impaired children</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -848,7 +834,6 @@
 								<td class="width23">volwassenen met een visuele beperking</td>
 								<td class="width23">Erwachsene mit einer visuellen Wahrnehmungsstörung</td>
 								<td class="width23">visually impaired adults</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -856,7 +841,6 @@
 								<td class="width23">volwassenen met een auditieve beperking</td>
 								<td class="width23">Erwachsene mit einer auditiven Wahrnehmungsstörung</td>
 								<td class="width23">hearing impaired adults</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8">534$p</td>
@@ -864,7 +848,6 @@
 								<td class="width23">Oorspronkelijke uitgave</td>
 								<td class="width23"></td>
 								<td class="width23">Original edition</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -872,7 +855,6 @@
 								<td class="width23">Overdruk uit</td>
 								<td class="width23"></td>
 								<td class="width23">Offprint from</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -880,7 +862,6 @@
 								<td class="width23">Facsimile-herdruk van</td>
 								<td class="width23"></td>
 								<td class="width23">Reprint in facsimile of</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -888,7 +869,6 @@
 								<td class="width23">Identieke facsimile van</td>
 								<td class="width23"></td>
 								<td class="width23">Identical facsimile of</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -896,15 +876,17 @@
 								<td class="width23">Brontekst</td>
 								<td class="width23"></td>
 								<td class="width23">Source text</td>
-								<td class="width23"></td>
 							</tr>
 							<tr>
-								<td class="width8">541$c (ou note d'exemplaire / of exemplaarannotatie)</td>
+								<td colspan="5">541$c (ou note d'exemplaire / of exemplaarannotatie)</td>
+							</tr>	
+							<tr>
+								<td class="width8"></td>
 								<td class="width23">Achat</td>
 								<td class="width23">Aankoop</td>
 								<td class="width23"></td>
 								<td class="width23">Purchased</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -912,7 +894,7 @@
 								<td class="width23">Schenking</td>
 								<td class="width23"></td>
 								<td class="width23">Gift</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -920,7 +902,7 @@
 								<td class="width23">Veiling</td>
 								<td class="width23"></td>
 								<td class="width23">Purchased at auction</td>
-								<td class="width23"></td>
+
 							</tr>
 							<tr>
 								<td class="width8"></td>
@@ -928,13 +910,14 @@
 								<td class="width23">Bron onbekend</td>
 								<td class="width23"></td>
 								<td class="width23">Source unknown</td>
-								<td class="width23"></td>
+
 							</tr>
 						</tbody>
 					</table>
-				</div>
-			</div>
-			<div  class="lang-fr">
+</td>
+</tr>
+<tr>
+<td  class="lang-fr">
 				<div class="panel-heading">
 					<h4 class="panel-title" onclick="var element = document.getElementById('33XFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">Le rôle de 336-337-338 dans RDA</a></h4>
 				</div>
@@ -942,7 +925,7 @@
 				<p>RDA est fortement basé sur le modèle de l'IFLA-LRM. Une distinction y est faite entre l'œuvre, l'expression, la manifestation et l'item (voir explication ci-dessus). Les expressions se distinguent les unes des autres par une langue et/ou une forme de contenu différentes. Afin de représenter correctement la forme du contenu, le champ 336 a été créé. Au sein de KBR, les différentes expressions sont ainsi distinguées par la combinaison des champs 041$a (langue du document) et 336$a (forme).<br />Dans le champ 337 on décrit le 'media type', dans le champ 338 le 'carrier type'. Ce sont tous les deux des éléments qui décrivent une manifestation, mais pour lesquels MARC21 n'avait pas encore de champ. Ils ont donc été ajoutés lors d'une mise à jour de MARC21 (UNIMARC a également ajouté ces trois éléments dans les champs 181-182-183).<br />Dans la mesure du possible, ces champs seront remplis dans Syracuse, mais veuillez vérifier à chaque fois.<br />Par exemple, le type de contenu par défaut d'un livre est "text", mais il doit être changé en "still image" pour un livre de coloriage. Pour une publication avec différents types de contenus, indiquez tous les types de contenus (dupliquez le sous-champ $a)<br />Ces trois champs sont donc très importants dans les futures descriptions. Tous les trois sont liés à une liste fixe (controlled vocabularies). RDA nous fournit de telles listes, mais laisse également la possibilité d'ajouter nos propres termes. Si vous souhaitez ajouter un terme, veuillez envoyer un e-mail à <a href="mailto:metadata@kbr.be?subject=Cataloging Guidelines">metadata@kbr.be</a>
 				<br /><br />Les listes fixes se trouvent sur le RDA-Toolkit :<br />- 336 : <a target="_blank" href="https://access.rdatoolkit.org/VES/VES?externalId=en-US_rdaves_RDA_Content_Type" rel="noopener">VES RDA Content Type</a><br />- 337 : <a target="_blank" href="https://access.rdatoolkit.org/VES/VES?externalId=en-US_rdaves_RDA_Media_Type" rel="noopener">VES RDA Media Type</a><br />- 338 : <a target="_blank" href="https://access.rdatoolkit.org/VES/VES?externalId=en-US_rdaves_RDA_Carrier_Type" rel="noopener">VES RDA Carrier Type</a>
 				<br />Tableau des valeurs par défaut des champs 33X par type de document dans Syracuse <i>(in progress)</i></p>
-						<table class="bigtable">
+						<table>
 							<tbody>
 								<tr>
 									<th style="width: 16%;">Type document</th>
@@ -1121,17 +1104,17 @@
 							</tbody>
 						</table>
 					</div>
-</div>			</div>
-			<div  class="lang-nl">
+</div>			
+</td>
+<td class="lang-nl">
 				<div class="panel-heading">
 					<h4 class="panel-title" onclick="var element = document.getElementById('33XNL'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">De rol van 336-337-338 in RDA</a></h4>
 				</div>
 				<div id="33XNL" style="display: none;">
 				<p>RDA is sterk gebaseerd op het model van IFLA-LRM. In dat wordt er een onderscheid gemaakt tussen werk, expressie, manifestatie en item (zie uitleg hierboven). De expressies verschillen van elkaar door een andere taal en/of inhoudsvorm.<br />Om de inhoudsvorm goed weer te geven, werd het veld 336 in het leven geroepen. Binnen KBR worden de verschillende expressies dus onderscheiden door de combinatie van veld 041$a (taal van het document) en 336$a (vorm).<br />In veld 337 wordt 'media type' beschreven, in veld 338 'carrier type'. Dit zijn beide elementen die de manifestatie beschrijven, maar waarvoor MARC21 nog geen veld had. Deze werden dus bij een update van MARC21 toegevoegd (ook UNIMARC voegde deze drie elementen toe in velden 181-182-183).<br />In de mate van het mogelijke zullen deze velden standaard ingevuld zijn in Syracuse (zie tabel hieronder), maar controleer die toch telkens. Een boek heeft bijvoorbeeld standaard als content type 'text', maar moet bij een kleurboek veranderd worden naar 'still image'. Voor een publicatie met verschillende types inhoud, vermeld alle types inhoud (dupliceer het subveld $a). <br />Deze drie velden zijn dus erg belangrijk in de toekomstige beschrijvingen. Alle drie zijn ze gelinkt aan een vaste lijst (controlled vocabularies). RDA voorziet zelf dergelijke lijsten, maar laat ook de ruimte om eigen termen toe te voegen. Indien u een eigen term wil toevoegen, stuur zeker een mail naar <a href="mailto:metadata@kbr.be?subject=Cataloging Guidelines">metadata@kbr.be</a>. 
-				<p>RDA is sterk gebaseerd op het model van IFLA-LRM. In dat wordt er een onderscheid gemaakt tussen werk, expressie, manifestatie en item (zie uitleg hierboven). De expressies verschillen van elkaar door een andere taal en/of inhoudsvorm.<br />Om de inhoudsvorm goed weer te geven, werd het veld 336 in het leven geroepen. Binnen KBR worden de verschillende expressies dus onderscheiden door de combinatie van veld 041$a (taal van het document) en 336$a (vorm).<br />In veld 337 wordt 'media type' beschreven, in veld 338 'carrier type'. Dit zijn beide elementen die de manifestatie beschrijven, maar waarvoor MARC21 nog geen veld had. Deze werden dus bij een update van MARC21 toegevoegd (ook UNIMARC voegde deze drie elementen toe in velden 181-182-183).<br />In de mate van het mogelijke zullen deze velden standaard ingevuld zijn in Syracuse (zie tabel hieronder), maar controleer die toch telkens. Een boek heeft bijvoorbeeld standaard als content type 'text', maar moet bij een kleurboek veranderd worden naar 'still image'. Voor een publicatie met verschillende types inhoud, vermeld alle types inhoud (dupliceer het subveld $a). <br />Deze drie velden zijn dus erg belangrijk in de toekomstige beschrijvingen. Alle drie zijn ze gelinkt aan een vaste lijst (controlled vocabularies). RDA voorziet zelf dergelijke lijsten, maar laat ook de ruimte om eigen termen toe te voegen. Indien u een eigen term wil toevoegen, stuur zeker een mail naar <a href="mailto:metadata@kbr.be?subject=Cataloging Guidelines">metadata@kbr.be</a>. 
 				<br /><br />De vaste lijsten zijn te vinden op de RDA-Toolkit :<br />- 336 : <a target="_blank" href="https://access.rdatoolkit.org/VES/VES?externalId=en-US_rdaves_RDA_Content_Type" rel="noopener">VES RDA Content Type</a><br />- 337 : <a target="_blank" href="https://access.rdatoolkit.org/VES/VES?externalId=en-US_rdaves_RDA_Media_Type" rel="noopener">VES RDA Media Type</a><br />- 338 : <a target="_blank" href="https://access.rdatoolkit.org/VES/VES?externalId=en-US_rdaves_RDA_Carrier_Type" rel="noopener">VES RDA Carrier Type</a>
 				<br />Tabel van standaard ingevulde 3XX velden per type document in Syracuse <i>(in progress)</i></p>
-						<table class="bigtable">
+						<table>
 							<tbody>
 								<tr>
 									<th style="width: 16%;">Type document</th>
@@ -1310,25 +1293,25 @@
 							</tbody>
 						</table>
 					</div>
-				</div>
-			</div>
-
-		<div style="height: 55px;">
-			<td style="height: 55px;" class="lang-fr">
-				<h2><span style="color: #00748f; font-style: italic;" class="forecolor lang-fr">Autorités</span></h2>
-			</td>
-			<td style="height: 55px;" class="lang-nl">
-				<h2><span style="color: #00748f; font-style: italic;" class="forecolor lang-nl">Autoriteiten</span></h2>
-			</td>
-		</div>
-		<div class="panel-heading">
-					<h6 class="panel-title" onclick="var element = document.getElementById('SELECTRULESAUTHORITY'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr"><i class="fas fa-info"></i> Comment créer une notice autorité ?</div>
-						<div class="lang-nl"><i class="fas fa-info"></i> Hoe maak ik een autoriteitsbeschrijving?</div>
+</td>
+</tr>
+<tr>
+<td class="lang-fr" style="height: 55px;">
+				<h2><span style="color: #00748f; font-style: italic;" class="forecolor">Autorités</span></h2>
+</td>
+<td class="lang-nl" style="height: 55px;">
+				<h2><span style="color: #00748f; font-style: italic;" class="forecolor">Autoriteiten</span></h2>
+</td>
+</tr>
+<tr>
+<td class="lang-fr">
+			<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('SELECTRULESAUTHORITYFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+						<i class="fas fa-info"></i> Comment créer une notice autorité ?
 					</h6>
-		</div>
-				<div id="SELECTRULESAUTHORITY" style="display: none; margin-left: 60px;margin-bottom:50px;">
-					<div class="lang-fr"><select id="alltypesofauthfr" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofauthfr');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerulesauth');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+			</div>
+			<div id="SELECTRULESAUTHORITYFR" style="display: none; margin-left: 60px;margin-bottom:50px;">
+					<select id="alltypesofauthfr" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofauthfr');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerulesauth');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
 						<option value="" selected="selected">Choisissez type d'autorité</option>
 						<option value="APEP-fr-alltypes">Personne physique</option>
 						<option value="AORG-fr-alltypes">Collectivité</option>
@@ -1338,8 +1321,18 @@
 						<option value="AGEO-fr-alltypes">Nom géographique</option>
 						<option value="ACHR-fr-alltypes">Terme chronologique</option>
 						<option value="AEVE-fr-alltypes">Evenement</option>
-						</select></div>
-					<div class="lang-nl"><select id="alltypesofauthnl" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofauthnl');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerulesauth');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+						</select>
+			</div>			
+</td>
+<td class="lang-nl">
+			<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('SELECTRULESAUTHORITYNL'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+						<div class="lang-nl"><i class="fas fa-info"></i> Hoe maak ik een autoriteitsbeschrijving?</div>
+					</h6>
+			</div>
+			<div id="SELECTRULESAUTHORITYNL" style="display: none; margin-left: 60px;margin-bottom:50px;">
+
+					<select id="alltypesofauthnl" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofauthnl');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerulesauth');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
 						<option value="" selected="selected">Selecteer type Autoriteit</option>
 						<option value="APEP-nl-alltypes">Fysieke persoon</option>
 						<option value="AORG-nl-alltypes">Collectiviteit</option>
@@ -1349,8 +1342,13 @@
 						<option value="AGEO-nl-alltypes">Geografische term</option>
 						<option value="ACHR-nl-alltypes">Chronologische term</option>
 						<option value="AEVE-nl-alltypes">Gebeurtenis</option>
-						</select></div>
-				</div>
+						</select>
+				</div>			
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
 				<div id="tablerulesauth" style="display: none;">
 					<table>
 						<tbody>
@@ -1575,365 +1573,434 @@
 						</tbody>
 					</table>
 				</div>
+</td>
+</tr>
 
+<tr>
+<td class="lang-fr">
 				<div class="panel-heading">
-					<h6 class="panel-title" onclick="var element = document.getElementById('ADDAUTHORITYTYPES'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr"><i class="fas fa-link" aria-hidden="true"></i> Ajouter une autorité à une notice bibliographique</div>
-						<div class="lang-nl"><i class="fas fa-link" aria-hidden="true"></i> Een autoriteit toevoegen aan een bibliografische beschrijving</div>
+					<h6 class="panel-title" onclick="var rows = document.getElementsByClassName('ADDAUTHORITYTYPES');for (var i = 0; i < rows.length; i++) {rows[i].style.display = rows[i].style.display === 'none' ? 'table-row' : 'none';}">
+						<i class="fas fa-link" aria-hidden="true"></i> Ajouter une autorité à une notice bibliographique
 					</h6>
 				</div>
-				<div id="ADDAUTHORITYTYPES" style="display: none; margin-left: 15px;">
-					<div class="panel-heading">
-						<h6 class="panel-title" onclick="var element = document.getElementById('AUTHORITYAGENT'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr"><i class="fas fa-pen" aria-hidden="true"></i> Ajout d'une autorité comme créateur ou agent</div>
-							<div class="lang-nl"><i class="fas fa-pen" aria-hidden="true"></i> Een autoriteit toevoegen als maker of agent</div>
-						</h6>
-					</div>
-					<div id="AUTHORITYAGENT" style="display: none; margin-left: 35px;"><a onclick="var element = document.getElementById('APEP'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr">Ajouter une personne physique</div>
-						<div class="lang-nl">Een fysieke persoon toevoegen</div>
-						</a>
-						<div id="APEP" class="catalo" style="display: none;">
+</td>
+<td class="lang-nl">
+				<div class="panel-heading">
+					<h6 class="panel-title" onclick="var rows = document.getElementsByClassName('ADDAUTHORITYTYPES');for (var i = 0; i < rows.length; i++) {rows[i].style.display = rows[i].style.display === 'none' ? 'table-row' : 'none';}">
+						<i class="fas fa-link" aria-hidden="true"></i> Een autoriteit toevoegen aan een bibliografische beschrijving
+					</h6>
+				</div>
+</td>
+</tr>
+<tr class="ADDAUTHORITYTYPES" style="display:none">		
+					<td class="lang-fr">				
+						<div class="panel-heading">
+					<h6 class="panel-title" style="padding-left: 35px;" onclick="var rows = document.getElementsByClassName('AUTHORITYAGENT');for (var i = 0; i < rows.length; i++) {rows[i].style.display = rows[i].style.display === 'none' ? 'table-row' : 'none';}">
+							<i class="fas fa-pen" aria-hidden="true"></i> Ajout d'une autorité comme créateur ou agent
+							</h6>
+						</div>
+					</td>
+					<td class="lang-nl">				
+						<div class="panel-heading">
+						<h6 class="panel-title" style="padding-left: 35px;" onclick="var rows = document.getElementsByClassName('AUTHORITYAGENT');for (var i = 0; i < rows.length; i++) {rows[i].style.display = rows[i].style.display === 'none' ? 'table-row' : 'none';}">
+							<i class="fas fa-pen" aria-hidden="true"></i> Een autoriteit toevoegen als maker of agent
+							</h6>
+						</div>
+					</td>
+</tr>
+				<tr class="AUTHORITYAGENT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('APEP'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter une personne physique</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('APEP'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een fysieke persoon toevoegen</a></td>
+				</tr>
+				<tr id="APEP" class="catalo" style="display: none !Important;">
+					<td colspan="2">
 							<table>
 								<tbody>
 									<tr>
 										<td colspan="2"><button type="button" onclick="var element = document.getElementById('APEP'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>100$a - Vedette principale – Nom de personne</th>
-										<th>100$a - Hoofdingang - personele auteur</th>
+										<th class="lang-fr">100$a - Vedette principale – Nom de personne</th>
+										<th class="lang-nl">100$a - Hoofdingang - personele auteur</th>
 									</tr>
 									<tr>
-										<td>Cette zone contient un nom de personne désigné comme vedette principale.<br />Dans le §a, nous renseignons le nom de l'auteur. <br />Si la publication ne comporte qu'un seul auteur, on renseigne un seul champ 100.<br />Si nous avons un auteur principal et un ou plusieurs auteur(s) secondaire(s) (traducteur, illustrateur, etc.), l'auteur principal va en 100 et les autres en 700.<br />Si nous avons deux auteurs principaux ou plus, ils sont tous indiqués en 700.<br /><br /><b>Important :</b> On ne peut avoir qu'un seul champ 1XX, donc si on a un 100, on ne peut pas avoir un 110 ou un 130 dans la même notice</td>
-										<td>Dit veld bevat de naam van een persoon die als hoofdvermelding wordt aangeduid.<br />In §a vullen we de naam van de auteur in.<br />Als de publicatie slechts één auteur heeft, wordt één veld 100 ingevuld.<br />Als we één hoofdauteur hebben en één of meer secundaire auteur(s) (vertaler, illustrator, enz.), komt de hoofdauteur in 100 en de anderen in 700.<br />Als we twee of meer hoofdauteurs hebben, worden ze allemaal in 700 vermeld.<br /><br /><b>Belangrijk :</b> Er kan maar één veld 1XX zijn. Dus als er een 100 is, kan er geen 110 of 130 meer toegevoegd worden.</td>
+										<td class="lang-fr">Cette zone contient un nom de personne désigné comme vedette principale.<br />Dans le §a, nous renseignons le nom de l'auteur. <br />Si la publication ne comporte qu'un seul auteur, on renseigne un seul champ 100.<br />Si nous avons un auteur principal et un ou plusieurs auteur(s) secondaire(s) (traducteur, illustrateur, etc.), l'auteur principal va en 100 et les autres en 700.<br />Si nous avons deux auteurs principaux ou plus, ils sont tous indiqués en 700.<br /><br /><b>Important :</b> On ne peut avoir qu'un seul champ 1XX, donc si on a un 100, on ne peut pas avoir un 110 ou un 130 dans la même notice</td>
+										<td class="lang-nl">Dit veld bevat de naam van een persoon die als hoofdvermelding wordt aangeduid.<br />In §a vullen we de naam van de auteur in.<br />Als de publicatie slechts één auteur heeft, wordt één veld 100 ingevuld.<br />Als we één hoofdauteur hebben en één of meer secundaire auteur(s) (vertaler, illustrator, enz.), komt de hoofdauteur in 100 en de anderen in 700.<br />Als we twee of meer hoofdauteurs hebben, worden ze allemaal in 700 vermeld.<br /><br /><b>Belangrijk :</b> Er kan maar één veld 1XX zijn. Dus als er een 100 is, kan er geen 110 of 130 meer toegevoegd worden.</td>
 									</tr>
 									<tr>
-										<th>700$a - Vedette secondaire - Nom de personne</th>
-										<th>700$a - Bijkomende ingang - Personele auteur</th>
+										<th class="lang-fr">700$a - Vedette secondaire - Nom de personne</th>
+										<th class="lang-nl">700$a - Bijkomende ingang - Personele auteur</th>
 									</tr>
 									<tr>
-										<td>Lorsque nous voulons lier plus d'une personne à cette notice, nous les plaçons dans le champ 700.</td>
-										<td>Als we meer dan één persoon willen linken aan deze beschrijving, plaatsen we die in veld 700.</td>
+										<td class="lang-fr">Lorsque nous voulons lier plus d'une personne à cette notice, nous les plaçons dans le champ 700.</td>
+										<td class="lang-nl">Als we meer dan één persoon willen linken aan deze beschrijving, plaatsen we die in veld 700.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('AORG'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter une collectivité</div>
-							<div class="lang-nl">Een organisatie toevoegen</div>
-						</a>
-						<div id="AORG" class="catalo" style="display: none;">
+					</td>
+				</tr>
+				<tr class="AUTHORITYAGENT" style="display: none;">
+						<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('AORG'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter une collectivité</a></td>
+						<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('AORG'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een organisatie toevoegen</a></td>	
+				</tr>
+				<tr id="AORG" class="catalo" style="display: none;">
+					<td colspan="2">
 							<table>
 								<tbody>
 									<tr>
 										<td colspan="2"><button type="button" onclick="var element = document.getElementById('AORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>110$a - Vedette principale - Collectivité</th>
-										<th>110$a - Hoofdingang - Collectiviteit</th>
+										<th class="lang-fr">110$a - Vedette principale - Collectivité</th>
+										<th class="lang-nl">110$a - Hoofdingang - Collectiviteit</th>
 									</tr>
 									<tr>
-										<td>Cette zone contient un nom de collectivité désigné comme vedette principale.<br />Dans le §a, nous renseignons le nom de la collectivité. <br />Si la publication ne comporte qu'une seule collectivité, on renseigne un seul champ 110.<br />Si nous avons une collectivité principale et une ou plusieurs collectivité(s) secondaire(s), la collectivité principale va en 110 et les autres en 710.<br />Si nous avons deux collectivités principales ou plus, elles sont toutes indiquées en 710.<br /><br /><b>Important :</b> On ne peut avoir qu'un seul champ 1XX, donc si on a un 110, on ne peut pas avoir un 100 ou un 130 dans la même notice</td>
-										<td>Dit veld bevat de naam van een collectiviteit die als hoofdvermelding wordt aangeduid.<br />In §a vullen we de naam van de collectiviteit in.<br />Als de publicatie slechts één collectiviteit heeft, wordt één veld 110 ingevuld.<br />Als we één hoofdcollectiviteit hebben en één of meer secundaire collectiviteit(en), komt de hoofdcollectiviteit in 110 en de anderen in 710.<br />Als we twee of meer hoofdcollectiviteiten hebben, worden ze allemaal in 710 vermeld.<br /><br /><b>Belangrijk :</b> Er kan maar één veld 1XX zijn. Dus als er een 110 is, kan er geen 100 of 130 meer toegevoegd worden.</td>
+										<td class="lang-fr">Cette zone contient un nom de collectivité désigné comme vedette principale.<br />Dans le §a, nous renseignons le nom de la collectivité. <br />Si la publication ne comporte qu'une seule collectivité, on renseigne un seul champ 110.<br />Si nous avons une collectivité principale et une ou plusieurs collectivité(s) secondaire(s), la collectivité principale va en 110 et les autres en 710.<br />Si nous avons deux collectivités principales ou plus, elles sont toutes indiquées en 710.<br /><br /><b>Important :</b> On ne peut avoir qu'un seul champ 1XX, donc si on a un 110, on ne peut pas avoir un 100 ou un 130 dans la même notice</td>
+										<td class="lang-nl">Dit veld bevat de naam van een collectiviteit die als hoofdvermelding wordt aangeduid.<br />In §a vullen we de naam van de collectiviteit in.<br />Als de publicatie slechts één collectiviteit heeft, wordt één veld 110 ingevuld.<br />Als we één hoofdcollectiviteit hebben en één of meer secundaire collectiviteit(en), komt de hoofdcollectiviteit in 110 en de anderen in 710.<br />Als we twee of meer hoofdcollectiviteiten hebben, worden ze allemaal in 710 vermeld.<br /><br /><b>Belangrijk :</b> Er kan maar één veld 1XX zijn. Dus als er een 110 is, kan er geen 100 of 130 meer toegevoegd worden.</td>
 									</tr>
 									<tr>
-										<th>710$a - Vedette secondaire - Collectivité</th>
-										<th>710$a - Bijkomende ingang - Collectiviteit</th>
+										<th class="lang-fr">710$a - Vedette secondaire - Collectivité</th>
+										<th class="lang-nl">710$a - Bijkomende ingang - Collectiviteit</th>
 									</tr>
 									<tr>
-										<td>Lorsque nous avons plus d'une collectivité, nous les plaçons dans 710.</td>
-										<td>Als we meer dan één collectiviteit willen linken aan deze beschrijving, plaatsen we die in veld 710.</td>
+										<td class="lang-fr">Lorsque nous avons plus d'une collectivité, nous les plaçons dans 710.</td>
+										<td class="lang-nl">Als we meer dan één collectiviteit willen linken aan deze beschrijving, plaatsen we die in veld 710.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('RELATOR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter un code de fonction</div>
-							<div class="lang-nl">Een functiecode toevoegen</div>
-						</a>
-						<div id="RELATOR" class="catalo" style="display: none;">
+					</td>			
+				</tr>
+				<tr class="AUTHORITYAGENT" style="display: none;">
+						<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('RELATOR'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter un code de fonction</a></td>
+						<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('RELATOR'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een functiecode toevoegen</a></td>	
+				</tr>
+				<tr id="RELATOR" class="catalo" style="display: none;">
+					<td colspan="2">
 							<table>
 								<tbody>
 									<tr>
 										<td colspan="2"><button type="button" onclick="var element = document.getElementById('RELATOR'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>$4 - Code fonction</th>
-										<th>$4 - Functiecode</th>
+										<th class="lang-fr">$4 - Code fonction</th>
+										<th class="lang-nl">$4 - Functiecode</th>
 									</tr>
 									<tr>
-										<td>Dans le §4, nous renseignons la fonction de l'auteur et ce, en utilisant la liste déroulante (<a target="_blank" href="https://www.loc.gov/marc/relators/relaterm.html" rel="noopener">MARC21 relator code</a>).<br />Les auteurs qui sont des auteurs-éditeurs, ou d'autres auteurs avec des fonctions dupliquées, obtiendront 1 x lien avec l'autorité (par exemple un 700), avec 2 codes de fonction dans $4.<br />Donc pas <br />- 700 $a Dupont, Jean $4 aut<br />- 700 $a Dupont, Jean $4 pbl<br />Mais : <br />- 700 $a Dupont, Jean $4 aut $4 pbl</td>
-										<td>In het subveld §4, vullen we de functie in van de persoon of collectiviteit waarmee er een link gelegd wordt. Maak gebruik van de keuzelijst (<a target="_blank" href="https://www.loc.gov/marc/relators/relaterm.html" rel="noopener">MARC21 relator code</a>).<br />Auteurs die auteur-uitgever zijn, of andere auteurs met dubbele functies, krijgen vanaf nu 1 x een link met de autoriteit (vb een 700), met 2 $4 functiecodes.<br />Dus niet:<br />- 700 $a Dupont, Jean $4 aut<br />- 700 $a Dupont, Jean $4 pbl<br />Maar:<br />- 700 $a Dupont, Jean $4 aut $4 pbl.</td>
+										<td class="lang-fr">Dans le §4, nous renseignons la fonction de l'auteur et ce, en utilisant la liste déroulante (<a target="_blank" href="https://www.loc.gov/marc/relators/relaterm.html" rel="noopener">MARC21 relator code</a>).<br />Les auteurs qui sont des auteurs-éditeurs, ou d'autres auteurs avec des fonctions dupliquées, obtiendront 1 x lien avec l'autorité (par exemple un 700), avec 2 codes de fonction dans $4.<br />Donc pas <br />- 700 $a Dupont, Jean $4 aut<br />- 700 $a Dupont, Jean $4 pbl<br />Mais : <br />- 700 $a Dupont, Jean $4 aut $4 pbl</td>
+										<td class="lang-nl">In het subveld §4, vullen we de functie in van de persoon of collectiviteit waarmee er een link gelegd wordt. Maak gebruik van de keuzelijst (<a target="_blank" href="https://www.loc.gov/marc/relators/relaterm.html" rel="noopener">MARC21 relator code</a>).<br />Auteurs die auteur-uitgever zijn, of andere auteurs met dubbele functies, krijgen vanaf nu 1 x een link met de autoriteit (vb een 700), met 2 $4 functiecodes.<br />Dus niet:<br />- 700 $a Dupont, Jean $4 aut<br />- 700 $a Dupont, Jean $4 pbl<br />Maar:<br />- 700 $a Dupont, Jean $4 aut $4 pbl.</td>
 									</tr>
 								</tbody>
 							</table>
+					</td>		
+				</tr>
+<tr class="ADDAUTHORITYTYPES" style="display:none">		
+				<td class="lang-fr">				
+						<div class="panel-heading">
+							<h6 class="panel-title" style="padding-left: 35px;" onclick="var rows = document.getElementsByClassName('AUTHORITYSUBJECT');for (var i = 0; i < rows.length; i++) {rows[i].style.display = rows[i].style.display === 'none' ? 'table-row' : 'none';}">
+							<i class="fas fa-tag" aria-hidden="true"></i> Ajout d'une autorité comme sujet
+							</h6>
 						</div>
-					</div>
-					<div class="panel-heading">
-						<h6 class="panel-title" onclick="var element = document.getElementById('AUTHORITYSUBJECT'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr"><i class="fas fa-tag" aria-hidden="true"></i> Ajout d'une autorité comme sujet</div>
-							<div class="lang-nl"><i class="fas fa-tag" aria-hidden="true"></i> Een autoriteit toevoegen als onderwerp</div>
-						</h6>
-					</div>
-					<div id="AUTHORITYSUBJECT" style="display: none; margin-left: 35px;"><a onclick="var element = document.getElementById('SUBJECTAPEP'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr">Ajouter une vedette-matière 'Personne physique'</div>
-						<div class="lang-nl">Een trefwoord 'Fysieke persoon' toevoegen</div>
-						</a>
-						<div id="SUBJECTAPEP" class="catalo" style="display: none;">
+					</td>
+					<td class="lang-nl">				
+						<div class="panel-heading">
+							<h6 class="panel-title" style="padding-left: 35px;"  onclick="var rows = document.getElementsByClassName('AUTHORITYSUBJECT');for (var i = 0; i < rows.length; i++) {rows[i].style.display = rows[i].style.display === 'none' ? 'table-row' : 'none';}">
+							<i class="fas fa-tag" aria-hidden="true"></i> Een autoriteit toevoegen als onderwerp
+							</h6>
+						</div>
+					</td>
+</tr>				
+				<tr class="AUTHORITYSUBJECT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAPEP'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter une vedette-matière 'Personne physique'</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAPEP'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een trefwoord 'Fysieke persoon' toevoegen</a></td>
+				</tr>
+				<tr id="SUBJECTAPEP" class="catalo" style="display: none;">
+				<td colspan="2">
 							<table>
 								<tbody>
 									<tr>
-										<td colspan="2"><button type="button" onclick="var element = document.getElementById('APEP'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+										<td colspan="2"><button type="button" onclick="var element = document.getElementById('SUBJECTAPEP'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>600$a - Vedette-matière - Nom de personne</th>
-										<th>600$a - Trefwoord - Personele auteur</th>
+										<th class="lang-fr">600$a - Vedette-matière - Nom de personne</th>
+										<th class="lang-nl">600$a - Trefwoord - Personele auteur</th>
 									</tr>
 									<tr>
-										<td>Lorsque une personne fait le sujet d'un livre, comme dans un biographie, on le met dans 600.</td>
-										<td>Als een persoon een onderwerp is van een boek, zoals in een biografie, zetten we de naam van de persoon in 600.</td>
+										<td class="lang-fr">Lorsque une personne fait le sujet d'un livre, comme dans un biographie, on le met dans 600.</td>
+										<td class="lang-nl">Als een persoon een onderwerp is van een boek, zoals in een biografie, zetten we de naam van de persoon in 600.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('SUBJECTAORG'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter une vedette-matière 'Collectivité'</div>
-							<div class="lang-nl">Een trefwoord 'Organisatie' toevoegen</div>
-						</a>
-						<div id="SUBJECTAORG" class="catalo" style="display: none;">
+				</td></tr>
+				<tr class="AUTHORITYSUBJECT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAORG'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter une vedette-matière 'Collectivité'</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAORG'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een trefwoord 'Organisatie' toevoegen</a></td>
+				</tr>
+				<tr id="SUBJECTAORG" class="catalo" style="display: none;">
+					<td colspan="2">
+					<table>
+								<tbody>
+									<tr>
+										<td colspan="2"><button type="button" onclick="var element = document.getElementById('SUBJECTAORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+									</tr>
+									<tr>
+										<th class="lang-fr">610$a - Vedette-matière - Nom de collectivité</th>
+										<th class="lang-nl">610$a - Trefwoord - Collectiviteit</th>
+									</tr>
+									<tr>
+										<td class="lang-fr">Lorsque une collectivité fait le sujet d'un livre, on le met dans 600.</td>
+										<td class="lang-nl">Als een collectiviteit een onderwerp is van een boek, zetten we de naam van de persoon in 600.</td>
+									</tr>
+								</tbody>
+							</table>
+							</td>
+				</tr>
+				<tr class="AUTHORITYSUBJECT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAEVE'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter une vedette-matière 'Événement'</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAEVE'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een trefwoord 'Evenement' toevoegen</a></td>
+				</tr>
+				<tr id="SUBJECTAEVE" class="catalo" style="display: none;">
+							<td colspan="2">
 							<table>
 								<tbody>
 									<tr>
-										<td colspan="2"><button type="button" onclick="var element = document.getElementById('AORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+										<td colspan="2"><button type="button" onclick="var element = document.getElementById('SUBJECTAEVE'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>610$a - Vedette-matière - Nom de collectivité</th>
-										<th>610$a - Trefwoord - Collectiviteit</th>
+										<th class="lang-fr">647$a - Vedette-matière - Événement nommé</th>
+										<th class="lang-nl">647$a - Trefwoord - Evenement</th>
 									</tr>
 									<tr>
-										<td>Lorsque une collectivité fait le sujet d'un livre, on le met dans 600.</td>
-										<td>Als een collectiviteit een onderwerp is van een boek, zetten we de naam van de persoon in 600.</td>
+										<td class="lang-fr">Lorsque une événement fait le sujet d'un livre, comme 'sécond guerre mondiale' on le met dans 647.</td>
+										<td class="lang-nl">Als een evenement een onderwerp is van een boek, zoals 'Tweede Wereldoorlog' zetten we de naam van de persoon in 647.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('SUBJECTAEVE'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter une vedette-matière 'Événement'</div>
-							<div class="lang-nl">Een trefwoord 'Evenement' toevoegen</div>
-						</a>
-						<div id="SUBJECTAEVE" class="catalo" style="display: none;">
-							<table>
+				</td></tr>
+				<tr class="AUTHORITYSUBJECT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTACHR'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter un terme chronologique</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTACHR'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een chronologische term toevoegen</a></td>
+				</tr>
+				<tr id="SUBJECTACHR" class="catalo" style="display: none;">
+					<td colspan="2">		<table>
 								<tbody>
 									<tr>
-										<td colspan="2"><button type="button" onclick="var element = document.getElementById('AORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+										<td colspan="2"><button type="button" onclick="var element = document.getElementById('SUBJECTACHR'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>647$a - Vedette-matière - Événement nommé</th>
-										<th>647$a - Trefwoord - Evenement</th>
+										<th class="lang-fr">648$a - Vedette-matière - Terme chronologique</th>
+										<th class="lang-nl">648$a - Trefwoord - Chronologische term</th>
 									</tr>
 									<tr>
-										<td>Lorsque une événement fait le sujet d'un livre, comme 'sécond guerre mondiale' on le met dans 647.</td>
-										<td>Als een evenement een onderwerp is van een boek, zoals 'Tweede Wereldoorlog' zetten we de naam van de persoon in 647.</td>
+										<td class="lang-fr">Nous ajoutons cette vedette-matière pour indiquer la période dont il est question. Notez qu'il s'agit de numéros d'année (1350-1400), et non de noms de périodes (par exemple « Moyen-Âge » ou événements).</td>
+										<td class="lang-nl">Dit trefwoord voegen we toe om de besproken periode aan te duiden. Let op, dit zijn jaartallen (1350-1400), geen namen van perioden (bijvoorbeeld 'middeleeuwen' of evenementen.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('SUBJECTACHR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter un terme chronologique</div>
-							<div class="lang-nl">Een chronologische term toevoegen</div>
-						</a>
-						<div id="SUBJECTACHR" class="catalo" style="display: none;">
-							<table>
+				</td></tr>
+				<tr class="AUTHORITYSUBJECT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTARAM'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter une vedette-matière 'Nom commun'</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTARAM'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een onderwerpsterm toevoegen</a></td>
+				</tr>		
+				<tr id="SUBJECTARAM" class="catalo" style="display: none;">
+					<td colspan="2">		<table>
 								<tbody>
 									<tr>
-										<td colspan="2"><button type="button" onclick="var element = document.getElementById('AORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+										<td colspan="2"><button type="button" onclick="var element = document.getElementById('SUBJECTARAM'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>648$a - Vedette-matière - Terme chronologique</th>
-										<th>648$a - Trefwoord - Chronologische term</th>
+										<th class="lang-fr">650$a - Vedette-matière - Nom commun</th>
+										<th class="lang-nl">650$a - Trefwoord - Onderwerpsterm</th>
 									</tr>
 									<tr>
-										<td>Nous ajoutons cette vedette-matière pour indiquer la période dont il est question. Notez qu'il s'agit de numéros d'année (1350-1400), et non de noms de périodes (par exemple « Moyen-Âge » ou événements).</td>
-										<td>Dit trefwoord voegen we toe om de besproken periode aan te duiden. Let op, dit zijn jaartallen (1350-1400), geen namen van perioden (bijvoorbeeld 'middeleeuwen' of evenementen.</td>
+										<td class="lang-fr">Via 650, nous ajoutons une vedette 'nom commun' (sujet). Notez qu'à partir de maintenant, nous n'ajoutons plus que des termes uniques. On créait des vedettes composées, mais maintenant nous ajoutons les informations des subdivision via les différents champs 6XX.</td>
+										<td class="lang-nl">Via 650 voegen we een onderwerpsterm toe. opgelet, vanaf nu voegen we enkel nog enkelvoudige termen toe. Vroeger maakten we meervoudige termen met verschillende subgeledingen, maar nu voegen we de informatie van de subgeledelingen toe via de verschillende 6XX velden.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('SUBJECTARAM'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter une vedette-matière 'Nom commun'</div>
-							<div class="lang-nl">Een onderwerpsterm toevoegen</div>
-						</a>
-						<div id="SUBJECTARAM" class="catalo" style="display: none;">
-							<table>
+				</td></tr>
+				<tr class="AUTHORITYSUBJECT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAGEO'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter une vedette-matière 'Nom geographique'</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAGEO'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een geografische term toevoegen</a></td>
+				</tr>	
+				<tr id="SUBJECTAGEO" class="catalo" style="display: none;">
+					<td colspan="2">		<table>
 								<tbody>
 									<tr>
-										<td colspan="2"><button type="button" onclick="var element = document.getElementById('AORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+										<td colspan="2"><button type="button" onclick="var element = document.getElementById('SUBJECTAGEO'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>650$a - Vedette-matière - Nom commun</th>
-										<th>650$a - Trefwoord - Onderwerpsterm</th>
+										<th class="lang-fr">651$a - Vedette-matière - Nom géographique</th>
+										<th class="lang-nl">651$a - Trefwoord - Geografische term</th>
 									</tr>
 									<tr>
-										<td>Via 650, nous ajoutons une vedette 'nom commun' (sujet). Notez qu'à partir de maintenant, nous n'ajoutons plus que des termes uniques. On créait des vedettes composées, mais maintenant nous ajoutons les informations des subdivision via les différents champs 6XX.</td>
-										<td>Via 650 voegen we een onderwerpsterm toe. opgelet, vanaf nu voegen we enkel nog enkelvoudige termen toe. Vroeger maakten we meervoudige termen met verschillende subgeledingen, maar nu voegen we de informatie van de subgeledelingen toe via de verschillende 6XX velden.</td>
+										<td class="lang-fr">Avec 651, nous ajoutons un nom de lieu en tant que vedette-matière. Ceci est particulièrement important pour les cartes ou les documents couvrant une région ou une ville spécifique.</td>
+										<td class="lang-nl">Via 651 voegen we een plaatsnaam toe als onderwerpsterm. Dit is vooral belangrijk voor kaarten of documenten die een specifieke regio of stad behandelen.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('SUBJECTAGEO'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter une vedette-matière 'Nom geographique'</div>
-							<div class="lang-nl">Een trefwoord 'Geografische term' toevoegen</div>
-						</a>
-						<div id="SUBJECTAGEO" class="catalo" style="display: none;">
-							<table>
+				</td></tr>
+				<tr class="AUTHORITYSUBJECT" style="display: none;">
+					<td class="lang-fr" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAFOR'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Ajouter un term 'Forme ou Genre'</a></td>
+					<td class="lang-nl" style="padding-left: 85px;"><a onclick="var element = document.getElementById('SUBJECTAFOR'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">Een term 'Vorm of Genre' toevoegen</a></td>
+				</tr>	
+				<tr id="SUBJECTAFOR" class="catalo" style="display: none;">
+					<td colspan="2">		<table>
 								<tbody>
 									<tr>
-										<td colspan="2"><button type="button" onclick="var element = document.getElementById('AORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+										<td colspan="2"><button type="button" onclick="var element = document.getElementById('SUBJECTAFOR'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 									</tr>
 									<tr>
-										<th>651$a - Vedette-matière - Nom géographique</th>
-										<th>651$a - Trefwoord - Geografische term</th>
+										<th class="lang-fr">655$a - Term Forme/Genre</th>
+										<th class="lang-nl">655$a - Vorm/Genre-term</th>
 									</tr>
 									<tr>
-										<td>Avec 651, nous ajoutons un nom de lieu en tant que vedette-matière. Ceci est particulièrement important pour les cartes ou les documents couvrant une région ou une ville spécifique.</td>
-										<td>Via 651 voegen we een plaatsnaam toe als onderwerpsterm. Dit is vooral belangrijk voor kaarten of documenten die een specifieke regio of stad behandelen.</td>
+										<td class="lang-fr">Le code 655 indique la forme ou le genre d'un document. Cela peut aller de la forme physique (livre crissant, livre de bain, livre de coloriage...) au genre d'un livre de fiction.</td>
+										<td class="lang-nl">Via 655 geven we aan welke vorm of genre een document is. Dat kan gaan van fysieke vorm (knisperboek, badboek, kleurboek...) tot genre van een fictieboek.</td>
 									</tr>
 								</tbody>
 							</table>
-						</div>
-						<a onclick="var element = document.getElementById('SUBJECTAFOR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-							<div class="lang-fr">Ajouter un term 'Forme ou Genre'</div>
-							<div class="lang-nl">Een term 'Vorm of Genre' toevoegen</div>
-						</a>
-						<div id="SUBJECTAFOR" class="catalo" style="display: none;">
-							<table>
-								<tbody>
-									<tr>
-										<td colspan="2"><button type="button" onclick="var element = document.getElementById('AORG'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
-									</tr>
-									<tr>
-										<th>655$a - Term Forme/Genre</th>
-										<th>655$a - Vorm/Genre-term</th>
-									</tr>
-									<tr>
-										<td>Le code 655 indique la forme ou le genre d'un document. Cela peut aller de la forme physique (livre crissant, livre de bain, livre de coloriage...) au genre d'un livre de fiction.</td>
-										<td>Via 655 geven we aan welke vorm of genre een document is. Dat kan gaan van fysieke vorm (knisperboek, badboek, kleurboek...) tot genre van een fictieboek.</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-
+				</td>
+				</tr>
+<tr>
+<td class="lang-fr">
 				<div class="panel-heading">
-					<h6 class="panel-title" onclick="var element = document.getElementById('HOWMANYAUTH'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr"><i class="fas fa-plus" aria-hidden="true"></i> Combien d'autorités faut-il ajouter ?</div>
-						<div class="lang-nl"><i class="fas fa-plus" aria-hidden="true"></i> Hoeveel autoriteiten moet ik toevoegen?</div>
+					<h6 class="panel-title" onclick="var element = document.getElementById('HOWMANYAUTH'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">
+						<i class="fas fa-plus" aria-hidden="true"></i> Combien d'autorités faut-il ajouter ?
 					</h6>
 				</div>
-				<div id="HOWMANYAUTH" style="display: none;">
-					<table class="bigtable">
+</td>
+<td class="lang-nl">
+				<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('HOWMANYAUTH'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">
+						<i class="fas fa-plus" aria-hidden="true"></i> Hoeveel autoriteiten moet ik toevoegen?
+					</h6>
+				</div>
+</td>
+</tr>
+				<tr id="HOWMANYAUTH" style="display: none;">
+					<td colspan="2">
+					<table>
 						<tbody>
 							<tr>
-								<th>Het document bevat 1 werk van 1 creator</th>
-								<th>Le document contient 1 œuvre de 1 créateur</th>
+								<th class="lang-fr">Le document contient 1 œuvre de 1 créateur</th>					
+								<th class="lang-nl">Het document bevat 1 werk van 1 creator</th>
+
 							</tr>
 							<tr>
-								<td>We zetten de auteur/creator in 100/110</td>
-								<td>On indique l'auteur/le créateur dans 100/110</td>
+								<td class="lang-fr">On indique l'auteur/le créateur dans 100/110</td>
+								<td class="lang-nl">We zetten de auteur/creator in 100/110</td>
 							</tr>
 							<tr>
-								<th>Het document bevat een ‘hoofdwerk’ en één of meerdere ondersteunende rollen, vb een vertaling, met inleiding door , enz</th>
-								<th>Le document contient une « œuvre principale » et un ou plusieurs rôles secondaires, par exemple une traduction, avec une introduction par..., etc.</th>
+								<th class="lang-fr">Le document contient une « œuvre principale » et un ou plusieurs rôles secondaires, par exemple une traduction, avec une introduction par..., etc.</th>
+								<th class="lang-nl">Het document bevat een ‘hoofdwerk’ en één of meerdere ondersteunende rollen, vb een vertaling, met inleiding door , enz</th>
 							</tr>
 							<tr>
-								<td>Auteur van hoofdwerk in 100/110<br /><br />Andere rollen in 700/710, met een maximum van 5 autoriteiten in 700/710 in totaal (dus niet 5 per functiecode).<br /><br />De keuze voor welke autoriteit wordt toegevoegd, is de keuze van de catalograaf. De volgorde van de publicatie hoeft niet te worden gerespecteerd, de keuze wordt bepaald door : Belg, bekend, geacht andere boeken te schrijven, enz.<br /><br />Andere auteurs/creators (niet via autoriteit toegevoegd) kunnen vermeld worden in 720 (dit is optioneel, dus niet verplicht)</td>
-								<td>Auteur de l'œuvre principale en 100/110<br /><br />Autres rôles en 700/710, avec un maximum de 5 autorités en 700/710 au total (pas 5 autorités par code de fonction).<br /><br />Le choix de l'autorité à ajouter incombe au catalographe. L'ordre de citation dans la publication ne doit pas être respecté, le choix est déterminé par : Belge, connu, censé écrire d'autres livres, etc.<br /><br />D'autres auteurs/créateurs (non ajoutés via une autorité) peuvent être mentionnés en 720 (facultatif).</td>
+								<td class="lang-fr">Auteur de l'œuvre principale en 100/110<br /><br />Autres rôles en 700/710, avec un maximum de 5 autorités en 700/710 au total (pas 5 autorités par code de fonction).<br /><br />Le choix de l'autorité à ajouter incombe au catalographe. L'ordre de citation dans la publication ne doit pas être respecté, le choix est déterminé par : Belge, connu, censé écrire d'autres livres, etc.<br /><br />D'autres auteurs/créateurs (non ajoutés via une autorité) peuvent être mentionnés en 720 (facultatif).</td>
+								<td class="lang-nl">Auteur van hoofdwerk in 100/110<br /><br />Andere rollen in 700/710, met een maximum van 5 autoriteiten in 700/710 in totaal (dus niet 5 per functiecode).<br /><br />De keuze voor welke autoriteit wordt toegevoegd, is de keuze van de catalograaf. De volgorde van de publicatie hoeft niet te worden gerespecteerd, de keuze wordt bepaald door : Belg, bekend, geacht andere boeken te schrijven, enz.<br /><br />Andere auteurs/creators (niet via autoriteit toegevoegd) kunnen vermeld worden in 720 (dit is optioneel, dus niet verplicht)</td>
 							</tr>
 							<tr>
-								<th>Het document bevat 1 werk met meerdere creators die dezelfde rol hebben (vb 2 auteurs)</th>
-								<th>Le document contient 1 œuvre avec plusieurs créateurs ayant le même rôle (par exemple deux auteurs)</th>
+								<th class="lang-fr">Le document contient 1 œuvre avec plusieurs créateurs ayant le même rôle (par exemple deux auteurs)</th>
+								<th class="lang-nl">Het document bevat 1 werk met meerdere creators die dezelfde rol hebben (vb 2 auteurs)</th>
 							</tr>
 							<tr>
-								<th>Het document bevat meerdere werken van verschillende creators</th>
-								<th>Le document contient plusieurs œuvres de différents créateurs</th>
+								<th class="lang-fr">Le document contient plusieurs œuvres de différents créateurs</th>
+								<th class="lang-nl">Het document bevat meerdere werken van verschillende creators</th>
 							</tr>
 							<tr>
-								<th>Het document bevat 1 werk met meerdere creators met verschillende, maar gelijkwaardige rollen, bijvoorbeeld een illustrator en scenarist (stripverhaal)</th>
-								<th>Le document contient 1 œuvre avec plusieurs créateurs ayant des rôles différents mais équivalents, par exemple un illustrateur et un scénariste. (BD)</th>
+								<th class="lang-fr">Le document contient 1 œuvre avec plusieurs créateurs ayant des rôles différents mais équivalents, par exemple un illustrateur et un scénariste. (BD)</th>
+								<th class="lang-nl">Het document bevat 1 werk met meerdere creators met verschillende, maar gelijkwaardige rollen, bijvoorbeeld een illustrator en scenarist (stripverhaal)</th>
 							</tr>
 							<tr>
-								<td>De eerste naam mag in 100/110, maar de aanwezigheid van een 100/110 is niet langer verplicht<br /><br />De (andere) auteurs/creators worden in 700/710 gezet, met een maximum van 5 autoriteiten in 700/710 (dus niet 5 per functiecode).<br /><br />De keuze voor welke autoriteit wordt toegevoegd, is de keuze van de catalograaf. De volgorde van de publicatie hoeft niet te worden gerespecteerd, de keuze wordt bepaald door : Belg, bekend, geacht andere boeken te schrijven, enz.<br /><br />Andere auteurs/creators (niet via autoriteit toegevoegd) kunnen vermeld worden in 720 (dit is optioneel, dus niet verplicht)<br /><br /></td>
-								<td>Le premier nom peut figurer dans 100/110, mais la présence d'un 100/110 n'est plus obligatoire.<br /><br />Les (autres) auteurs/créateurs sont placés dans 700/710, avec un maximum de 5 autorités dans 700/710 (pas 5 autorités par code de fonction).<br /><br />Le choix de l'autorité à ajouter incombe au catalographe. L'ordre de citation dans la publication ne doit pas être respecté, le choix est déterminé par : Belge, connu, censé écrire d'autres livres, etc.<br /><br />D'autres auteurs/créateurs (non ajoutés via une autorité) peuvent être mentionnés en 720 (facultatif).</td>
+								<td class="lang-fr">Le premier nom peut figurer dans 100/110, mais la présence d'un 100/110 n'est plus obligatoire.<br /><br />Les (autres) auteurs/créateurs sont placés dans 700/710, avec un maximum de 5 autorités dans 700/710 (pas 5 autorités par code de fonction).<br /><br />Le choix de l'autorité à ajouter incombe au catalographe. L'ordre de citation dans la publication ne doit pas être respecté, le choix est déterminé par : Belge, connu, censé écrire d'autres livres, etc.<br /><br />D'autres auteurs/créateurs (non ajoutés via une autorité) peuvent être mentionnés en 720 (facultatif).</td>
+								<td class="lang-nl">De eerste naam mag in 100/110, maar de aanwezigheid van een 100/110 is niet langer verplicht<br /><br />De (andere) auteurs/creators worden in 700/710 gezet, met een maximum van 5 autoriteiten in 700/710 (dus niet 5 per functiecode).<br /><br />De keuze voor welke autoriteit wordt toegevoegd, is de keuze van de catalograaf. De volgorde van de publicatie hoeft niet te worden gerespecteerd, de keuze wordt bepaald door : Belg, bekend, geacht andere boeken te schrijven, enz.<br /><br />Andere auteurs/creators (niet via autoriteit toegevoegd) kunnen vermeld worden in 720 (dit is optioneel, dus niet verplicht)<br /><br /></td>
 							</tr>
 							<tr>
-								<th>Documenten type overheidspublicaties, bedrijfspublicatie, toeristisch gids, kaarten :<br />Kortom: documenten waar de publicerende organisatie belangrijks is dan de individuele auteurs</th>
-								<th>Documents de type publications gouvernementales, publications d'entreprise, guides touristiques, cartes :<br />En bref : documents pour lesquels l'organisation qui publie est plus importante que les auteurs individuels.</th>
+								<th class="lang-fr">Documents de type publications gouvernementales, publications d'entreprise, guides touristiques, cartes :<br />En bref : documents pour lesquels l'organisation qui publie est plus importante que les auteurs individuels.</th>
+								<th class="lang-nl">Documenten type overheidspublicaties, bedrijfspublicatie, toeristisch gids, kaarten :<br />Kortom: documenten waar de publicerende organisatie belangrijks is dan de individuele auteurs</th>
 							</tr>
 							<tr>
-								<td>De uitvoerende overheidsinstantie/organisatie wordt in veld 110 gezet<br /><br />Andere autoriteiten zijn optioneel: Reden: de organisatie is voor deze publicatie het belangrijkste (voor zoekopdrachten en weergave).<br /><br />Indien er andere auteurs/creators worden toegevoegd, worden die in 700/710 gezet , maar opnieuw met een maximum van 5 autoriteiten in 700/710 (dus niet 5 per functiecode). De keuze voor welke autoriteit wordt toegevoegd, is de keuze van de catalograaf. De volgorde van de publicatie hoeft niet te worden gerespecteerd, de keuze wordt bepaald door : Belg, bekend, geacht andere boeken te schrijven, enz.<br /><br />Andere auteurs/creators (niet via autoriteit toegevoegd) kunnen vermeld worden in 720 (dit is eveneens optioneel, dus niet verplicht)</td>
-								<td>L'organisation chargée de la mise en œuvre est indiquée dans le champ 110.<br /><br />Les autres autorités sont facultatives. Raison : l'organisation est la plus importante pour cette publication (à des fins de recherche et d'affichage).<br /><br />Si d'autres auteurs/créateurs sont ajoutés, ils seront placés dans 700/710, mais toujours avec un maximum de 5 autorités dans 700/710 (donc pas 5 autorités par code de fonction). Le choix de l'autorité à ajouter incombe au catalographe. L’ordre de citation dans la publication ne doit pas être respecté, le choix est déterminé par : Belge, connu, censé écrire d'autres livres, etc.<br /><br />D'autres auteurs/créateurs (pas ajoutés via l'autorité) peuvent être mentionnés en 720 (facultatif).</td>
+								<td class="lang-fr">L'organisation chargée de la mise en œuvre est indiquée dans le champ 110.<br /><br />Les autres autorités sont facultatives. Raison : l'organisation est la plus importante pour cette publication (à des fins de recherche et d'affichage).<br /><br />Si d'autres auteurs/créateurs sont ajoutés, ils seront placés dans 700/710, mais toujours avec un maximum de 5 autorités dans 700/710 (donc pas 5 autorités par code de fonction). Le choix de l'autorité à ajouter incombe au catalographe. L’ordre de citation dans la publication ne doit pas être respecté, le choix est déterminé par : Belge, connu, censé écrire d'autres livres, etc.<br /><br />D'autres auteurs/créateurs (pas ajoutés via l'autorité) peuvent être mentionnés en 720 (facultatif).</td>
+								<td class="lang-nl">De uitvoerende overheidsinstantie/organisatie wordt in veld 110 gezet<br /><br />Andere autoriteiten zijn optioneel: Reden: de organisatie is voor deze publicatie het belangrijkste (voor zoekopdrachten en weergave).<br /><br />Indien er andere auteurs/creators worden toegevoegd, worden die in 700/710 gezet , maar opnieuw met een maximum van 5 autoriteiten in 700/710 (dus niet 5 per functiecode). De keuze voor welke autoriteit wordt toegevoegd, is de keuze van de catalograaf. De volgorde van de publicatie hoeft niet te worden gerespecteerd, de keuze wordt bepaald door : Belg, bekend, geacht andere boeken te schrijven, enz.<br /><br />Andere auteurs/creators (niet via autoriteit toegevoegd) kunnen vermeld worden in 720 (dit is eveneens optioneel, dus niet verplicht)</td>
 							</tr>
 						</tbody>
 					</table>
-				</div>
-
+					</td>
+				</tr>
+<tr>
+<td class="lang-fr">
 				<div class="panel-heading">
-					<h6 class="panel-title" onclick="var element = document.getElementById('APEPORAORG'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr"><i class="fas fa-address-card" aria-hidden="true"></i> Éditeur et imprimeur: Personne ou Collectivité?</div>
-						<div class="lang-nl"><i class="fas fa-address-card" aria-hidden="true"></i> Uitgever en Drukker: Persoon of Collectiviteit?</div>
+					<h6 class="panel-title" onclick="var element = document.getElementById('APEPORAORG'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">
+						<i class="fas fa-address-card" aria-hidden="true"></i> Éditeur et imprimeur: Personne ou Collectivité?
+
 					</h6>
 				</div>
-				<div id="APEPORAORG" style="display: none;">
-					<table class="bigtable" id="TableAPEPORAORG">
+</td>
+<td class="lang-nl">
+				<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('APEPORAORG'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">
+						<i class="fas fa-address-card" aria-hidden="true"></i> Uitgever en Drukker: Persoon of Collectiviteit?
+					</h6>
+				</div>
+</td>
+</tr>
+<tr id="APEPORAORG" style="display: none;">
+				<td colspan="2">
+					<table>
 						<tbody>
 							<tr>
-								<th>Imprimeur en tant que Personne (APEP)</th>
-								<th>Drukker als autoriteit Persoon (APEP)</th>
+								<th class="lang-fr">Imprimeur en tant que Personne (APEP)</th>
+								<th class="lang-nl">Drukker als autoriteit Persoon (APEP)</th>
 							</tr>
 							<tr>
-								<td>L'imprimeur se voit attribuer une autorité « personne » s'il est clairement identifié comme une personne physique par son nom et son prénom. L'activité de l'imprimeur est clairement marquée du sceau de l'individu. Après le décès, la veuve a parfois repris les activités ; elle se voit également attribuer une autorité « personne ».</td>
-								<td>Een printer krijgt een persoonsautoriteit als de drukker duidelijk is aangegeven als individueel persoon met naam en voornaam. Het is het individu die duidelijk zijn stempel draagt op de drukkersactiviteit. Na overlijden nam de weduwe de activiteiten soms over, ook zij krijgt een persoonsautoriteit.</td>
+								<td class="lang-fr">L'imprimeur se voit attribuer une autorité « personne » s'il est clairement identifié comme une personne physique par son nom et son prénom. L'activité de l'imprimeur est clairement marquée du sceau de l'individu. Après le décès, la veuve a parfois repris les activités ; elle se voit également attribuer une autorité « personne ».</td>
+								<td class="lang-nl">Een printer krijgt een persoonsautoriteit als de drukker duidelijk is aangegeven als individueel persoon met naam en voornaam. Het is het individu die duidelijk zijn stempel draagt op de drukkersactiviteit. Na overlijden nam de weduwe de activiteiten soms over, ook zij krijgt een persoonsautoriteit.</td>
 							</tr>
 							<tr>
-								<td><br /><u>Exemples</u><br /><br />Imprimé par Hieronymus Vandebroucke<br />Imprimerie Hieronymus Vandebroucke<br />Imprimé par H. Vandebroucke<br />Veuve de Hieronymus Vandebroucke</td>
-								<td><br /><u>Voorbeelden</u><br /><br />Gedrukt door Hieronymus Vandebroucke<br />Drukkerij Hieronymus Vandebroucke<br />Gedrukt door H. Vandebroucke<br />Weduwe van Hieronymus Vandebroucke</td>
+								<td class="lang-fr"><br /><u>Exemples</u><br /><br />Imprimé par Hieronymus Vandebroucke<br />Imprimerie Hieronymus Vandebroucke<br />Imprimé par H. Vandebroucke<br />Veuve de Hieronymus Vandebroucke</td>
+								<td class="lang-nl"><br /><u>Voorbeelden</u><br /><br />Gedrukt door Hieronymus Vandebroucke<br />Drukkerij Hieronymus Vandebroucke<br />Gedrukt door H. Vandebroucke<br />Weduwe van Hieronymus Vandebroucke</td>
 							</tr>
 							<tr>
-								<th>Imprimeur en tant que Collectivité (AORG)</th>
-								<th>Drukker als Collectiviteit (AORG)</th>
+								<th class="lang-fr">Imprimeur en tant que Collectivité (AORG)</th>
+								<th class="lang-nl">Drukker als Collectiviteit (AORG)</th>
 							</tr>
 							<tr>
-								<td>Un imprimeur se voit attribuer une autorité « Collectivité » s'il agit sous un nom de famille, un nom de société ou une autre identité collective.</td>
-								<td>Een printer krijgt een autoriteit collectiviteit als de drukker handelt onder familienaam, bedrijfsnaam of een andere collectieve identiteit.</td>
+								<td class="lang-fr">Un imprimeur se voit attribuer une autorité « Collectivité » s'il agit sous un nom de famille, un nom de société ou une autre identité collective.</td>
+								<td class="lang-nl">Een printer krijgt een autoriteit collectiviteit als de drukker handelt onder familienaam, bedrijfsnaam of een andere collectieve identiteit.</td>
 							</tr>
 							<tr>
-								<td><br /><u>Exemples</u><br /><br />Imprimeur Vandebroucke<br />Vandebroucke &amp; fils<br />Vandebroucke &amp; Co<br />Vandebroucke &amp; Cie (Compagnie)</td>
-								<td><br /><u>Voorbeelden</u><br /><br />Drukkerij Vandebroucke<br />Vandebroucke &amp; zonen<br />Vandebroucke &amp; Co<br />Vandebroucke &amp; Cie (Compagnie)</td>
+								<td class="lang-fr"><br /><u>Exemples</u><br /><br />Imprimeur Vandebroucke<br />Vandebroucke &amp; fils<br />Vandebroucke &amp; Co<br />Vandebroucke &amp; Cie (Compagnie)</td>
+								<td class="lang-nl"><br /><u>Voorbeelden</u><br /><br />Drukkerij Vandebroucke<br />Vandebroucke &amp; zonen<br />Vandebroucke &amp; Co<br />Vandebroucke &amp; Cie (Compagnie)</td>
 							</tr>
 							<tr>
-								<th>Règles</th>
-								<th>Regels</th>
+								<th class="lang-fr">Règles</th>
+								<th class="lang-nl">Regels</th>
 							</tr>
 							<tr>
-								<td><u>Liens</u><br />Lorsqu'un imprimeur « personne » change d'organisation et qu'il décède et que ses fils reprennent le flambeau, l'entreprise devient une entreprise familiale : le père se voit attribuer une autorité « personne », mais le successeur légal se voit attribuer une autorité « collectivité ». Entre les deux autorités, un lien est établi via les champs 500 et 510, avec le type de relation dans le sous-champ i.<br /><br /><u>En cas de doute :</u><br />• Examinez la période : les imprimeurs du début de l'époque prémoderne (16e-18e siècle) reçoivent principalement une autorité ‘personne’.<br />• Trouvez de la documentation sur l'imprimerie (son organisation, sa gérance, etc.)<br />• Documentez les raisons pour lesquelles le choix s’est porté sur « personne » ou « organisation ».</td>
-								<td><u>Linken</u><br />Als een persoonlijke drukker verandert van organisatie en bij overlijden nemen zijn zonen het over en maken er een familiebusiness van: De vader krijgt een autoriteit ‘persoon’, maar de rechtsopvolger een autoriteit ‘collectiviteit’. Tussen beide autoriteiten wordt een link gelegd via Velden 500 en 510, met de type relatie in subveld i.<br /><br /><u>Twijfelgevallen:</u><br />• Kijk naar de periode: vroegmoderne drukkers (16-18de eeuw) krijgen voornamelijk een persoonsautoriteit<br />• Zoek documentatie over de drukkerij (de organisatie, bestuur, enz)<br />• Documenteer waarom er gekozen is voor ‘persoon’ of ‘organisatie’</td>
+								<td class="lang-fr"><u>Liens</u><br />Lorsqu'un imprimeur « personne » change d'organisation et qu'il décède et que ses fils reprennent le flambeau, l'entreprise devient une entreprise familiale : le père se voit attribuer une autorité « personne », mais le successeur légal se voit attribuer une autorité « collectivité ». Entre les deux autorités, un lien est établi via les champs 500 et 510, avec le type de relation dans le sous-champ i.<br /><br /><u>En cas de doute :</u><br />• Examinez la période : les imprimeurs du début de l'époque prémoderne (16e-18e siècle) reçoivent principalement une autorité ‘personne’.<br />• Trouvez de la documentation sur l'imprimerie (son organisation, sa gérance, etc.)<br />• Documentez les raisons pour lesquelles le choix s’est porté sur « personne » ou « organisation ».</td>
+								<td class="lang-nl"><u>Linken</u><br />Als een persoonlijke drukker verandert van organisatie en bij overlijden nemen zijn zonen het over en maken er een familiebusiness van: De vader krijgt een autoriteit ‘persoon’, maar de rechtsopvolger een autoriteit ‘collectiviteit’. Tussen beide autoriteiten wordt een link gelegd via Velden 500 en 510, met de type relatie in subveld i.<br /><br /><u>Twijfelgevallen:</u><br />• Kijk naar de periode: vroegmoderne drukkers (16-18de eeuw) krijgen voornamelijk een persoonsautoriteit<br />• Zoek documentatie over de drukkerij (de organisatie, bestuur, enz)<br />• Documenteer waarom er gekozen is voor ‘persoon’ of ‘organisatie’</td>
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</td>
+</tr>
+<tr>
+<td class="lang-fr" style="height: 55px;">
+				<h2><span style="color: #00748f; font-style: italic;" class="forecolor">Documents</span></h2>
+</td>
+<td class="lang-nl" style="height: 55px;">
+				<h2><span style="color: #00748f; font-style: italic;" class="forecolor">Documenten</span></h2>
+</td>
+</tr>					
 
-				<h2 class="lang-fr"><span style="color: #00748f; font-style: italic;" class="forecolor">Documents</span></h2>
-				<h2 class="lang-nl"><span style="color: #00748f; font-style: italic;" class="forecolor">Documenten</span></h2>
-
-				<div class="panel-heading">
-					<h6 class="panel-title" onclick="var element = document.getElementById('SELECTBIBLIOGRAPHICRULES'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr"><i class="fas fa-info" aria-hidden="true"></i> Comment créer une notice bibliographique ?</div>
-						<div class="lang-nl"><i class="fas fa-info" aria-hidden="true"></i> Hoe maak ik een bibliografische beschrijving?</div>
+<tr>
+<td class="lang-fr">
+			<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('SELECTBIBLIOGRAPHICRULESFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+						<i class="fas fa-info" aria-hidden="true"></i> Comment créer une notice bibliographique ?
 					</h6>
-				</div>
-				<div id="SELECTBIBLIOGRAPHICRULES" style="display: none; margin-left: 60px;margin-bottom:50px;">
-					<div class="lang-fr"><select id="alltypesofdocumentsfr" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofdocumentsfr');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerules');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+			</div>
+			<div id="SELECTBIBLIOGRAPHICRULESFR" style="display: none; margin-left: 60px;margin-bottom:50px;">
+				<select id="alltypesofdocumentsfr" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofdocumentsfr');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerules');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
 						<option value="" selected="selected">Choisissez type de document</option>
 						<option value="LIVR-fr-alltypes">Livre</option>
 						<option value="THES-fr-alltypes">Thèse ou mémoire</option>
@@ -1947,8 +2014,17 @@
 						<option value="IMAG-alltypes">Document iconographique</option>
 						<option value="PREC-alltypes">Imprimé ancien et précieux</option>
 						<option value="MONN-alltypes">Document numismatique</option>
-						</select></div>
-					<div class="lang-nl"><select id="alltypesofdocumentsnl" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofdocumentsnl');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerules');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+				</select>
+			</div>			
+</td>
+<td class="lang-nl">
+			<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('SELECTBIBLIOGRAPHICRULESNL'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
+						<i class="fas fa-info" aria-hidden="true"></i> Hoe maak ik een bibliografische beschrijving?
+						</h6>
+			</div>
+			<div id="SELECTBIBLIOGRAPHICRULESNL" style="display: none; margin-left: 60px;margin-bottom:50px;">
+				<select id="alltypesofdocumentsnl" class="form-select" style="width: 90%;" onclick="var select = document.getElementById('alltypesofdocumentsnl');var option = select.options[select.selectedIndex].value;var showdivtablerules = document.getElementById('tablerules');showdivtablerules.style.display = 'block';var element = document.getElementById(option);element.style.display = element.style.display === 'none' ? 'block' : 'none';">
 						<option value="" selected="selected">Selecteer type document</option>
 						<option value="LIVR-nl-alltypes">Boek</option>
 						<option value="THES-nl-alltypes">Thesis</option>
@@ -1962,8 +2038,12 @@
 						<option value="IMAG-alltypes">Iconografisch document</option>
 						<option value="PREC-alltypes">Oude en kostbare druk</option>
 						<option value="MONN-alltypes">Numismatisch object</option>
-						</select></div>
-				</div>
+				</select>
+				</div>			
+</td>
+</tr>
+<tr>
+<td colspan="2">
 				<div id="tablerules" style="display: none;">
 					<table>
 						<tbody>
@@ -1972,7 +2052,7 @@
 							</tr>
 							<tr>
 								<td class="tablefiche">
-									<div class="lang-nl" id="LIVR-nl-alltypes" style="display: none;">
+									<div id="LIVR-nl-alltypes" style="display: none !Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB949z'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">949$z - Status Wettelijk Depot</a></p>
@@ -2027,7 +2107,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB880a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">880 - Alternatief schrift</a></p>
 										</div>
 									</div>
-									<div  class="lang-fr" id="LIVR-fr-alltypes" style="display: none;">
+									<div id="LIVR-fr-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB949z'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">949$z - Statut KBR</a></p>
@@ -2083,7 +2163,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB880a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">880 - Graphie alternative</a></p>
 										</div>
 									</div>
-									<div  class="lang-nl" id="THES-nl-alltypes" style="display: none;">
+									<div id="THES-nl-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB949z'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">949$z - Status Wettelijk Depot</a></p>
@@ -2139,7 +2219,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB880a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">880 - Alternatief schrift</a></p>
 										</div>
 									</div>
-									<div  class="lang-fr" id="THES-fr-alltypes" style="display: none;">
+									<div id="THES-fr-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB949z'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">949$z - Statut KBR</a></p>
@@ -2195,7 +2275,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB880a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">880 - Graphie alternative</a></p>
 										</div>
 									</div>
-									<div class="lang-nl" id="PERI-NL-alltypes" style="display: none;">
+									<div id="PERI-NL-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Gegevenselementen van vaste lengte</a></p>
@@ -2238,7 +2318,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB866a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">866$a - Tekstuele bezitsvermelding-Basis bibliografische eenheid</a></p>
 										</div>
 									</div>
-									<div class="lang-fr" id="PERI-FR-alltypes" style="display: none;">
+									<div id="PERI-FR-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
@@ -2281,7 +2361,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB866a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">866$a - Fonds textuels-Unité bibliographique de base - Tekstuele bezitsvermelding-Basis bibliografische eenheid</a></p>
 										</div>
 									</div>
-									<div id="EPER-alltypes" style="display: none;">
+									<div id="EPER-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
@@ -2320,7 +2400,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB856i'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">856$i - Instruction - Instructie</a></p>
 										</div>
 									</div>
-									<div id="ELIV-alltypes" style="display: none;">
+									<div id="ELIV-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
@@ -2355,7 +2435,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB856i'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">856$i - Instruction - Instructie</a></p>
 										</div>
 									</div>
-									<div id="BDDL-alltypes" style="display: none;">
+									<div id="BDDL-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB336a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">336$a - Type de contenu - Type inhoud </a></p>
@@ -2378,7 +2458,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB856i'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">856$i - Instruction - Instructie</a></p>
 										</div>
 									</div>
-									<div id="PREC-alltypes" style="display: none;">
+									<div id="PREC-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
@@ -2463,7 +2543,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB583a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">583$a - Mesures prises (note) - Maatregelen (annotatie)</a></p>
 										</div>
 									</div>
-									<div id="PART-alltypes" style="display: none;">
+									<div id="PART-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
@@ -2509,13 +2589,13 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB511a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">511$a - Participants ou les interprètes (note) - Uitvoerders/cast (annotatie)</a></p>
 										</div>
 									</div>
-									<div id="CART-alltypes" style="display: none;">
+									<div id="CART-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
 										</div>
 									</div>
-									<div id="IMAG-alltypes" style="display: none;">
+									<div id="IMAG-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
@@ -2547,7 +2627,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB655a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">655$a - Terme d'indexation - Indexterm</a></p>
 										</div>
 									</div>
-									<div id="MANU-alltypes" style="display: none;">
+									<div id="MANU-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB008'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">008 - Éléments de données de longueur fixe–Renseignements généraux - Gegevenselementen van vaste lengte</a></p>
@@ -2616,7 +2696,7 @@
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB856u'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">856$u - Identificateur de ressource uniforme - Uniform resource identifier</a></p>
 										</div>
 									</div>
-									<div id="MONN-alltypes" style="display: none;">
+									<div id="MONN-alltypes" style="display: none!Important;">
 										<div class="panel-body">
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIBleader007'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">leader + 007</a></p>
 											<p onclick="document.querySelectorAll('[id^=AUTHORI], [id^=BIB]').forEach(el =&gt; el.style.display = 'none');var element = document.getElementById('BIB245a'); element.style.display = element.style.display === 'none' ? 'block' : 'none';"><a class="collapsed">245$a - Titre - Titel</a></p>
@@ -2652,28 +2732,56 @@
 						</tbody>
 					</table>
 				</div>
+				
+</td>
+</tr>
 
-
+<tr>
+<td class="lang-fr">
 				<div class="panel-heading">
-					<h6 class="panel-title" onclick="var element = document.getElementById('RULESLINKS'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr"><i class="fas fa-link" aria-hidden="true"></i> Ajouter des liens entre des notices</div>
-						<div class="lang-nl"><i class="fas fa-link" aria-hidden="true"></i> Link tussen beschrijvingen toevoegen</div>
+					<h6 class="panel-title" onclick="var element = document.getElementById('RULESLINKS'); element.style.display = element.style.display === 'none' ? 'table-cell' : 'none';">
+						<i class="fas fa-link" aria-hidden="true"></i> Ajouter des liens entre des notices
 					</h6>
 				</div>
-				<div id="RULESLINKS" style="display:none;margin-left: 60px;margin-bottom:50px;">
-					<div id="catalogue-container-LINK"></div>
-				</div>
-
-
+</td>
+<td class="lang-nl">
 				<div class="panel-heading">
-					<h6 class="panel-title" onclick="var element = document.getElementById('LISTTYPFR'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-						<div class="lang-fr"><i class="fas fa-newspaper" aria-hidden="true"></i> Périodique - Fascicule - Article</div>
-						<div class="lang-nl"><i class="fas fa-newspaper" aria-hidden="true"></i> Tijdschrift - Tijdschriftnummer - Artikel</div>
+					<h6 class="panel-title" onclick="var element = document.getElementById('RULESLINKS'); element.style.display = element.style.display === 'none' ? 'table-cell' : 'none';">
+						<i class="fas fa-link" aria-hidden="true"></i> Link tussen beschrijvingen toevoegen
 					</h6>
 				</div>
-				<div id="LISTTYPFR" style="display: none;"><a onclick="var element = document.getElementById('lien1'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-					<div class="lang-fr">Aperçu des types de notice des documents périodiques
-							<table class="bigtable">
+</td>
+</tr>
+<tr>
+<td colspan="2" id="RULESLINKS" style="display:none;margin-left: 60px;margin-bottom:50px;">
+				<div id="catalogue-container-LINK"></div>
+		
+</td>
+</tr>
+<tr>
+<td class="lang-fr">
+			<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('LISTTYPES'); element.style.display = element.style.display === 'none' ? 'table-cell' : 'none';">
+						<i class="fas fa-newspaper" aria-hidden="true"></i> Périodique - Fascicule - Article
+					</h6>
+			</div>
+</td>
+<td class="lang-nl">
+			<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('LISTTYPES'); element.style.display = element.style.display === 'none' ? 'table-cell' : 'none';">
+						<i class="fas fa-newspaper" aria-hidden="true"></i> Tijdschrift - Tijdschriftnummer - Artikel
+						</h6>
+			</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+	<div id="LISTTYPES" style="display: none; margin-left: 60px;margin-bottom:50px;">
+		<table>
+		<tbody>
+		<tr>
+		<td id="LISTTYPFR" class="lang-fr" style="display:none!Important;">Aperçu des types de notice des documents périodiques
+							<table >
 								<tbody>
 									<tr>
 										<th style="width: 16%;">Périodique</th>
@@ -2707,9 +2815,9 @@
 									</tr>
 								</tbody>
 							</table>
-					</div>
-					<div class="lang-nl">Overzicht van types beschrijvingen van periodieke documenten
-							<table class="bigtable">
+					</td>
+					<td id="LISTTYPNL" class="lang-nl" style="display:none;">Overzicht van types beschrijvingen van periodieke documenten
+							<table>
 								<tbody>
 									<tr>
 										<th style="width: 16%;">Tijdschrift</th>
@@ -2743,29 +2851,48 @@
 									</tr>
 								</tbody>
 							</table>
-					</div>
-					</a>
-					
-					</div>
+					</td>
+		</tr>
+	</tbody></table>
+	</div>
+</tr>
+</tbody>
+</table>
 
 
-</div>
+
 <script>
-  let currentLanguage = 'FR';
+  let currentLanguage = 'ALL';
 
   function setLanguage(lang) {
     currentLanguage = lang;
     const allNL = document.querySelectorAll('.lang-nl');
     const allFR = document.querySelectorAll('.lang-fr');
 
-    allNL.forEach(el => {
-      el.style.display = (lang === 'NL') ? 'block' : 'none';
-    });
-
-    allFR.forEach(el => {
-      el.style.display = (lang === 'FR') ? 'block' : 'none';
-    });
+    if (lang === 'ALL') {
+      allNL.forEach(el => {
+        el.style.display = 'table-cell';
+      });
+      allFR.forEach(el => {
+        el.style.display = 'table-cell';
+      });
+    } else if (lang === 'NL') {
+      allNL.forEach(el => {
+        el.style.display = 'table-cell';
+      });
+      allFR.forEach(el => {
+        el.style.display = 'none';
+      });
+    } else if (lang === 'FR') {
+      allFR.forEach(el => {
+        el.style.display = 'table-cell';
+      });
+      allNL.forEach(el => {
+        el.style.display = 'none';
+      });
+    }
   }
+
   window.addEventListener('DOMContentLoaded', () => {
     setLanguage(currentLanguage);
   });
@@ -2798,37 +2925,21 @@ function renderRulesTable(rulesArray) {
 		  div.style.display = 'none';
 		  div.innerHTML = `
 			<table>
-			  <tbody class="lang-nl">
+			  <tbody>
 				<tr>
-				  <td >
+				  <td colspan="2">
 					<button type="button" onclick="document.getElementById('${field.ID}').style.display = 'none';">
 					  <i class="fa fa-window-close"></i>
 					</button>
 				  </td>
 				</tr>
-				<tr><th>${field.TitleNL}</th></tr>
-				<tr><td>MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
-				<tr><td>RDA element : ${field.RDA_ELEMENT}</td></tr>
-				<tr><td>RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
-				${field.IND2_NL ? `<tr><td>Tweede indicator:<br><br>${field.IND2_NL}</td></tr>` : ''}
-				${field.RulesNL ? `<tr><td>${field.RulesNL}</td></tr>` : ''}
-				${field.RulesTableNL ? `<tr><td>${renderRulesTable(field.RulesTableNL)}</td></tr>` : ''}
-			  </tbody>
-			  <tbody class="lang-fr">
-				<tr>
-				  <td>
-					<button type="button" onclick="document.getElementById('${field.ID}').style.display = 'none';">
-					  <i class="fa fa-window-close"></i>
-					</button>
-				  </td>
-				</tr>
-				<tr><th>${field.TitleFR}</th></tr>
-				<tr><td>MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
-				<tr><td>RDA element : ${field.RDA_ELEMENT}</td></tr>
-				<tr><td>RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
-				${field.IND2_FR ? `<tr><td>Deuxième indicateur:<br><br>${field.IND2_FR}</td></tr>` : ''}
-				${field.RulesFR ? `<tr><td>${field.RulesFR}</td></tr>` : ''}
-				${field.RulesTableFR ? `<tr><td>${renderRulesTable(field.RulesTableFR)}</td></tr>` : ''}
+				<tr>${field.TitleFR ? `<th class="lang-fr">${field.TitleFR}</th>` : ''}${field.TitleNL ? `<th class="lang-nl">${field.TitleNL}</th>` : ''}</tr>
+				<tr><td colspan="2">MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
+				<tr><td colspan="2">RDA element : ${field.RDA_ELEMENT}</td></tr>
+				<tr><td colspan="2">RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
+				<tr>${field.IND2_FR ? `<td class="lang-fr">Deuxième indicateur:<br><br>${field.IND2_FR}</td>` : ''}${field.IND2_NL ? `<td class="lang-nl">Tweede indicator:<br><br>${field.IND2_NL}</td>` : ''}</tr>
+				<tr>${field.RulesFR ? `<td class="lang-fr">${field.RulesFR}</td>` : ''}${field.RulesNL ? `<td class="lang-nl">${field.RulesNL}</td>` : ''}</tr>
+				<tr>${field.RulesTableFR ? `<td class="lang-fr">${renderRulesTable(field.RulesTableFR)}</td>` : ''}${field.RulesTableNL ? `<td class="lang-nl">${renderRulesTable(field.RulesTableNL)}</td>` : ''}</tr>
 			  </tbody>
 			</table>`;
 		  containerAUT.appendChild(div);
@@ -2840,7 +2951,7 @@ function renderRulesTable(rulesArray) {
 		  div.style.display = 'none';
 		  div.innerHTML = `
 			<table>
-			  <tbody class="lang-nl" style="width:100%;">
+			  <tbody style="width:100%;">
 				<tr>
 				  <td>
 					<button type="button" onclick="document.getElementById('${field.ID}').style.display = 'none';">
@@ -2848,70 +2959,45 @@ function renderRulesTable(rulesArray) {
 					</button>
 				  </td>
 				</tr>
-				<tr><th>${field.TitleNL}</th></tr>
-				<tr><td>MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
-				<tr><td>RDA element : ${field.RDA_ELEMENT}</td></tr>
-				<tr><td>RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
-				${field.IND2_NL ? `<tr><td>Tweede indicator:<br><br>${field.IND2_NL}</td></tr>` : ''}
-				${field.RulesNL ? `<tr><td>${field.RulesNL}</td></tr>` : ''}
-				${field.MANU_NL ? `<tr><td>MANU: ${field.MANU_NL}</td></tr>` : ''}
-				${field.IMAG_NL ? `<tr><td>IMAG: ${field.IMAG_NL}</td></tr>` : ''}
-			  </tbody>
-			  <tbody class="lang-fr" style="width:100%;">
-				<tr>
-				  <td>
-					<button type="button" onclick="document.getElementById('${field.ID}').style.display = 'none';">
-					  <i class="fa fa-window-close"></i>
-					</button>
-				  </td>
-				</tr>
-				<tr><th>${field.TitleFR}</th></tr>
-				<tr><td>MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
-				<tr><td>RDA element : ${field.RDA_ELEMENT}</td></tr>
-				<tr><td>RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
-				${field.IND2_FR ? `<tr><td>Deuxième indicateur:<br><br>${field.IND2_FR}</td></tr>` : ''}
-				${field.RulesFR ? `<tr><td>${field.RulesFR}</td></tr>` : ''}
-				${field.MANU_FR ? `<tr><td>MANU: ${field.MANU_FR}</td></tr>` : ''}
-				${field.IMAG_FR ? `<tr><td>IMAG: ${field.IMAG_FR}</td></tr>` : ''}
+				<tr>${field.TitleFR ? `<th class="lang-fr">${field.TitleFR}</th>` : ''}${field.TitleNL ? `<th class="lang-nl">${field.TitleNL}</th>` : ''}</tr>
+				<tr><td colspan="2">MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
+				<tr><td colspan="2">RDA element : ${field.RDA_ELEMENT}</td></tr>
+				<tr><td colspan="2">RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
+				<tr>${field.IND2_FR ? `<td class="lang-fr">Deuxième indicateur:<br><br>${field.IND2_FR}</td>` : ''}${field.IND2_NL ? `<td class="lang-nl">Tweede indicator:<br><br>${field.IND2_NL}</td>` : ''}</tr>
+				<tr>${field.RulesFR ? `<td class="lang-fr">${field.RulesFR}</td>` : ''}${field.RulesNL ? `<td class="lang-nl">${field.RulesNL}</td>` : ''}</tr>
+				<tr>${field.MANU_FR ? `<td class="lang-fr">MANU :<br>${field.MANU_FR}</td>` : ''}${field.MANU_NL ? `<td class="lang-nl">MANU :<br>${field.MANU_NL}</td>` : ''}</tr>
+				<tr>${field.IMAG_FR ? `<td class="lang-fr">IMAG :<br>${field.IMAG_FR}</td>` : ''}${field.IMAG_NL ? `<td class="lang-nl">IMAG :<br>${field.IMAG_NL}</td>` : ''}</tr>
 			  </tbody>
 			</table>`;
 		  containerBIB.appendChild(div);
 		  
 		} else if (field.ID.startsWith('link')) {
-		  const div = document.createElement('div');
-		  div.innerHTML = `
-			<a onclick="var element = document.getElementById('${field.ID}'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">
-					${field.ID.includes('sublink') ? `
-						<div class="lang-fr">--- ${field.TitleFR}</div>
-						<div class="lang-nl">--- ${field.TitleNL}</div>` : 
-						`<div class="lang-fr">${field.TitleFR}</div>
-						<div class="lang-nl">${field.TitleNL}</div>`}
-			</a>
+		  const table = document.createElement('table');
+		  table.innerHTML = `
+			<tbody><tr>	${field.ID.includes('sublink') ? `
+						<td class="lang-fr"><a onclick="var element = document.getElementById('${field.ID}'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">--- ${field.TitleFR}</a></td>
+						<td class="lang-nl"><a onclick="var element = document.getElementById('${field.ID}'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">--- ${field.TitleNL}</a></td>` : 
+						`<td class="lang-fr"><a onclick="var element = document.getElementById('${field.ID}'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">${field.TitleFR}</a></td>
+						<td class="lang-nl"><a onclick="var element = document.getElementById('${field.ID}'); element.style.display = element.style.display === 'none' ? 'block' : 'none';">${field.TitleNL}</a></td>`}
+			</tr>
+			<tr>
+			<td colspan="2">
 			<div id="${field.ID}" class="catalo" style="display: none;">
 				<table>
-					<tbody class="lang-fr">
+					<tbody>
 						<tr>
-							<td><button type="button" onclick="var element = document.getElementById('${field.ID}'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
+							<td colspan="2"><button type="button" onclick="var element = document.getElementById('${field.ID}'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
 						</tr>
-						<tr><th>${field.TitleFR}</th></tr>
-						<tr><td>MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
-						<tr><td>RDA element : ${field.RDA_ELEMENT}</td></tr>
-						<tr><td>RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
-						<tr><td>${field.RulesFR}</td></tr>
-					</tbody>
-					<tbody class="lang-nl">
-						<tr>
-							<td><button type="button" onclick="var element = document.getElementById('${field.ID}'); if (element.style.display == 'block') {element.style.display = 'none';} else {element.style.display = 'none';}"><i class="fas fa-window-close"></i></button></td>
-						</tr>
-						<tr><th>${field.TitleFR}</th></tr>
-						<tr><td>MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
-						<tr><td>RDA element : ${field.RDA_ELEMENT}</td></tr>
-						<tr><td>RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
-						<tr><td>${field.RulesNL}</td></tr>
+						<tr>${field.TitleFR ? `<th class="lang-fr">${field.TitleFR}</th>` : ''}${field.TitleNL ? `<th class="lang-nl">${field.TitleNL}</th>` : ''}</tr>
+						<tr><td colspan="2">MARC21 : <a target="_blank" href="${field.MARC21}" rel="noopener">${field.MARC21}</a></td></tr>
+						<tr><td colspan="2">RDA element : ${field.RDA_ELEMENT}</td></tr>
+						<tr><td colspan="2">RDA Toolkit : ${field.RDA_TOOLKIT}</td></tr>
+						<tr>${field.RulesFR ? `<td class="lang-fr">${field.RulesFR}</td>` : ''}${field.RulesNL ? `<td class="lang-nl">${field.RulesNL}</td>` : ''}</tr>
 					</tbody>
 				</table>
-			</div>`;
-		  containerLINK.appendChild(div);}
+			</div>
+			</td></tr></tbody>`;
+		  containerLINK.appendChild(table);}
 		});
       setLanguage(currentLanguage);
     });
