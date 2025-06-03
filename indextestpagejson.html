@@ -2985,7 +2985,7 @@ function renderRulesTableLeader(rulesArray) {
 				<tr>${field.IMAG_FR ? `<td class="lang-fr">IMAG :<br>${field.IMAG_FR}</td>` : ''}${field.IMAG_NL ? `<td class="lang-nl">IMAG :<br>${field.IMAG_NL}</td>` : ''}</tr>
 				<tr>${field.ELIV_FR ? `<td class="lang-fr">ELIV :<br>${field.ELIV_FR}</td>` : ''}${field.IELIV_NL ? `<td class="lang-nl">ELIV :<br>${field.IMAG_NL}</td>` : ''}</tr>		  
      				<tr>${field.PERE_FR ? `<td class="lang-fr">PERE :<br>${field.IMAG_FR}</td>` : ''}${field.PERE_NL ? `<td class="lang-nl">PERE :<br>${field.IMAG_NL}</td>` : ''}</tr>
-				<tr>${field.RulesTable ? `<td colspan:"2">${renderRulesTableLeader(field.RulesTableFR)}</td>` : ''}</tr>
+				<tr>${field.RulesTable ? `<td colspan:"2">${renderRulesTableLeader(field.RulesTable)}</td>` : ''}</tr>
 			</tbody>
 			</table>`;
 		  containerBIB.appendChild(div);
