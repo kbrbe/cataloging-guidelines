@@ -2953,7 +2953,7 @@ function renderRulesTable(rulesArray) {
 			<table>
 			  <tbody style="width:100%;">
 				<tr>
-				  <td>
+				  <td colspan="2">
 					<button type="button" onclick="document.getElementById('${field.ID}').style.display = 'none';">
 					  <i class="fa fa-window-close"></i>
 					</button>
@@ -2967,7 +2967,9 @@ function renderRulesTable(rulesArray) {
 				<tr>${field.RulesFR ? `<td class="lang-fr">${field.RulesFR}</td>` : ''}${field.RulesNL ? `<td class="lang-nl">${field.RulesNL}</td>` : ''}</tr>
 				<tr>${field.MANU_FR ? `<td class="lang-fr">MANU :<br>${field.MANU_FR}</td>` : ''}${field.MANU_NL ? `<td class="lang-nl">MANU :<br>${field.MANU_NL}</td>` : ''}</tr>
 				<tr>${field.IMAG_FR ? `<td class="lang-fr">IMAG :<br>${field.IMAG_FR}</td>` : ''}${field.IMAG_NL ? `<td class="lang-nl">IMAG :<br>${field.IMAG_NL}</td>` : ''}</tr>
-			  </tbody>
+				<tr>${field.ELIV_FR ? `<td class="lang-fr">ELIV :<br>${field.ELIV_FR}</td>` : ''}${field.IELIV_NL ? `<td class="lang-nl">ELIV :<br>${field.IMAG_NL}</td>` : ''}</tr>		  
+     				<tr>${field.PERE_FR ? `<td class="lang-fr">PERE :<br>${field.IMAG_FR}</td>` : ''}${field.PERE_NL ? `<td class="lang-nl">PERE :<br>${field.IMAG_NL}</td>` : ''}</tr>
+			</tbody>
 			</table>`;
 		  containerBIB.appendChild(div);
 		  
