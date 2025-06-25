@@ -1,4 +1,19 @@
-[
+[   {
+    "ID": "BIBWORK240a",
+    "TitleFR": "9XX$a - Titre de l'oeuvre",
+    "TitleNL": "9XX$a - Titel van werk",
+    "MARC21": "https://www.loc.gov/marc/bibliographic/bd9xx.html",
+    "RDA_ELEMENT": "<a target='_blank' href='https://rdaregistry.info/Elements/w/P10088' rel='noopener'>title of work</a>",
+    "RDA_TOOLKIT": "https://access.rdatoolkit.org/Content/Index?externalId=en-US_ala-f106d8cd-6853-320c-8608-04fd977a0603",
+    "RulesFR": "Mettez ici le nom de l'oeuvre (titre original, connu, préféré)",
+    "RulesNL": "Zet hier de titel van het werk (originele, gekende, geprefereerde titel)",
+    "Entity": "Work",
+    "FirstInstance": "Mandatory",
+    "AdditionalInstances": "If appliccable",
+    "DataType": "String",
+    "VES": "",
+    "RecordingMethod": "Unstructured"
+  },
   {
     "ID": "BIBleader007",
     "TitleFR": "Leader and 007",
