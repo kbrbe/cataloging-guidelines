@@ -9,7 +9,7 @@
     "RulesNL": "Zet hier de titel van het werk (originele titel in geval van vertalingen, gekende, geprefereerde titel)",
     "Entity": "Work",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -256,7 +256,7 @@
     ],
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -270,7 +270,7 @@
     "RulesNL": "Vermelding door de cel QC van de datum van publicatie in de Belgische Bibliografie (formaat YYYYMM).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -284,7 +284,7 @@
     "RulesNL": "Kies de passende status in het pull-down menu. Status 4a is klaar voor publicatie in de Belgische Bibliografie, waarna ze naar status 6 veranderen.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -294,11 +294,12 @@
     "TitleFR": "911$a - Rubrique bibliographie de Belgique",
     "TitleNL": "911$a - Rubriek Belgische bibliografie",
     "MARC21": "[Champ local / lokaal veld]",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "Déroulez l'arborescence des rubriques afin d'affiner votre sélection.",
     "RulesNL": "Ontvouw de boomstructuur van de rubrieken om uw keuze te verfijnen.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -316,7 +317,7 @@
     "PERE NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -326,11 +327,12 @@
     "TitleFR": "017$a - Numéro de dépôt légal",
     "TitleNL": "017$a - Nummer wettelijk depot",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd017.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "Les séquences de chiffres doivent toujours contenir 4 chiffres. Ajoutez des '0' si nécessaire.<br>Exemple: Si dans le document est mis 'D/2018/78/378', changez-le en D/2018/0078/0378<br>Dans le cas d'un auteur/éditeur : D/YYYY/Prénom Nom, éditeur",
     "RulesNL": "De cijferreeksen moeten in Syracuse steeds bestaan uit 4 cijfers. Voeg zo nodig een of meerdere nullen ('0') toe.<br>Bv als er staat 'D/2018/78/378', verander het dan naar D/2018/0078/0378<br>In het geval van een auteur/uitgever: D/YYYY/Voornaam Naam, uitgever",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -340,11 +342,12 @@
     "TitleFR": "017$b - Source d'attribution",
     "TitleNL": "017$b - Toekennend agentschap",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd017.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "Lorsque le champ 017$a est rempli, indiquez obligatoirement 'BE-KBR00'.",
     "RulesNL": "Wanneer het veld 017$a is ingevuld, bent u verplicht 'BE-KBR00' te vermelden.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -354,11 +357,12 @@
     "TitleFR": "017$z - Numéro de dépôt légal annulé/invalide",
     "TitleNL": "017$z - Geannuleerd of ongeldig nummer wettelijk depot",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd017.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "Lorsque le numéro de dépôt légal mentionné est invalidé ou annulé, indiquez-le ici.",
     "RulesNL": "Als het vermelde wettelijk depotnummer ongeldig of geannuleerd is, voer het dan hier in.",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -373,8 +377,8 @@
     "RulesFR": "Indiquez l'ISBN avec tirets.<br>Plusieurs volumes :<br>A priori, faites une notice par ISBN, même s'il s'agit de multivolumes sans titres (significatifs).<br>Coédition à double ISBN :<br>Affichez les deux ISBN dans deux champs 020 et ajoutez une annotation dans 500 pour indiquer quel ISBN appartient à quel pays de publication, par exemple 'ISBN pays 1 : ....'. ISBN pays 2 : ....'",
     "RulesNL": "Vermeld het ISBN met streepjes.<br>Meerdere volumes:<br>A priori, maak een beschrijving per ISBN, ook als het om multivolumes zonder (significante) titels gaat.<br>Dubbele ISBN co-editie:<br>Vermeld beide ISBN's in twee velden 020 en voeg in 500 een annotatie toe om aan te geven welke ISBN van welk land van uitgave is, bv. 'ISBN land 1 : …. ISBN land 2 : ….'",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -389,8 +393,8 @@
     "RulesFR": "Si le prix est indiqué par un symbole (€, $,...), remplacez-le par le code monétaire correspondant, conformément à la norme ISO 4217 (EUR, USD,...).<br>Les unités et les nombres décimaux sont séparés par une virgule.<br>N'indiquez pas les zéros après la virgule ou le point pour les nombres entiers (donc si le prix indiqué est 25,00 EUR, changez-le en 25 EUR ).",
     "RulesNL": "indien de prijs is aangeduid met een symbool (€, $,...), vervang deze door de corresponderende valuta-code, conform de norm ISO 4217 (EUR, USD,...)<br>Eenheden en decimalen worden gescheiden door een komma.<br>Vermeld geen nullen na de komma of punt voor gehele getallen (dus als de aangeduide prijs is 25,00 EUR, verander het naar 25 EUR).",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -406,8 +410,8 @@
     "RulesNL": "Selecteer in het pull-down menu. Voor het type boekband, gebruik 340$l",
     "ELIV_FR": "Informations complémentaires (pdf, epub, webpdf, ebook etc…)",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -433,11 +437,12 @@
     "TitleFR": "022$a - ISSN",
     "TitleNL": "022$a - ISSN",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd022.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "Indiquez l'ISSN.<br>Vous ne pouvez pas avoir deux zones 022 contenant un $a dans une notice.<br>Le tiret, qui fait partie de la structure des numéros ISSN, est introduit manuellement par le catalogueur. Si le numéro ISSN contient un «x» en fin de séquence, il doit toujours être introduit en majuscules «X». Dans les notices de ressources électroniques, l'ISSN est placé en 022 $a et l'ISSN correspondant à la version 'papier' est placé en 776 $x. De même, une notice décrivant un périodique 'papier' peut contenir l'ISSN de la version électronique en 776 $x.",
     "RulesNL": "Vermeld het ISSN.<br>Als de ISSN aan het eind van de reeks een 'x' bevat, moet deze altijd in hoofdletters 'X' worden ingevoerd. In records voor elektronische bronnen wordt het ISSN geplaatst in 022 $a en het ISSN voor de 'papieren' versie in 776 $x. Evenzo kan een record dat een 'papieren' tijdschrift beschrijft, het ISSN van de elektronische versie in 776 $x bevatten.",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -447,11 +452,12 @@
     "TitleFR": "022$l - ISSN-L",
     "TitleNL": "022$l - ISSN-L",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd022.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "Indiquez l'ISSN-L.",
     "RulesNL": "Vermeld het ISSN-L.",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -460,12 +466,13 @@
     "ID": "BIB022m",
     "TitleFR": "022$m - ISSN-L annulé ou invalide",
     "TitleNL": "022$m - Geannuleerd of ongeldig ISSN-L",
+    "RDA_ELEMENT": "Not applicable",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd022.html",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -475,11 +482,12 @@
     "TitleFR": "022$y - ISSN incorrect",
     "TitleNL": "022$m - Foutief ISSN",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd022.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -489,11 +497,12 @@
     "TitleFR": "022$z - ISSN annulé",
     "TitleNL": "022$z - Geannuleerd ISSN",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd022.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -503,11 +512,12 @@
     "TitleFR": "024$a - Autre numéro ou code normalisé",
     "TitleNL": "024$a - Ander standaardnummer of code",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd024.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -517,11 +527,12 @@
     "TitleFR": "024$c - Autre numéro ou code normalisé-Prix",
     "TitleNL": "024$c - Ander standaardnummer of code-Prijs",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd024.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -531,11 +542,12 @@
     "TitleFR": "026$a - Identificateur d'empreintes-Premier et deuxième groupes de caractères",
     "TitleNL": "026$a - Vingerafdruk-Eerste en tweede karaktergroepen",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd026.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -545,11 +557,12 @@
     "TitleFR": "026$b - Identificateur d'empreintes-Troisième et quatrième groupes de caractères",
     "TitleNL": "026$b - Vingerafdruk-Derde en vierde karaktergroepen",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd026.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -559,11 +572,12 @@
     "TitleFR": "026$c - Identificateur d'empreintes-Date",
     "TitleNL": "026$c - Vingerafdruk-Datum",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd026.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -573,11 +587,12 @@
     "TitleFR": "026$d - Identificateur d'empreintes-Nombre de volumes ou de pièces",
     "TitleNL": "026$d - Vingerafdruk-Nummer van volume of deel",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd026.html",
+    "RDA_ELEMENT": "Not applicable",
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -590,8 +605,8 @@
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -604,8 +619,8 @@
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -618,8 +633,8 @@
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "Optional",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -629,11 +644,12 @@
     "TitleFR": "040$a - Organisme responsable du catalogage original",
     "TitleNL": "040$a - Oorspronkelijk catalografisch agentschap",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd040.html",
-    "RulesFR": "'BE-KBR00' (code ISIL de KBR)",
-    "RulesNL": "'BE-KBR00' (ISIL code van KBR)",
+    "RDA_ELEMENT": "Not applicable",
+    "RulesFR": "Mettez 'BE-KBR00' (=code ISIL de KBR)",
+    "RulesNL": "Zet 'BE-KBR00' (=ISIL code van KBR)",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -647,7 +663,7 @@
     "RulesNL": "Vermeld de MARC-code van de catalogeertaal (taal gebruikt in de niet-getranscribeerde elementen van de beschrijving, bv. de velden 3XX, de annotaties ...).<br><br>De regels voor de taal van catalogiseren zijn als volgt: <br>-publicaties in het Nederlands worden gecatalogiseerd in het Nederlands, ongeacht de taal die de catalograaf spreekt (040$b=dut); <br>-publicaties in het Frans worden gecatalogiseerd in het Frans, ongeacht de taal die de catalograaf spreekt (040$b=fre); <br>-Tweetalige Frans-Nederlandse boeken worden gecatalogiseerd in de taal die de catalograaf spreekt (040$b=dut of fre); <br>-publicaties in het Duits worden gecatalogiseerd in de taal die de catalograaf spreekt (040$b=dut of fre of ger); <br>-publicaties in een andere taal worden gecatalogiseerd in de taal die de catalograaf spreekt (040$b=dut of fre); <br>- documenten zonder titel of zonder tekstuele informatie (munten, prenten, manuscripten) worden gecatalogiseerd in het Engels (040$b=eng).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -661,7 +677,7 @@
     "RulesNL": "Code van het organisme die wijzigingen aanbracht aan de beschrijving. De code 'BE-KBR00' (ISIL-code van KBR) zal worden toegevoegd aan alle beschrijvingen die via Electre en Boekenbank werden geïmporteerd.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -675,7 +691,7 @@
     "RulesNL": "'rda'",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -691,7 +707,7 @@
     "RulesNL": "Wanneer de tekst(en) is (zijn) geschreven in meerdere talen: herhaal $a en vermeld alle overeenstemmende codes.<br>Gebruik dus niet de code 'mul'.<br>De code 'mis' wordt gebruikt voor de talen waarvoor er geen code bestaat.<br>In geval van dialecten:<br>- Kies 'wln' voor de Waalse dialecten<br>- Kies 'roa' voor andere Romaanse dialecten, bv. gaumais, lorrain, picard, champenois, bourguignon,...<br>- Kies 'gem' voor Vlaamse dialecten<br>Specifieer het precieze dialect in het veld 546 - taalannotatie.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -705,7 +721,7 @@
     "RulesNL": "Verplicht in geval van vertaling.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -723,7 +739,7 @@
     "MANU_NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -737,7 +753,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -751,7 +767,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -765,7 +781,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -781,7 +797,7 @@
     "MANU_NL": "De meest gekende titel van een document<br>'Alias' van ms. &gt; 730</b>",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -795,7 +811,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -811,7 +827,7 @@
     "PERE NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -825,7 +841,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -839,7 +855,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -861,7 +877,7 @@
     "PERE NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -883,7 +899,7 @@
     "PERE NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -903,7 +919,7 @@
     "IMAG_NL": "Indien bekend namen voluit vermelden.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -919,7 +935,7 @@
     "IMAG_NL": "Vul hier het object-type in met hoofdletter. De object-types zijn: Print, Drawing, Postcard, Poster en Photograph (voorlopig enkel in het Engels).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -935,7 +951,7 @@
     "MANU_NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -953,7 +969,7 @@
     "MANU_NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -971,7 +987,7 @@
     "MANU_NL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -986,7 +1002,7 @@
     "MANU_FR": "Tel que formulé dans le ms.<br>Forgé entre crochets.<br>Contrairement à une pratique répandue jusqu'à présent, ce type de mention ne doit pas être mêlé au titre propre (245$a).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1000,7 +1016,7 @@
     "RulesNL": "Wanneer in veld 245 getranslitereerde gegevens staan (titel, ondertitel of verantwoordelijkheidsvermelding), moeten we:<br>-de gegevens in het niet-Latijnse schrift in het veld 880 toevoegen;<br>-in subveld 245$6 de informatie toevoegen om beide velden te linken.<br>Stel het als volgt samen: veldnummer van het geassocieerde veld gevolgd door een streepje en het volgordenummer (twee cijfers).<br>Bv.: 880-01<br>245 $a Yawmiaat eashiq fi almahjar $c Youssef El Houari $6 880-01<br>880 $aيوميات عاشق في المهجر $c يوسف الهواري. $f6 245-01/(3",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1022,7 +1038,7 @@
     "IMAG_NL": "De variante titels mogen beknopt blijven.<br>Cruciaal is dat het veld geassocieerd wordt met de juiste taal.<br>De Franse titel of beeldbeschrijving kan worden overgenomen uit Createl.<br>De Nederlandse titel of beeldbeschrijving kan eventueel worden overgenomen uit de databank van het Rijksmuseum.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1038,7 +1054,7 @@
     "RulesNL": "Ondertitel.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1053,7 +1069,7 @@
     "MANU_FR": "Exemple : the title might beter be read as :",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1067,7 +1083,7 @@
     "RulesNL": "Nummer van deel/onderdeel.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1081,7 +1097,7 @@
     "RulesNL": "Naam van deel/onderdeel.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1095,7 +1111,7 @@
     "RulesNL": "Gegevens die zones met verschillende alfabetten verbinden.<br>Stel als volgt samen: etiketnummer van de verbonden zone, gevolgd door een liggend streepje en volgnummer (twee cijfers).<br>Bv. 880-01",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1111,7 +1127,7 @@
     "RulesNL": "Transcribeer de vermelding zoals ze voorkomt op het document (niet afkorten en een titel in cijfers niet omzetten door hem voluit te schrijven).<br>Indien editievermelding in meerdere talen, ze scheiden met een = in de zone a<br>Bv. $a Canadian edition = Edition canadienne<br>Indien auteursvermelding verbonden met de editie, deze vermelden in zone b<br>Bv. $a Canadian ed. $b par Fabienne Dupont",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1127,7 +1143,7 @@
     "RulesNL": "Auteursvermelding van deze editie. Bv. Editie herzien en gecorrigeerd door Fabienne Dupont -> door Fabienne Dupont wordt opgenomen in $b.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1141,7 +1157,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1157,7 +1173,7 @@
     "RulesNL": "In $a vullen we de schaal in zoals die voorkomt op het cartografisch document.<br>Voorbeeld 1: 57 mm = 1000 m<br>Voorbeeld 2: 1 / 12 500<br>Voorbeeld 3: 1:50 000<br>Schaal gegeven in vorm 2 cm = 1 km, of een regeltje van 2 cm dat overeenstemt met 1 km (1 km = 100.000 cm): omzetten in breuk met vorm 1:50 000",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1177,7 +1193,7 @@
     "IMAG_NL": "Enkel invullen indien van toepassing.<br>Opgelet, dit is niet conform RDA, indien niet gekend aanduiden als 'place of production not identified' (te zetten in de taal van 040$b).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1197,7 +1213,7 @@
     "IMAG_NL": "Enkel invullen indien van toepassing.<br>Opgelet, dit is niet conform RDA, indien niet gekend aanduiden als 'name of production not identified' (te zetten in de taal van 040$b).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1219,7 +1235,7 @@
     "IMAG_NL": "Enkel invullen indien bekend.<br>Opgelet, dit is niet conform RDA, indien niet gekend aanduiden als 'date of production not identified' (te zetten in de taal van 040$b).<br>Bij ongedateerde anoniemen kan een (halve) eeuw worden vermeld volgens de volgende standaarden: '18th century', 'late 16th-17th century', 'ca. 1500-1550' etc. NIET CONFORM RDA ?",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1241,7 +1257,7 @@
     "IMAG_NL": "Getallen in cijfers. CONFORMITEIT RDA CONTROLEREN",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1260,8 +1276,8 @@
     "IMAG FR": "",
     "IMAG_NL": "Dit veld begint met een kleine letter.",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1285,7 +1301,7 @@
     "PREC_NL": "128mo, 12mo, 16mo, 18mo, 24mo, 32mo, 36mo, 48mo, 4to, 64mo, 72mo, 8vo, 96mo, folio, ...",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1300,8 +1316,8 @@
     "MANU FR": "Pièces adventices (fragment, …)<br>La localisation sous la reliure est notée soit par la mention du feuillet (f. 125v) soit par une mention relative à la reliure : inside front and back covers, …",
     "MANU_NL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1314,8 +1330,8 @@
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1331,7 +1347,7 @@
     "RulesNL": "On utilise le champ 310 pour indiquer la périodicité courante d'une publication (ou la périodicité au moment où la publication a cessé de paraître). Il est obligatoire dans une notice de périodique. On parle de périodicité courante pour indiquer qu'il s'agit de la périodicité actuelle de la publication, par opposition à une périodicité antérieure qu'on indique dans le champ 321.<br>La périodicité courante de la publication donnée dans la zone 310 doit toujours correspondre à la position 18 de la zone 008.<br>Utilisez les termes de RDA:<br>jaarlijks<br>eens per twee jaar<br>eens per twee maanden<br>eens per twee weken<br>dagelijks<br>onregelmatig<br>maandelijks<br>eens per kwartaal<br>twee keer per jaar<br>twee keer per maand<br>twee keer per week<br>drie keer per maand<br>drie keer per week<br>drie keer per jaar<br>eens per drie jaar<br>wekelijks<br>Si aucun de ces termes n'est approprié, il est possible d'enregistrer une note sur le détail de la périodicité.<br>Ex.<br>310 ## $a Mensuel (excepté en juillet et août).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1345,7 +1361,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1360,8 +1376,8 @@
     "RulesFR": "S'il y a un changement de périodicité, indiquez la périodicité antérieure de la publication en 321. Précisez les dates de la périodicité concernée en sous-zone $b. Créez autant de 321 qu'il y a de changements de périodicité. Lorsqu'on crée plusieurs champs 321, il faut respecter l'ordre chronologique, du plus ancien au plus récent. Utilisez les termes de RDA (voir lien 'frequency' ci-dessus).",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1377,7 +1393,7 @@
     "RulesNL": "Selecteer in het pull-down menu.<br>Zie ook bovenaan de pagina (onder 'Introductie') de tabel met voorbeelden voor elk type document : 'De rol van 336-337-338 in RDA'<br>Voor een publicatie met verschillende types inhoud, vermeld alle types inhoud (dupliceer het subveld $a):<br>-tekst, stilstaand beeld: voor een geïllustreerde manifestatie<br>-stilstaand beeld, tekst: voor een tentoonstellingscatalogus<br>Voor een publicatie met begeleidend materiaal, vermeld alle types inhoud (dupliceer het veld 336):<br>-tekst, stilstaand beeld: voor een geïllustreerde manifestatie<br>-stilstaand beeld, tekst: voor een tentoonstellingscatalogus",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1393,7 +1409,7 @@
     "RulesNL": "Selecteer in het pull-down menu.<br>Wanneer de manifestatie uit twee types media of meer bestaat, vermeld dan alle types media.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1409,7 +1425,7 @@
     "RulesNL": "Selecteer in het pull-down menu.<br>Wanneer de manifestatie uit twee types drager of meer bestaat, vermeld dan alle types drager.<br>Koepels en collecties: leeg laten (te verifiëren in rdatoolkit)?",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1424,8 +1440,8 @@
     "IMAG_FR": "",
     "IMAG_NL": "Dit veld is facultatief.<br>Indien gekend kan de papiersoort worden gespecifieerd",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1440,7 +1456,7 @@
     "IMAG_NL": "Dit veld is facultatief en betreft de afmetingen van het gehele object.<br>De afmetingen van werken op papier worden in millimeters uitgedrukt.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1453,8 +1469,8 @@
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1467,8 +1483,8 @@
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1481,8 +1497,8 @@
     "RulesFR": "",
     "RulesNL": "",
     "Entity": "Manifestation",
-    "FirstInstance": "If appliccable",
-    "AdditionalInstances": "If appliccable",
+    "FirstInstance": "If applicable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1498,7 +1514,7 @@
     "RulesNL": "Selecteer in het pull-down menu.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "https://www.rdaregistry.info/termList/RDATypeOfBinding/",
     "RecordingMethod": "Identifier"
@@ -1514,7 +1530,7 @@
     "ELIV_FR": "Pdf, epub (si conservation de fichier, si pas =&gt; 336).",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1528,7 +1544,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1542,7 +1558,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1556,7 +1572,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1570,7 +1586,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1585,7 +1601,7 @@
     "PERE_FR": "La zone 362 contient la numérotation de la publication en série, lorsque l'information est connue.<br>• Soit on possède le 1er et/ou le dernier fascicule,<br>• Soit on ne possède pas le 1er/dernier fascicule, mais on peut fournir une numérotation à partir d'une autre source :<br>- un autre fascicule<br>- le site web de l'éditeur<br>- un fac-similé en ligne du 1er/dernier fascicule<br><br>Les informations peuvent être structurée ou non. Si l'information concernant les dates a été obtenue d'une source différente que la revue, elle est donnée sous forme non structurée et la source d'information est citée. On n'entre pas de dates incomplètes ou approximatives dans ce champ. Si on ne possède pas le 1er fascicule et si on ne sait pas quand la publication a commencé, il ne faut pas enregistrer de zone 362.<br><br><b>Indicateurs</b><br><br><u>1er indicateur : Format de date</u><br>0 : Forme structurée : la description numérique, alphabétique, chronologique ou autre est trouvé dans le numéro de la revue et est donnée comme elle figure sur la publication. Si on enregistre à la fois le n° et la date, on place cette date entre parenthèses.<br><br>Exemples :<br>- Vol. 1, n° 1 (avril 1981)<br>- 72/1 (sept. 2018)<br>- 1988<br>- 1er trimestre –<br>- Nr. 11 (15/21 maart 2000)-<br><br>1 : Note non structurée : la description numérique, alphabétique, chronologique ou autre est trouvé dans une autre source que la publication cataloguée. Les informations sont alors données sous forme de note (indication en texte libre).<br><br>Exemples :<br>- Commence avec le fascicule de 1995<br>- Commence avec le vol. 4<br>- Publié en 2004<br>- Cesse avec le vol. 2<br><br>Codes de sous-champs<br>$a : Dates de publication et/ou désignation d'ordre séquentiel (NR) (RDA 2.6.2 à 2.6.9).<br><br>- Transcrire les termes et les chiffres tels que sur la ressource<br>- Remplacer les nombres écrits en toutes lettres par des chiffres<br>- Remplacer un trait d'union par une barre oblique, autant que nécessaire, pour plus de clarté.<br><br>Exemples :<br>362 0# $a Volume X, n° 1 (janvier 2013)-<br>362 0# $a Vol. 32, numéro 7 (septembre/octobre 2003)-<br>(La source d'information indique : septembre-octobre)<br>362 0# $a Édition 1999/2000-édition 2012/2013<br>(La source d'information indique : 2012/13)<br>- S'il y a des changements dans la désignation (nouvelle numérotation), il faut les séparer par un « ; ».<br>Ex. 362 0# $a Anno 1 (1877)-anno 79(1955) ; n.s., 1 (1956)-<br>- Ne jamais faire la description d'après un numéro préliminaire (« numéro 0 », « volume 0 », « numéro pilote », etc.). La description sera faite après la réception du premier numéro (ex. volume 1, no 1; numéro 1, etc.). ; Le numéro préliminaire peut être renseigné en zone 515 (note sur les particularités de la numérotation)<br>Ex. 515 ## $a N° préliminaire désigné n° 0, publié en avril 2019.<br>- S'il y a des périodes où le périodique ne paraît pas, on peut également détailler ces périodes en note 515.<br>Ex. 515 ## $a Aucune publication entre 1941-1946.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1600,7 +1616,7 @@
     "EPER_FR": "Plateforme quand il y a plusieurs 362.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1614,7 +1630,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1628,7 +1644,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1642,7 +1658,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1656,7 +1672,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1670,7 +1686,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1692,7 +1708,7 @@
     "IMAG_NL": "Dit veld is facultatief en omvat extra technische gegevens, conservatorische bemerkingen, historische context en verwijzingen naar externe bronnen of andere werken in de collectie.<br>Indien gewenst kan het veld worden herhaald om te differentiëren tussen de verschillende soorten informatie.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1708,7 +1724,7 @@
     "RulesNL": "Vul in volgens volgende vorm:<br>Universiteit. Faculteit. Afdeling, JJJJ<br>3 niveaus maximum",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1724,7 +1740,7 @@
     "RulesNL": "Selecteer de graad in de keuzelijst.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1740,7 +1756,7 @@
     "RulesNL": "Vermeld de aanwezigheid van bibliografie of index.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1755,7 +1771,7 @@
     "MANU_FR": "Détail des intertitres d'un ouvrage spécifique (calendrier de livre liturgique, légendier, etc.).<br>Format :<br>[numéro d'ordre] intertitre (foliotation/pagination) - …<br>Remarque : Contrairement à un usage précédent, les fragments de manuscrits ajoutés au manuscrit décrit ne sont pas signalés en 505, mais plutôt en 300 $e",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1770,7 +1786,7 @@
     "MANU_FR": "Foliotation des différents textes.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1786,7 +1802,7 @@
     "RulesNL": "Gebruik 505 voor de titels in het document.<br>Herhaal het $t subveld als de titels van dezelfde auteur zijn.<br>Indien de titels van verschillende auteurs zijn, herhaal de subvelden t en r: 505trtrtrtr",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1799,7 +1815,7 @@
     "RulesFR": "Vul ook dit veld in wanneer het desbetreffende titels vervaagdigd zijn door een auteur die anders is dan deze ingevuld in 245.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1813,7 +1829,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1827,7 +1843,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1841,7 +1857,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1855,7 +1871,7 @@
     "RulesNL": "<b>ELIV-EPER-BDDL:</b><br>IP / OA / wachtwoord",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1869,7 +1885,7 @@
     "RulesNL": "<b>ELIV-EPER-BDDL:</b><br>Aantal gebruikers",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1883,7 +1899,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1897,7 +1913,7 @@
     "RulesNL": "<b>EPER-BDDL:</b>",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1912,7 +1928,7 @@
     "MANU_FR": "Références complètes : articles, monographies, ressources en ligne.<br>Format :<br>initiale du prénom d'auteur nom d'auteur, « titre de l'article » / titre de la monographie, numéro de revue (année de revue) / année de publication de la monographie<br>[Record] 'titre de la ressource en ligne', in 'nom de la base de données ou du site web' (online), lieu de production, organisme producteur, année de première publication rev. année de dernière correction",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1927,7 +1943,7 @@
     "MANU_FR": "Pagination de l'article ou dans le livre.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1941,7 +1957,7 @@
     "RulesNL": "URI van de bron beschreven in $a",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1955,7 +1971,7 @@
     "RulesNL": "ISSN van het tijdschrift waar het artikel is verschenen",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1969,7 +1985,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1983,7 +1999,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -1999,7 +2015,7 @@
     "RulesNL": "Voeg een korte objectieve samenvatting toe indien:<br>-deze informatie wordt belangrijk geacht voor identificatie of selectie<br>-en niet elders in de beschrijving voldoende informatie is opgenomen.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2014,7 +2030,7 @@
     "RulesNL": "Facultatief: vermeld het doelpubliek (schoolniveau, leeftijd, visueel gehandicapten, enz.) alleen als deze informatie doorslaggevend is:<br>-het maakt het mogelijk onderscheid te maken tussen twee gelijksoortige publicaties<br>-deze informatie staat niet in de titel<br>Gebruik de eerste indicator om het soort informatie aan te geven dat in 521$a",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2028,7 +2044,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2042,7 +2058,7 @@
     "RulesNL": "Microfilm KBR",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2056,7 +2072,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2070,7 +2086,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2084,7 +2100,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2098,7 +2114,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2112,7 +2128,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2126,7 +2142,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2140,7 +2156,7 @@
     "RulesNL": "Bron van de aanwinst.<br> Type aankoop (abonnement, OA, aanwinst, depotbibliotheek, archief tijdschrift)",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2154,7 +2170,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2168,7 +2184,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2182,7 +2198,7 @@
     "RulesNL": "Datum van de aakoop",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2196,7 +2212,7 @@
     "RulesNL": "Prijs",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2210,7 +2226,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2224,7 +2240,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2238,7 +2254,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2252,7 +2268,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2266,7 +2282,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2280,7 +2296,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2295,7 +2311,7 @@
     "MANU_FR": "Utilisé très rarement : <br>546 $a In het Nederlands $#0.<br>En complément de 041 et 008, mais à condition de constituer une vraie plus-value informationnelle/scientifique.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2310,7 +2326,7 @@
     "MANU_FR": "Type d'alphabet, d'écriture ou de notation musicale (en remplacement de 300 $b).<br>Remarques : les valeurs-types seront établies par les Sections respectives en fonction de la littérature scientifique :<br>$bgothic textualis (13th century)<br>$bCaroline minuscle (12th century) and gothic textualis (14th century; f. 1-4)<br>$bhumanist cursive (17th century)<br>$bHumanistic minuscule",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2324,7 +2340,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2338,7 +2354,7 @@
     "RulesNL": "Dit veld beperkt zich tot de provenance of herkomstgeschiedenis van het object.<br>De vorm en het vocabularium van het voorbeeld dient nagevolgd te worden: acquired at auction, Brussels (Arenberg), 16 December 2018; sale, London (Christie's), 10 July 1970; Andrew Berkley Durmmond; Sir Berkely Lucy (1759)",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2352,7 +2368,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2367,7 +2383,7 @@
     "IMAG_NL": "Dit veld identificeert gestempelde verzamelaarsmerken en begint ook met een kleine letter.<br>Eindig de notitie met '(not in Lugt)' indien het merk ontbreekt in Les Marques de Collections de Dessins & d'Estampes.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2382,7 +2398,7 @@
     "RulesNL": "Dit veld beschrijft de kwaliteit en conditie van het object.<br>Let op de kleine letters en de puntkomma's.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2396,7 +2412,7 @@
     "IMAG_NL": "Dit veld beschrijft de staat van een prent.<br>Gebruik kleine letters en eventueel puntkomma's.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2410,7 +2426,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2424,7 +2440,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2438,7 +2454,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2452,7 +2468,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2466,7 +2482,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2480,7 +2496,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2494,7 +2510,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2507,7 +2523,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2520,7 +2536,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2533,7 +2549,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2546,7 +2562,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2559,7 +2575,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2572,7 +2588,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2585,7 +2601,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2599,7 +2615,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2613,7 +2629,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2627,7 +2643,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2641,7 +2657,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2655,7 +2671,7 @@
     "RulesNL": "EZ Proxy : https://kbr.idm.oclc.org/login?url=",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2669,7 +2685,7 @@
     "RulesNL": "Paswoord",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2683,7 +2699,7 @@
     "RulesNL": "Login",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2698,7 +2714,7 @@
     "RulesNL": "Vermeld de URL (van de site, niet de onlineversie om verbroken links te voorkomen) alleen als de online toegang tot het document gratis is.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2712,7 +2728,7 @@
     "RulesNL": "Geef de bezitslijn weer <b>I,structies?</b>",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2726,7 +2742,7 @@
     "RulesNL": "Deze subvelden zijn dezelfde als deze die in het bijbehorende veld zijn gedefinieerd.<br>Hier worden bijvoorbeeld titels in een ander alfabet (Chinees, Arabisch, enz.) ingevoerd. Voor een beschrijving van de subvelden wordt verwezen naar de paragrafen waarin de bijbehorende velden worden beschreven.<br><br><u>Catalogisering van documenten in niet-Latijnse geschriften</u><br>In de velden 245, 246 enz. translittereren we, in het veld 880 zetten we de elementen in het oorspronkelijke niet-Latijnse alfabet.<br>In het subveld « 6 » van 245 zetten we « 880-01 » ; als er twee getranslitereerde velden zijn, zetten we in het subveld « 6 » van het tweede veld (bv 246 of 264) « 880-02 » enzovoort.<br><br>In het subveld « 6 » van 880 zetten we:<br>« 245-01/(3 » indien het gaat om een werk in Arabisch alfabet (Arabisch, Pashto, etc.)<br>We zetten « 245-01/$1 » indien het gaat om een werk in Chinees, Japans,... geschrift.<br>We zetten « 245-01/(N » voor een werk in het Cyrillisch alfabet (Russisch, Bulgaars etc.).<br>We zetten « 245-01/(S » voor een werk in het Griekse alfabet.<br>We zetten « 245-01/(2 » voor een werk in het Hebreeuwse alfabet.<br><br><u>Code - Type karakters om in te geven in subveld 6 van veld 880</u><br>(3 - Arabisch <br>$1 - Chinees, Japans, Koreaans<br>(N - Cyrillisch<br>(S - Grieks<br>(2 - Hebreeuws",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2739,7 +2755,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2752,7 +2768,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2765,7 +2781,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2778,7 +2794,7 @@
     "RulesNL": "",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2794,7 +2810,7 @@
     "RulesNL": "Mogelijke codes : isni, viaf<br><br>Zet '?' indien meerdere ISNI, maar twijfel over welk correct is",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2810,7 +2826,7 @@
     "RulesNL": "APEP, AORG:<br>Internationaal standaardnummer ISNI, of VIAF<br><br>ARAM, AFOR:<br>identificatienummer van OCLC FAST",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2826,7 +2842,7 @@
     "RulesNL": "URI dat verwijst naar de correcte ISNI of FAST record. In geval van ISNI hoeft u dit niet zelf in te vullen, maar wordt het na verloop van tijd zelf gegenereerd op basis van 024$a en 024$2",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2886,7 +2902,7 @@
     ],
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -2946,7 +2962,7 @@
     ],
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3006,7 +3022,7 @@
     ],
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3066,7 +3082,7 @@
     ],
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3126,7 +3142,7 @@
     ],
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3186,7 +3202,7 @@
     ],
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3202,7 +3218,7 @@
     "RulesNL": "Gebruikelijke woordvorm van de autoriteit (een echte naam, een pseudoniem of een religieuze naam).<br><br>Voor belgische auteurs : volledige naam (tussenvoegsels inbegrepen), gevolgd door de voorna(a)m(en).<br><br>Voor niet-belgische auteurs : het bibliotheekwetenschappelijk gebruik van het land van de auteur volgen.<br><br>Naam en voornaam altijd gescheiden met een komma.<br><br>Speciale gevallen (onderhevig aan andere regels), bv. latijnse auteurs, middeleeuwse,...",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3218,7 +3234,7 @@
     "RulesNL": "pseudoniem of religieus (gebruik niet meer de codes p of r hiervoor)<br><br>Bv. $a Streuvels, Stijn $c pseudoniem $d 1871-1969<br><br>Vrije tekst (bij voorkeur de termen voluit): bv. professor, arts, dichter, componist,…<br><br>Ex. $aRomascanu, Constantin $cCompositeur et chef de choeur roumain $d1926-",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3327,7 +3343,7 @@
     ],
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3343,7 +3359,7 @@
     "RulesNL": "Als de gebruikelijke woordvorm van de voornaam uit initialen bestaat.",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3359,7 +3375,7 @@
     "RulesNL": "Gebruikelijke woordvorm van de collectiviteit",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3375,7 +3391,7 @@
     "RulesNL": "Onderafdeling",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3391,7 +3407,7 @@
     "RulesNL": "Plaats",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3407,7 +3423,7 @@
     "RulesNL": "Stad en land van geboorte. Volgens formaat : Stad (land). Bv. Antwerpen (België)<br><br>Als enkel land gekend is, de code zetten (bv. ‘be’)",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3423,7 +3439,7 @@
     "RulesNL": "Stad en land van overlijden. Volgens formaat : Stad (land). Bv. Antwerpen (België)<br><br>Als enkel land gekend is, de code zetten (bv. ‘be’)",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3439,7 +3455,7 @@
     "RulesNL": "Nationaliteit of geassocieerd land van de auteur.<br><br>Zelfde codes als voor Documenten – 044$a, dus ‘be’, ‘fr’, … cf. landcodes<br><br>Bij twijfel of ongekend, ‘xx – No place, unknown, or undetermined’ zetten.",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3453,7 +3469,7 @@
     "RulesNL": "Als subveld $c ingevuld is, code ‘nat’ voor nationaliteit",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3469,7 +3485,7 @@
     "RulesNL": "",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3485,7 +3501,7 @@
     "RulesNL": "",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3501,7 +3517,7 @@
     "RulesNL": "België / Belgique / Belgien / Belgium, volgens de taal van de auteur",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3517,7 +3533,7 @@
     "RulesNL": "",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3533,7 +3549,7 @@
     "RulesNL": "",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3549,7 +3565,7 @@
     "RulesNL": "Gebruik deze codes: M, F, U, X<br><br>M (male), F (female), U (unknown), X (not applicable)",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3565,7 +3581,7 @@
     "RulesNL": "Zelfde codes als voor Documenten - 041$a, dus ‘dut’, ‘fre’,… cf. <a href='https://www.loc.gov/marc/languages/language_code.html' target='_blank' rel='noopener'><u>taalcodes</u></a>",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3581,7 +3597,7 @@
     "RulesNL": "Verworpen woordvorm van de persoonsnaam, of echte naam in het geval van pseudoniemen of religieuze namen.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3597,7 +3613,7 @@
     "RulesNL": "Verworpen woordvorm van de collectiviteit.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3613,7 +3629,7 @@
     "RulesNL": "Verworpen woordvorm van de onderafdeling.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3629,7 +3645,7 @@
     "RulesNL": "Link tussen de autoriteit die je beschrijft en een autoriteit persoon",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3645,7 +3661,7 @@
     "RulesNL": "Geef de type relatie aan tussen de autoriteit die je beschrijft en een autoriteit persoon",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3661,7 +3677,7 @@
     "RulesNL": "Link tussen de autoriteit die je beschrijft en een autoriteit collectiviteit",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3677,7 +3693,7 @@
     "RulesNL": "Geef de type relatie aan tussen de autoriteit die je beschrijft en een autoriteit collectiviteit",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3693,7 +3709,7 @@
     "RulesNL": "Korte beschrijving van de autoriteit zodat die beter geïdentificeerd kan worden.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3707,7 +3723,7 @@
     "RulesNL": "Permalink naar de bron van de gegevens en/of meer informatie. Altijd ingeleid door « http » of « https » (bij voorkeur https – testen welke werkt)",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3721,7 +3737,7 @@
     "RulesNL": "Algemene informatie die niet opgenomen wordt in de subvelden van 100, hierboven bepaald. In gepaste stijl voor het publiek.<br><br>In Syracuse voor het uitgeversnummer gebruikt. Hier vult men in :<br>‘Uitgeversnummer/Numéro d'éditeur : ’",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3737,7 +3753,7 @@
     "RulesNL": "Uitgeversnummer, bijvoorbeeld : 0020",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3751,7 +3767,7 @@
     "RulesNL": "URL van de website van de auteur of uitgever. Altijd ingeleid door « http » of « https » (bij voorkeur https – testen welke werkt).",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3764,7 +3780,7 @@
     "RulesNL": "Formaat : 0x/xxx.xx.xx 0xx/xx.xx.xx",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3777,7 +3793,7 @@
     "RulesNL": "Formaat : 04xx xx xx xx",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3793,7 +3809,7 @@
     "RulesNL": "[041] In 041$a zet je eerst de taalcode van het document en daarna in 041$h de taalcode van het origineel. Vervolgens moet je ook de eerste indicator veranderen : 041ind1=1 (om aan te geven dat het beschreven document een vertaling is).<br><br>Als de beschrijving reeds in de catalogus is :<br>[765] Gebruik 765 om de link te leggen met het document in de oorspronkelijke taal<br><br>Als de beschrijving niet in de catalogus is :<br>[246] Je kan 246 gebruiken met het subveld $i 'Oorspronkelijke titel' (volgens taal van catalogisering in 040$b).",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3809,7 +3825,7 @@
     "RulesNL": "Als de beschrijving reeds in de catalogus is :<br>[767] Deze zone bevat informatie met betrekking tot de publicatie in een andere taal dan de oorspronkelijke taal wanneer het doeldocument het origineel of een andere vertaling is (horizontale relatie).<br>Als de beschrijving niet in de catalogus is :<br>[246] Je kan dit aangeven in veld 246: in $a de titel van een vertaling met in subveld $i 'vertaling'.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3825,7 +3841,7 @@
     "RulesNL": "Als de beschrijving reeds in de catalogus is :<br>[773] Dit veld bevat de informatie met betrekking tot het ouderdocument voor het kind-document dat in de beschrijving wordt beschreven (verticale relatie). De informatie in de subvelden $g is nodig om de exacte locatie van het samenstellende deel in het bibliografische item aan te geven wanneer de ouderdocumenten seriële of meerdelige documenten zijn.<br>Als de beschrijving niet in de catalogus is :<br>[490] Bij voorkeur niet meer gebruiken maar een reeks of koepel-beschrijving maken en de link leggen via 773.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3841,7 +3857,7 @@
     "RulesNL": "[775] Dit veld bevat de link naar andere edities van het beschreven document (horizontale relatie).<br>De volgende types edities worden vermeld in dit veld :<br>Taaledities : Wanneer een publicatie tegelijk in verschillende talen gepubliceerd wordt (gewoonlijk door dezelfde uitgever, anders dan een vertaling gepubliceerd door een andere uitgever).<br>Herdrukken van een gedrukt document : wanneer een publicatie een herdruk is van een gedrukt document, wordt het veld 775 gebruikt om te linken naar de oorspronkelijke beschrijving.<br>Andere edities : Andere edities van het beschreven document. Deze edities hebben normaliter dezelfde titel als het beschreven document, maar de editievermelding zal anders zijn voor elk document.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3857,7 +3873,7 @@
     "RulesNL": "Als de beschrijving reeds in de catalogus is :<br>[776] Als u een document catalogiseert die ook in een ander formaat of drager (vb CD-ROM), kan u veld 776 gebruiken om de link te leggen.<br>Als de beschrijving niet in de catalogus is :<br>[530] Als u een document catalogiseert die ook in een ander formaat of drager bestaat maar niet in de catalogus zit (vb CD-ROM), kan u annotatieveld 530 gebruiken.",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3873,7 +3889,7 @@
     "RulesNL": "[770] Wanneer je een tijdschrift aan het catalogiseren bent, kan je eventueel de link maken met een supplement of speciaal nummer in veld 770 (verticale relatie).",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3889,7 +3905,7 @@
     "RulesNL": "[772] Wanneer je een supplement of speciaal nummer aan het catalogiseren bent, maak je de link met het tijdschrift in veld 772 (verticale relatie).",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3905,7 +3921,7 @@
     "RulesNL": "[780] Dit veld bevat informatie met betrekking tot de voorganger van het doeldocument (chronologische relatie). Als er meer dan één voorafgaand document is, wordt het veld 780 herhaald.<br>Geef 2e indicator aan: 780ind2=0 : 'Voortzetting van'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3921,7 +3937,7 @@
     "RulesNL": "[780] Geef 2e indicator aan: 780ind2=1 : 'Gedeeltelijke voortzetting van'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3937,7 +3953,7 @@
     "RulesNL": "[780] Geef 2e indicator aan: 780ind2=2 : 'Vervanging van'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3953,7 +3969,7 @@
     "RulesNL": "[780] Geef 2e indicator aan: 780ind2=3 : 'Gedeeltelijke vervanging van'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3969,7 +3985,7 @@
     "RulesNL": "[780] Geef 2e indicator aan: 780ind2=4 : 'Samensmelting van … en …'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -3985,7 +4001,7 @@
     "RulesNL": "[780] Geef 2e indicator aan: 780ind2=5 : 'Absorbeerde'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4001,7 +4017,7 @@
     "RulesNL": "[780] Geef 2e indicator aan: 780ind2=6 : 'Absorbeerde deels'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4017,7 +4033,7 @@
     "RulesNL": "[780] Geef 2e indicator aan: 780ind2=7 : 'Afsplitsing van'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4033,7 +4049,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=0 : 'Opgevolgd door'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4049,7 +4065,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=1 : 'Deels opgevolgd door'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4065,7 +4081,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=2 : 'Vervangen door'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4081,7 +4097,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=3 : 'Deels vervangen door'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4097,7 +4113,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=4 : 'Geabsorbeerd door'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4113,7 +4129,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=5 : 'Deels geabsorbeerd door'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4129,7 +4145,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=6 : 'Gesplitst in... en...'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4145,7 +4161,7 @@
     "RulesNL": "[785] Geef 2e indicator aan: 785ind2=7 : 'Gefusioneerd met...en wordt...'",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
@@ -4161,7 +4177,7 @@
     "RulesNL": "",
     "Entity": "Agent",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If appliccable",
+    "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
     "RecordingMethod": "Unstructured"
