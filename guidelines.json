@@ -390,14 +390,14 @@
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd020.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/m/P30160' rel='noopener'>term of availability</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-496cc498-87a3-329f-9560-7f16668a6cd5",
-    "RulesFR": "Si le prix est indiqué par un symbole (€, $,...), remplacez-le par le code monétaire correspondant, conformément à la norme ISO 4217 (EUR, USD,...).<br>Les unités et les nombres décimaux sont séparés par une virgule.<br>N'indiquez pas les zéros après la virgule ou le point pour les nombres entiers (donc si le prix indiqué est 25,00 EUR, changez-le en 25 EUR ).",
-    "RulesNL": "indien de prijs is aangeduid met een symbool (€, $,...), vervang deze door de corresponderende valuta-code, conform de norm ISO 4217 (EUR, USD,...)<br>Eenheden en decimalen worden gescheiden door een komma.<br>Vermeld geen nullen na de komma of punt voor gehele getallen (dus als de aangeduide prijs is 25,00 EUR, verander het naar 25 EUR).",
+    "RulesFR": "Si le prix est indiqué par un symbole (€, $,...), remplacez-le par le code monétaire correspondant, conformément à la norme ISO 4217 (EUR, USD,...).<br>Les unités et les nombres décimaux sont séparés par une virgule.<br>N'indiquez pas les zéros après la virgule ou le point pour les nombres entiers (donc si le prix indiqué est '25,00' ou '25.00', changez-le en '25', mais '25.50' peut être laissé tel quel).",
+    "RulesNL": "indien de prijs is aangeduid met een symbool (€, $,...), vervang deze door de corresponderende valuta-code, conform de norm ISO 4217 (EUR, USD,...)<br>Eenheden en decimalen worden gescheiden door een komma.<br>Vermeld geen nullen na de komma of punt voor gehele getallen (dus als de aangeduide prijs is '25,00' of '25.00', verander het naar '25'), maar '25,50' mag je zo laten staan.",
     "Entity": "Manifestation",
     "FirstInstance": "If applicable",
     "AdditionalInstances": "If applicable",
     "DataType": "String",
     "VES": "",
-    "RecordingMethod": "Unstructured"
+    "RecordingMethod": "Structured"
   },
   {
     "ID": "BIB020q",
