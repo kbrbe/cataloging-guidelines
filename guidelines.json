@@ -5,7 +5,7 @@
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd9xx.html",
     "RDA_ELEMENT": "<a target='_blank' href='https://rdaregistry.info/Elements/w/P10088' rel='noopener'>title of work</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/Content/Index?externalId=en-US_ala-f106d8cd-6853-320c-8608-04fd977a0603",
-    "RulesFR": "Mettez ici le nom de l'oeuvre (dans le cas des traductions c'est le titre original, ou aussi le titre le plus connu, préféré)",
+    "RulesFR": "Mettez ici le nom de l'oeuvre (dans le cas des traductions c'est le titre original, ou aussi le titre le plus connu, préféré).  Dans le cas d’un agrégat, créez une œuvre pour l’agrégat, mais aussi une pour chaque œuvre agrégée. ",
     "RulesNL": "Zet hier de titel van het werk (originele titel in geval van vertalingen, gekende, geprefereerde titel)",
     "Entity": "Work",
     "FirstInstance": "Mandatory",
