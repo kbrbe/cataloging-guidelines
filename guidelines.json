@@ -14,22 +14,6 @@
     "VES": "",
     "RecordingMethod": "Unstructured"
   },
-   {
-    "ID": "BIBWORKtest2",
-    "TitleFR": "9XX$a - Langue de l'oeuvre",
-    "TitleNL": "9XX$a - Taal van werk",
-    "MARC21": "https://www.loc.gov/marc/bibliographic/bd9xx.html",
-    "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/w/P10353' rel='noopener'>language of representative expression</a>",
-    "RDA_TOOLKIT": "https://access.rdatoolkit.org/Content/Index?externalId=en-US_ala-9dbad164-5722-3594-acc9-ed80b49c9e2b",
-    "RulesFR": "Mettez ici la langue de l’expression représentative de l’œuvre. Dans le cas d’une traduction, il ne s’agit pas de la langue du document même, mais de la langue de la version originale, la version qui a été traduit. Vous pouvez identifier cette langue grâce à des mentions comme : « titre original », « publié pour la première fois en [langue] », « première impression en [langue] », etc.",
-    "RulesNL": "Zet hier de oorspronkelijke taal, de taal waarin het werk de eerste keer is gepubliceerd. Je kan de taal van het werk herkennen door vermeldingen als 'oorspronkelijke titel', 'voor het eerst verschenen in...', enz.",
-    "Entity": "Work",
-    "FirstInstance": "Mandatory",
-    "AdditionalInstances": "Optional",
-    "DataType": "String",
-    "VES": "Use MARC language code",
-    "RecordingMethod": "Structured"
-  },	
   {
     "ID": "BIBleader007",
     "TitleFR": "Leader and 007",
@@ -727,20 +711,22 @@
     "DataType": "String",
     "VES": "Use MARC21 language code",
     "RecordingMethod": "Structured"
-  },
+  },	
   {
     "ID": "BIB041h",
     "TitleFR": "041$h - Code de langue de la langue originale",
     "TitleNL": "041$h - Taalcode van origineel",
+    "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/w/P10353' rel='noopener'>language of representative expression</a>",
+    "RDA_TOOLKIT": "https://access.rdatoolkit.org/Content/Index?externalId=en-US_ala-9dbad164-5722-3594-acc9-ed80b49c9e2b",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd041.html",
-    "RulesFR": "Obligatoire en cas de traduction.",
-    "RulesNL": "Verplicht in geval van vertaling.",
-    "Entity": "Manifestation",
+    "RulesFR": "Mettez ici la langue de l’expression représentative de l’œuvre. Dans le cas d’une traduction, il ne s’agit pas de la langue du document même, mais de la langue de la version originale, la version qui a été traduit. Vous pouvez identifier cette langue grâce à des mentions comme : « titre original », « publié pour la première fois en [langue] », « première impression en [langue] », etc.",
+    "RulesNL": "Zet hier de oorspronkelijke taal, de taal waarin het werk de eerste keer is gepubliceerd. Je kan de taal van het werk herkennen door vermeldingen als 'oorspronkelijke titel', 'voor het eerst verschenen in...', enz.",
+    "Entity": "Work",
     "FirstInstance": "Mandatory",
-    "AdditionalInstances": "If applicable",
+    "AdditionalInstances": "Optional",
     "DataType": "String",
-    "VES": "",
-    "RecordingMethod": "Unstructured"
+    "VES": "Use MARC21 language code",
+    "RecordingMethod": "Structured"
   },
   {
     "ID": "BIB044a",
