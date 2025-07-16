@@ -1,5 +1,5 @@
 [   {
-    "ID": "BIBWORK240a",
+    "ID": "BIBWORKtest",
     "TitleFR": "9XX$a - Titre de l'oeuvre",
     "TitleNL": "9XX$a - Titel van werk",
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd9xx.html",
@@ -14,6 +14,22 @@
     "VES": "",
     "RecordingMethod": "Unstructured"
   },
+   {
+    "ID": "BIBWORKtest2",
+    "TitleFR": "9XX$a - Titre de l'oeuvre",
+    "TitleNL": "9XX$a - Titel van werk",
+    "MARC21": "https://www.loc.gov/marc/bibliographic/bd9xx.html",
+    "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/w/P10353' rel='noopener'>language of representative expression</a>",
+    "RDA_TOOLKIT": "https://access.rdatoolkit.org/Content/Index?externalId=en-US_ala-9dbad164-5722-3594-acc9-ed80b49c9e2b",
+    "RulesFR": "Mettez ici la langue original, la langue dans laquelle l'oeuvre a été publié la première fois",
+    "RulesNL": "Zet hier de oorspronkelijke taal, de taal waarin het werk de eerste keer is gepubliceerd.",
+    "Entity": "Work",
+    "FirstInstance": "Mandatory",
+    "AdditionalInstances": "Optional",
+    "DataType": "String",
+    "VES": "Use MARC language code",
+    "RecordingMethod": "Structured"
+  },	
   {
     "ID": "BIBleader007",
     "TitleFR": "Leader and 007",
@@ -703,14 +719,14 @@
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd041.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/e/P20006' rel='noopener'>language of expression</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-b7de61e2-fe4b-3cc3-a4a2-7a3c4c55b4fc",
-    "RulesFR": "Lorsque le(s) texte(s) est/sont rédigé(s) en plusieurs langues : répétez le $a et indiquez tous les codes correspondants.<br>Donc ne pas utiliser le code 'mul'.<br>Le code 'mis' s'utilise pour les langues pour lesquelles il n'existe pas de code.<br>Le code 'zxx' s'utilise quand il n'y a aucun contenu linguistique.<br>Pour les dialectes:<br>- Indiquez 'wln' pour les dialectes wallons<br>- Indiquez 'roa' pour les autres dialectes romans, ex. gaumais, lorrain, picard, champenois, bourguignon,...<br>- Indiquez 'gem' pour les dialectes flamands<br>Spécifiez le dialecte précis dans la zone 546 - annotation langue.",
-    "RulesNL": "Wanneer de tekst(en) is (zijn) geschreven in meerdere talen: herhaal $a en vermeld alle overeenstemmende codes.<br>Gebruik dus niet de code 'mul'.<br>De code 'mis' wordt gebruikt voor de talen waarvoor er geen code bestaat.<br>In geval van dialecten:<br>- Kies 'wln' voor de Waalse dialecten<br>- Kies 'roa' voor andere Romaanse dialecten, bv. gaumais, lorrain, picard, champenois, bourguignon,...<br>- Kies 'gem' voor Vlaamse dialecten<br>Specifieer het precieze dialect in het veld 546 - taalannotatie.",
+    "RulesFR": "Mettez ici la langue principale de document décrit. Lorsque le(s) texte(s) est/sont rédigé(s) en plusieurs langues : répétez le $a et indiquez tous les codes correspondants.<br>Donc ne pas utiliser le code 'mul'.<br>Le code 'mis' s'utilise pour les langues pour lesquelles il n'existe pas de code.<br>Le code 'zxx' s'utilise quand il n'y a aucun contenu linguistique.<br>Pour les dialectes:<br>- Indiquez 'wln' pour les dialectes wallons<br>- Indiquez 'roa' pour les autres dialectes romans, ex. gaumais, lorrain, picard, champenois, bourguignon,...<br>- Indiquez 'gem' pour les dialectes flamands<br>Spécifiez le dialecte précis dans la zone 546 - annotation langue.",
+    "RulesNL": "Zet heir de belangrijkste taal van het beschreven document. Wanneer de tekst(en) is (zijn) geschreven in meerdere talen: herhaal $a en vermeld alle overeenstemmende codes.<br>Gebruik dus niet de code 'mul'.<br>De code 'mis' wordt gebruikt voor de talen waarvoor er geen code bestaat.<br>In geval van dialecten:<br>- Kies 'wln' voor de Waalse dialecten<br>- Kies 'roa' voor andere Romaanse dialecten, bv. gaumais, lorrain, picard, champenois, bourguignon,...<br>- Kies 'gem' voor Vlaamse dialecten<br>Specifieer het precieze dialect in het veld 546 - taalannotatie.",
     "Entity": "Expression",
     "FirstInstance": "Mandatory",
     "AdditionalInstances": "If applicable",
     "DataType": "String",
-    "VES": "",
-    "RecordingMethod": "Unstructured"
+    "VES": "Use MARC21 language code",
+    "RecordingMethod": "Structured"
   },
   {
     "ID": "BIB041h",
@@ -1395,7 +1411,7 @@
     "FirstInstance": "Mandatory",
     "AdditionalInstances": "If applicable",
     "DataType": "String",
-    "VES": "https://www.rdaregistry.info/termList/RDAContentType/",
+    "VES": "RDA content type : https://www.rdaregistry.info/termList/RDAContentType/",
     "RecordingMethod": "Identifier"
   },
   {
@@ -1411,7 +1427,7 @@
     "FirstInstance": "Mandatory",
     "AdditionalInstances": "If applicable",
     "DataType": "String",
-    "VES": "https://www.rdaregistry.info/termList/RDAMediaType/",
+    "VES": "RDA Media Type : https://www.rdaregistry.info/termList/RDAMediaType/",
     "RecordingMethod": "Identifier"
   },
   {
@@ -1427,7 +1443,7 @@
     "FirstInstance": "Mandatory",
     "AdditionalInstances": "If applicable",
     "DataType": "String",
-    "VES": "https://www.rdaregistry.info/termList/RDACarrierType/",
+    "VES": "RDA Carrier Type : https://www.rdaregistry.info/termList/RDACarrierType/",
     "RecordingMethod": "Identifier"
   },
   {
