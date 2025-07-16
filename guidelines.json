@@ -21,7 +21,7 @@
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd9xx.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/w/P10353' rel='noopener'>language of representative expression</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/Content/Index?externalId=en-US_ala-9dbad164-5722-3594-acc9-ed80b49c9e2b",
-    "RulesFR": "Mettez ici la langue original, la langue dans laquelle l'oeuvre a été publié la première fois. Vous pouvez reconnaître la langue de l'œuvre grâce à des mentions telles que « titre original », « publié pour la première fois en [langue] », «première impression en [langue]» etc.",
+    "RulesFR": "Mettez ici la langue original, donc la langue du document, ou dans le cas d'un traduction: la langue dans laquelle l'oeuvre a été publié la première fois. Vous pouvez reconnaître la langue de l'expression representative grâce à des mentions telles que « titre original », « publié pour la première fois en [langue] », «première impression en [langue]», etc.",
     "RulesNL": "Zet hier de oorspronkelijke taal, de taal waarin het werk de eerste keer is gepubliceerd. Je kan de taal van het werk herkennen door vermeldingen als 'oorspronkelijke titel', 'voor het eerst verschenen in...', enz.",
     "Entity": "Work",
     "FirstInstance": "Mandatory",
