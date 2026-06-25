@@ -1512,7 +1512,7 @@
     "MARC21": "https://www.loc.gov/marc/bibliographic/bd340.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/m/P30309' rel='noopener'>type of binding</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-4b9320ad-5cf8-31b7-aad2-7d4b60070bbb",
-    "RulesFR": "Sélectionnez dans la liste déroulante.<br>Exemples:<br>rdatb:1001 - broché<img src='img/typeofbinding/1001.PNG' alt='broché' style='max-width:150px;'>",
+    "RulesFR": "Sélectionnez dans la liste déroulante.<br>Exemples:<br>rdatb:1001 - broché<img src='img/typeofbinding/1001.PNG' alt='broché' class='binding'>",
     "RulesNL": "Selecteer in het pull-down menu.",
     "Entity": "Manifestation",
     "FirstInstance": "Mandatory",
