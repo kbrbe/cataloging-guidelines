@@ -1988,6 +1988,81 @@
 					</table>
 				</td>
 </tr>
+
+<tr>
+<td class="lang-fr">
+				<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('PSEUDONYMS'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">
+						<i class="fas fa-info" aria-hidden="true"></i> Règles pour les pseudonymes
+
+					</h6>
+				</div>
+</td>
+<td class="lang-nl">
+				<div class="panel-heading">
+					<h6 class="panel-title" onclick="var element = document.getElementById('PSEUDONYMS'); element.style.display = element.style.display === 'none' ? 'table-row' : 'none';">
+						<i class="fas fa-info" aria-hidden="true"></i> Regels voor pseudoniemen
+					</h6>
+				</div>
+</td>
+</tr>
+<tr id="PSEUDONYMS" style="display: none;">
+				<td colspan="2">
+					<table>
+						<tbody>
+							<tr>
+								<th class="lang-fr">Règles de base</th>
+								<th class="lang-nl">Basisregels</th>
+							</tr>
+							<tr>
+								<td class="lang-fr">Dans le champ 100$c d'une autorité, nous n'indiquons plus « p » ou « r », mais on écrit « pseudoniem » ou « pseudonyme » en toutes lettres.
+								<br/><br/>Dans une prénotice du dépot légal, lorsqu’un déposant effectue une déclaration en ligne, son nom apparaît dans le champ 951. Ce champ doit être supprimé et converti en une autorité (100/700).<br/>
+								Si le champ 951$k contient « yes », cela signifie que son vrai nom ne peut pas être affiché. Dans ce cas, le champ 951 doit être supprimé et ne doit pas non plus être mentionné dans l’autorité liée au pseudonyme.
+							</td>
+								<td class="lang-nl">In het veld 100$c van een autoriteit zetten we niet meer 'p' of 'r', we schrijven voluit 'pseudoniem' of 'pseudonyme'.<br/><br/>In een prenotitie van het wettelijk depot, als een deposant online een declaratie indient, komt zijn naam in veld 951 te staan. Dit veld moet worden verwijderd en omgezet naar een autoriteit (100/700).<br/>Indien er in 951$k 'yes' staat, dan wil dat zeggen dat zijn echte naam niet mag getoond worden, dus in dat geval moet 951 verwijderd worden en ook niet vermeld in de gelinkte autoriteit met de pseudoniem.
+							</td>
+							</tr>
+							<tr>
+								<th class="lang-fr">Cas spécifique 1: vrai nom connu, pas utilisé, peut être diffusé</th>
+								<th class="lang-nl">Specifiek geval 1: echte naam gekend, niet gebruikt, mag verspreid worden</th>
+							</tr>
+							<tr>
+								<td class="lang-fr">Description:<br/>L’auteur·ice utilise un seul pseudonyme pour toutes ses publications. Son vrai nom est connu et peut être partagé, mais il/elle ne l’utilise jamais comme nom d’auteur.<br/><br/>Comment traiter:<br/>Créez une seule autorité. Ajoutez le pseudonyme dans le 100$a et ajoutez le vrai nom dans le 400$a.<br/><br/>Exemple :<br/>100 $a Quinn, Julia, $d 1970-<br/>400 $a Pottinger, Julie Cotler, $d 1970-
+								</td>
+								<td class="lang-nl">Omschrijving:<br/>De auteur gebruikt één enkel pseudoniem voor al zijn/haar publicaties. Zijn/haar echte naam is bekend en mag gedeeld worden, maar wordt nooit als auteursnaam gebruikt.<br/><br/>Hoe behandelen:<br/>Maak één enkele autoriteit aan. Voeg het pseudoniem toe in 100$a en voeg de echte naam toe in 400$a.<br/><br/>Voorbeeld :<br/>100 $a Quinn, Julia, $d 1970-<br/>400 $a Pottinger, Julie Cotler, $d 1970-</td>
+							</tr>
+							<tr>
+								<th class="lang-fr">Cas spécifique 2: vrai nom aussi utilisé et peut être diffusé</th>
+								<th class="lang-nl">Specifiek geval 2: echte naam ook gebruikt en mag verspreid worden</th>
+							</tr>
+							<tr>
+								<td class="lang-fr">Description:<br/>L’auteur·ice utilise son vrai nom et un pseudonyme, et ils peuvent être associés.<br/><br/>Comment traiter:<br/>Créez deux autorités : une pour son vrai nom et l’autre pour son pseudonyme. Pour relier les deux autorités, utilisez le champ 500 avec les liens suivants :<ul><li>rdaa:P50428 – pseudonyme de la personne</li><li>rdaa:P50429 – identité réelle de la personne</li></ul>Exemple :<br/>100 $a Sandford, John, $d 1944-<br/>500 $i rdaa:P50429 – identité réelle de la personne $a Camp, John, $d 1944-
+								</td>
+								<td class="lang-nl">Omschrijving:<br/>De auteur gebruikt zowel zijn echte naam als een pseudoniem, en ze mogen gelinkt worden.<br/><br/>Hoe behandelen:<br/>Maak twee autoriteiten aan: één voor de echte naam en één voor het pseudoniem. Om de twee autoriteiten met elkaar te verbinden, gebruik je veld 500 met de volgende relaties:<ul><li>rdaa:P50428 – pseudoniem van persoon</li><li>rdaa:P50429 – echte identiteit van persoon</li></ul>Voorbeeld:<br/>100 $a Sandford, John, $d 1944-<br/>500 $i rdaa:P50429 – echte identiteit van persoon $a Camp, John, $d 1944-</td>
+							</tr>
+							<tr>
+								<th class="lang-fr">Cas spécifique 3: seul le pseudonyme est utilisé, auteur ne souhaite pas que son vrai nom soit connu</th>
+								<th class="lang-nl">Specifiek geval 3: enkel pseudoniem wordt gebruikt, auteur wil niet dat echte naam gekend is</th>
+							</tr>
+							<tr>
+								<td class="lang-fr">Description:<br/>L’auteur·ice utilise un seul pseudonyme et ne souhaite pas que son vrai nom soit connu.<br/><br/>Comment traiter:<br/>Créez une seule autorité avec le pseudonyme dans le 100$a. N’ajoutez rien dans le 400$a. 
+								</td>
+								<td class="lang-nl">Omschrijving:<br/>De auteur gebruikt één enkel pseudoniem en wil niet dat zijn echte naam bekend wordt.<br/><br/>Hoe behandelen:<br/>Maak één enkele autoriteit aan met het pseudoniem in 100$a. Voeg niets toe in 400$a.
+								</td>
+							</tr>
+							<tr>
+								<th class="lang-fr">Cas spécifique 4: les deux noms sont utilisés et ne peuvent pas être associés</th>
+								<th class="lang-nl">Specifiek geval 4: de twee namen worden gebruikt en mogen niet worden gelinkt</th>
+							</tr>
+							<tr>
+								<td class="lang-fr">Description:<br/>L’auteur·ice publie sous son vrai nom et sous un pseudonyme, et souhaite que le lien entre ces deux identités reste confidentiel. (Dans certains cas, cette confidentialité peut être levée après son décès ou après un certain délai, permettant alors d’établir le lien entre le vrai nom et le pseudonyme. Par exemple, Jef Geeraerts - Claus Trum)<br/><br/>Comment traiter:<br/>Créez deux autorités : une pour son vrai nom et l’autre pour son pseudonyme. Ne reliez pas les deux autorités sauf si le lien entre les deux identités (pseudonyme et vrai nom) devient connu par la suite.
+								</td>
+								<td class="lang-nl">Omschrijving:<br/>De auteur publiceert zowel onder zijn/haar echte naam als onder een pseudoniem, en wil dat de relatie tussen beide identiteiten vertrouwelijk blijft. (In sommige gevallen kan deze vertrouwelijkheid na het overlijden of na verloop van tijd worden opgeheven, waardoor de koppeling tussen echte naam en pseudoniem alsnog kan worden gemaakt. Bijvoorbeeld Jef Geeraerts - Claus Trum)<br/><br/>Hoe behandelen:<br/>Maak twee autoriteiten aan: één voor de echte naam en één voor het pseudoniem. Verbind de twee autoriteiten niet met elkaar, tenzij de relatie tussen beide identiteiten (pseudoniem en echte naam) later bekend wordt.</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+</tr>
 <tr>
 <td class="lang-fr" style="height: 55px;">
 				<h2><span style="color: #00748f; font-style: italic;" class="forecolor">Documents</span></h2>
