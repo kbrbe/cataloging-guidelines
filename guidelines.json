@@ -2803,8 +2803,8 @@
   },
   {
     "ID": "AUTHORITY016a",
-    "TitleFR": "016$a - Numéro de contrôle de l'agence bibliographique nationale - Numéro de contrôle de la notice (numéro d’éditeur)",
-    "TitleNL": "016$a - Controlenummer van het nationaal bibliografisch agentschap - Controlenummer van de beschrijving (uitgeversnummer)",
+    "TitleFR": "016$a - Numéro de contrôle de la notice (numéro d’éditeur)",
+    "TitleNL": "016$a - Controlenummer van de beschrijving (uitgeversnummer)",
     "MARC21": "https://www.loc.gov/marc/authority/ad016.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/a/P50384' rel='noopener'>source consulted</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-66fd5c23-8f64-385a-99ee-c31676e8772b",
@@ -2819,8 +2819,8 @@
   },
   {
     "ID": "AUTHORITY016z",
-    "TitleFR": "016$z - Numéro de contrôle de l'agence bibliographique nationale - Numéro de contrôle annulé ou invalide (numéro d’éditeur)",
-    "TitleNL": "016$z - Controlenummer van het nationaal bibliografisch agentschap - Geannuleerd of ongeldig controlenummer (uitgeversnummer)",
+    "TitleFR": "016$z - Numéro de contrôle annulé ou invalide (numéro d’éditeur)",
+    "TitleNL": "016$z - Geannuleerd of ongeldig controlenummer (uitgeversnummer)",
     "MARC21": "https://www.loc.gov/marc/authority/ad016.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/a/P50384' rel='noopener'>source consulted</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-66fd5c23-8f64-385a-99ee-c31676e8772b",
@@ -2835,8 +2835,8 @@
   },
   {
     "ID": "AUTHORITY0162",
-    "TitleFR": "016$2 - Numéro de contrôle de l'agence bibliographique nationale - Source",
-    "TitleNL": "016$2 - Controlenummer van het nationaal bibliografisch agentschap - Bron",
+    "TitleFR": "016$2 - Source",
+    "TitleNL": "016$2 - Bron",
     "MARC21": "https://www.loc.gov/marc/authority/ad016.html",
     "RDA_ELEMENT": "undefined",
     "RDA_TOOLKIT": "undefined",
