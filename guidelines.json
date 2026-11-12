@@ -3040,8 +3040,8 @@
     "MARC21": "https://www.loc.gov/marc/authority/ad046.html",
     "RDA_ELEMENT": ":<a target='_blank' href='http://rdaregistry.info/Elements/a/P50098' rel='noopener'>period of activity of person</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-bf5d84ac-36dd-377c-8281-8512938f2468",
-    "RulesFR": "À ne remplir que lorsque l’année au moins est connue avec certitude (en combinaison avec 100$d dans lequel on n’indique que les années), selon les formats suivants",
-    "RulesNL": "Enkel in te vullen wanneer minstens het jaar met zekerheid gekend is (in combinatie met 100$d waarin enkel jaartallen ingevuld worden), volgens deze formaten:",
+    "RulesFR": "Veuillez utiliser ce champ pour indiquer le début de l'activité relative à la publication d'ouvrages. À remplir uniquement si 046$q n'est pas connu.",
+    "RulesNL": "Gebruik dit veld om de start van de publicatieactiviteit aan te geven. Alleen invullen als 046$q niet bekend is.",
     "RulesTableFR": [
       {
         "format": "YYYY-MM-DD",
@@ -3095,13 +3095,13 @@
   },
   {
     "ID": "AUTHORITY046t",
-    "TitleFR": "046$t - Date de fin de la période de l'activité",
+    "TitleFR": "046$t - Fin de la période de l'activité",
     "TitleNL": "046$tr - Datum van einde activiteit",
     "MARC21": "https://www.loc.gov/marc/authority/ad046.html",
     "RDA_ELEMENT": " <a target='_blank' href='http://rdaregistry.info/Elements/a/P50098' rel='noopener'>period of activity of person</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-bf5d84ac-36dd-377c-8281-8512938f2468",
-    "RulesFR": "Date de fin de la période de l'activité, selon les formats :",
-    "RulesNL": "Datum van einde van de collectiviteit, volgens de formaten:",
+    "RulesFR": "Veuillez utiliser ce champ pour indiquer la fin de l'activité relative à la publication d'ouvrages (date de la dernière publication connue). À remplir uniquement si 046$r n'est pas connu.",
+    "RulesNL": "Gebruik dit veld om het einde van de publicatieactiviteit aan te geven (datum van laatst gekende uitgave). Alleen invullen als 046$r niet bekend is.",
     "RulesTableFR": [
       {
         "format": "YYYY-MM-DD",
@@ -3156,12 +3156,12 @@
   {
     "ID": "AUTHORITY046q",
     "TitleFR": "046$q - Date de fondation",
-    "TitleNL": "046$q - Datum van oprichting of van begin activiteit",
+    "TitleNL": "046$q - Oprichtingsdatum",
     "MARC21": "https://www.loc.gov/marc/authority/ad046.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/a/P50343' rel='noopener'>related timespan of collective agent</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-2de923e0-645a-39d9-a4bf-ad7f181452dc",
-    "RulesFR": "À ne remplir que lorsque l’année au moins est connue avec certitude (en combinaison avec 100$d dans lequel on n’indique que les années), selon les formats suivants",
-    "RulesNL": "Enkel in te vullen wanneer minstens het jaar met zekerheid gekend is (in combinatie met 100$d waarin enkel jaartallen ingevuld worden), volgens deze formaten:",
+    "RulesFR": "À ne remplir que lorsque l’année au moins est connue avec certitude, selon les formats suivants",
+    "RulesNL": "Enkel in te vullen wanneer minstens het jaar met zekerheid gekend is, volgens deze formaten:",
     "RulesTableFR": [
       {
         "format": "YYYY-MM-DD",
@@ -3216,12 +3216,12 @@
   {
     "ID": "AUTHORITY046r",
     "TitleFR": "046$r - Date de cessation",
-    "TitleNL": "046$r - Datum van einde activiteit",
+    "TitleNL": "046$r - Datum van stopzetting",
     "MARC21": "https://www.loc.gov/marc/authority/ad046.html",
     "RDA_ELEMENT": "<a target='_blank' href='http://rdaregistry.info/Elements/a/P50343' rel='noopener'>related timespan of collective agent</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-2de923e0-645a-39d9-a4bf-ad7f181452dc",
     "RulesFR": "Date de cessation de la collectivité, selon les formats :",
-    "RulesNL": "YYYY-MM-DD",
+    "RulesNL": "Datum van stopzetting van de collectiviteit, volgens de volgende formaten:",
     "RulesTableFR": [
       {
         "format": "YYYY-MM-DD",
@@ -3432,13 +3432,13 @@
   },
   {
     "ID": "AUTHORITY110a",
-    "TitleFR": "110$a - Nom de collectivité",
-    "TitleNL": "110$a - Naam van collectiviteit",
+    "TitleFR": "110$a - Nom de collectivité ou nom de lieu comme élément de classement",
+    "TitleNL": "110$a - Naam van collectiviteit of plaatsnaam als classificatie-element",
     "MARC21": "https://www.loc.gov/marc/authority/ad110.html",
     "RDA_ELEMENT": " <a target='_blank' href='http://rdaregistry.info/Elements/a/P50405' rel='noopener'>authorized access point for collective agent</a>",
     "RDA_TOOLKIT": "https://access.rdatoolkit.org/en-US_ala-1d4866bb-7c1e-33ad-a900-208e686b7d02",
-    "RulesFR": "Forme courante de la collectivité",
-    "RulesNL": "Gebruikelijke woordvorm van de collectiviteit",
+    "RulesFR": "Ajoutez la forme courante de la collectivité.<br><br>Organisation multilingue avec des dénominations dans plusieurs langues :<ul><li>créez une seule autorité avec un 110$a par langue (associez la langue)</li><li>répétez le 377$a pour chaque langue</li><li>reprenez en zone 371 les variantes linguistiques de l’adresse, en précisant la langue.</li></ul><br><br>Lorsqu’une collectivité change de nom, l’autorité est conservée s’il n’existe pas encore d’autorité pour le nouveau nom.<ul><li>Ancien nom : à enregistrer en 410$a, avec la relation correspondante en 410$i (ancienne forme).</li><li>Nouveau nom : à enregistrer en 110$a, avec la relation correspondante en 410$i (forme actuelle[MH5.1]).</li><li>Ajoutez dans le 678$a une note de type : « À partir de [date], devient ... ».</li></ul>",
+    "RulesNL": "Voeg de gebruikelijke woordvorm van de collectiviteit toe.<br><br>Meertalige organisatie met benamingen in verschillende talen:<ul><li>Maak één autoriteit aan met een 110$a per taal (koppel de taal)</li><li>Herhaal subveld 377$a voor elke taal</li><li>Neem in veld 371 de taalvarianten van het adres op en vermeld daarbij de taal.</li></ul>Wanneer een organisatie van naam verandert, blijft de bestaande autoriteit behouden indien er nog geen aparte autoriteit voor de nieuwe naam bestaat.<ul><li>Oude naam: registreren in 410$a, met de overeenkomstige relatie in 410$i (vorige naam).</li><li>Nieuwe naam: registreren in 110$a, met de overeenkomstige relatie in 410$i (huidige naam).</li><li>In 678$a een toelichtende nota toevoegen, bijvoorbeeld: “Vanaf [datum] wordt ...”.</li></ul>",
     "Entity": "Agent",    
 	"FirstInstance": "Mandatory",
     "AdditionalInstances": "If applicable",
