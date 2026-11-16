@@ -3669,6 +3669,22 @@
     "RecordingMethod": "Unstructured"
   },
   {
+    "ID": "AUTHORITY371z",
+    "TitleFR": "371$z - Note destinée au public",
+    "TitleNL": "371$z - Publieke nota",
+    "MARC21": "https://www.loc.gov/marc/authority/ad371.html",
+    "RDA_ELEMENT": "<br><a target='_blank' href='http://rdaregistry.info/Elements/a/P50114' rel='noopener'>address of person</a><br><a target='_blank' href='http://rdaregistry.info/Elements/a/P50419' rel='noopener'>address of collective agent</a>",
+    "RDA_TOOLKIT": "<br>https://access.rdatoolkit.org/en-US_ala-706335cb-c831-3a4c-b7b0-4a59a28981b8<br>https://access.rdatoolkit.org/en-US_ala-98eea6eb-233f-3c3e-9f73-4cce122bfea4",
+    "RulesFR": "Utilisez ce sous-champ pour ajouter des informations complémentaires (par exemple pour indiquer s’il s’agit d’une ‘adresse postale’ ou d’un ‘siège social’).<br><br>Pour ajouter une ancienne adresse, ajoutez la mention ‘ancienne adresse’ ou ‘vorig adres’.<br><br>Voir les règles relatives aux changements d’adresse en 371$a.",
+    "RulesNL": "Gebruik dit subveld om aanvullende informatie toe te voegen (bijvoorbeeld om aan te geven of het om een ‘postadres’ of een ‘maatschappelijke zetel’ gaat).<br><br>Als u een oud adres wilt toevoegen, vermeld dan ‘vorig adres’ of ‘ancienne adresse’.<br><br>Zie de regels voor adreswijzigingen bij 371$a.",
+    "Entity": "Agent",    
+	"FirstInstance": "Mandatory",
+    "AdditionalInstances": "If applicable",
+    "DataType": "String",
+    "VES": "",
+    "RecordingMethod": "Unstructured"
+  },
+  {
     "ID": "AUTHORITY375a",
     "TitleFR": "375$a - Sexe",
     "TitleNL": "375$a - Gender",
